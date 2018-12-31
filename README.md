@@ -1,6 +1,6 @@
 # patterns
 Complete catalog of all classical patterns in the Archimate language (ArchiTool used https://www.archimatetool.com) 
-This version includes all 155+ patterns completed (278+ models)
+This version includes all 155+ patterns completed (278+ models). Images also avialable.
 
 - Domain driven design patterns
 - Fowler's Analysis patterns
