@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archimate:model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:archimate="http://www.archimatetool.com/archimate" name="10 Value Object" id="ecade05f" version="4.0.0">
+  <folder name="Strategy" id="67f17c4f" type="strategy"/>
+  <folder name="Business" id="cc8231e4" type="business"/>
+  <folder name="Application" id="46dd41a4" type="application">
+    <element xsi:type="archimate:ApplicationComponent" name="Class 1" id="b3e17ef8"/>
+    <element xsi:type="archimate:ApplicationComponent" name="class 2" id="8417fe7e"/>
+    <element xsi:type="archimate:DataObject" name="properties" id="11647da2"/>
+    <element xsi:type="archimate:ApplicationFunction" name="method1" id="bb0c4d42"/>
+    <element xsi:type="archimate:ApplicationProcess" name="some process" id="f138f25a"/>
+    <element xsi:type="archimate:ApplicationProcess" name="Application Process" id="20b9d4ef"/>
+    <element xsi:type="archimate:ApplicationProcess" name="Application Process" id="b19c0468"/>
+    <element xsi:type="archimate:ApplicationFunction" name="some func 1" id="033c36a7"/>
+    <element xsi:type="archimate:ApplicationFunction" name="some func 2" id="cdf4eac6"/>
+    <element xsi:type="archimate:ApplicationProcess" name="send object of class 1" id="51c5ba12"/>
+    <element xsi:type="archimate:ApplicationProcess" name="receive object of class 1" id="59a814ae"/>
+    <element xsi:type="archimate:DataObject" name="some place" id="fe5240ac"/>
+    <element xsi:type="archimate:ApplicationProcess" name="create object of class 1" id="79a8accd"/>
+    <element xsi:type="archimate:ApplicationFunction" name="some func 1 (copy)" id="71f4514c"/>
+    <element xsi:type="archimate:ApplicationProcess" name="send object of class 1 (copy)" id="30a77b02"/>
+    <element xsi:type="archimate:ApplicationProcess" name="create object of class 1 (copy)" id="59102c51"/>
+    <element xsi:type="archimate:ApplicationFunction" name="some func 2 (copy)" id="0f1781e0"/>
+    <element xsi:type="archimate:ApplicationProcess" name="receive object of class 1 (copy)" id="974c0341"/>
+    <element xsi:type="archimate:DataObject" name="Data Object (copy)" id="e9dd41d6"/>
+    <element xsi:type="archimate:ApplicationFunction" name="some func 1 " id="ba658b61"/>
+    <element xsi:type="archimate:ApplicationProcess" name="send value object" id="a0037c7f"/>
+    <element xsi:type="archimate:ApplicationProcess" name="create value object" id="14eed138"/>
+    <element xsi:type="archimate:ApplicationFunction" name="some func 2" id="c521468e"/>
+    <element xsi:type="archimate:ApplicationProcess" name="receive value object" id="201e08e4"/>
+    <element xsi:type="archimate:DataObject" name="Data Object" id="e98dd299"/>
+    <element xsi:type="archimate:DataObject" name="array" id="2a149a9b"/>
+    <element xsi:type="archimate:DataObject" name="object 1" id="a211feb7"/>
+    <element xsi:type="archimate:DataObject" name="object 2" id="af9f6951"/>
+    <element xsi:type="archimate:DataObject" name="object 3" id="dab929e9"/>
+    <element xsi:type="archimate:DataObject" name="object 4" id="32499154"/>
+    <element xsi:type="archimate:DataObject" name="ref to obj1" id="8cd15705"/>
+    <element xsi:type="archimate:DataObject" name="ref to obj2" id="5c725715"/>
+    <element xsi:type="archimate:DataObject" name="ref to obj3" id="48b190bc"/>
+    <element xsi:type="archimate:DataObject" name="ref to obj3" id="bb975d3e"/>
+    <element xsi:type="archimate:DataObject" name="array" id="8a337ed3"/>
+    <element xsi:type="archimate:DataObject" name="object 1" id="8dd4b2d3"/>
+    <element xsi:type="archimate:DataObject" name="object 2" id="fa7ec7f6"/>
+    <element xsi:type="archimate:DataObject" name="object 3" id="fb74541c"/>
+    <element xsi:type="archimate:DataObject" name="ref to obj3 (copy)" id="5fd4ec7d"/>
+    <element xsi:type="archimate:DataObject" name="some variable" id="51019f9c"/>
+    <element xsi:type="archimate:DataObject" name="some variable" id="4afa2c42"/>
+    <element xsi:type="archimate:DataObject" name="some variable" id="c366cc75"/>
+    <element xsi:type="archimate:DataObject" name="some variable" id="ff580df6"/>
+  </folder>
+  <folder name="Technology &amp; Physical" id="508d1846" type="technology"/>
+  <folder name="Motivation" id="cb6db7f8" type="motivation"/>
+  <folder name="Implementation &amp; Migration" id="9b544685" type="implementation_migration"/>
+  <folder name="Other" id="e656caf3" type="other"/>
+  <folder name="Relations" id="2fea760f" type="relations">
+    <element xsi:type="archimate:AccessRelationship" id="0dc385d5" source="b3e17ef8" target="11647da2"/>
+    <element xsi:type="archimate:AssignmentRelationship" id="8adc4a43" source="b3e17ef8" target="bb0c4d42"/>
+    <element xsi:type="archimate:CompositionRelationship" id="ce5ea45f" source="f138f25a" target="20b9d4ef"/>
+    <element xsi:type="archimate:CompositionRelationship" id="5f52c5a8" source="f138f25a" target="b19c0468"/>
+    <element xsi:type="archimate:CompositionRelationship" id="0f6dc24f" source="033c36a7" target="51c5ba12"/>
+    <element xsi:type="archimate:CompositionRelationship" id="16054e39" source="cdf4eac6" target="59a814ae"/>
+    <element xsi:type="archimate:TriggeringRelationship" id="49e22811" source="51c5ba12" target="59a814ae"/>
+    <element xsi:type="archimate:CompositionRelationship" id="34421bac" source="033c36a7" target="79a8accd"/>
+    <element xsi:type="archimate:AccessRelationship" name="get ref to instance" id="dccf2307" source="79a8accd" target="fe5240ac"/>
+    <element xsi:type="archimate:AccessRelationship" name="access and change object by ref" id="1b9430d6" source="59a814ae" target="fe5240ac"/>
+    <element xsi:type="archimate:CompositionRelationship" id="1d9903cd" source="71f4514c" target="59102c51"/>
+    <element xsi:type="archimate:AccessRelationship" id="3db68f9b" source="974c0341" target="e9dd41d6"/>
+    <element xsi:type="archimate:CompositionRelationship" id="9765e1ff" source="71f4514c" target="30a77b02"/>
+    <element xsi:type="archimate:TriggeringRelationship" id="2d5d7df3" source="30a77b02" target="974c0341"/>
+    <element xsi:type="archimate:CompositionRelationship" id="1682eece" source="0f1781e0" target="974c0341"/>
+    <element xsi:type="archimate:AccessRelationship" id="d16979b3" source="59102c51" target="e9dd41d6"/>
+    <element xsi:type="archimate:CompositionRelationship" id="95f3bd31" source="ba658b61" target="14eed138"/>
+    <element xsi:type="archimate:AccessRelationship" id="187a7f8b" source="201e08e4" target="e98dd299"/>
+    <element xsi:type="archimate:CompositionRelationship" id="c66c007b" source="ba658b61" target="a0037c7f"/>
+    <element xsi:type="archimate:TriggeringRelationship" id="e39e4b6c" source="a0037c7f" target="201e08e4"/>
+    <element xsi:type="archimate:CompositionRelationship" id="794c7b91" source="c521468e" target="201e08e4"/>
+    <element xsi:type="archimate:AccessRelationship" id="cc5b78a5" source="14eed138" target="e98dd299"/>
+    <element xsi:type="archimate:CompositionRelationship" id="c700bff0" source="2a149a9b" target="8cd15705"/>
+    <element xsi:type="archimate:CompositionRelationship" id="83a0f665" source="2a149a9b" target="5c725715"/>
+    <element xsi:type="archimate:CompositionRelationship" id="d0fcc328" source="2a149a9b" target="48b190bc"/>
+    <element xsi:type="archimate:CompositionRelationship" id="c39c77c1" source="2a149a9b" target="bb975d3e"/>
+    <element xsi:type="archimate:AssociationRelationship" id="93cd0a95" source="8cd15705" target="a211feb7"/>
+    <element xsi:type="archimate:AssociationRelationship" id="8e3cc788" source="5c725715" target="af9f6951"/>
+    <element xsi:type="archimate:AssociationRelationship" id="42623c7d" source="48b190bc" target="dab929e9"/>
+    <element xsi:type="archimate:AssociationRelationship" id="ceac262a" source="bb975d3e" target="32499154"/>
+    <element xsi:type="archimate:CompositionRelationship" id="0b77f4fb" source="8a337ed3" target="fa7ec7f6"/>
+    <element xsi:type="archimate:CompositionRelationship" id="bb478778" source="8a337ed3" target="8dd4b2d3"/>
+    <element xsi:type="archimate:CompositionRelationship" id="dec5c1fe" source="8a337ed3" target="fb74541c"/>
+    <element xsi:type="archimate:CompositionRelationship" id="41291417" source="8a337ed3" target="5fd4ec7d"/>
+  </folder>
+  <folder name="Views" id="d4056c08" type="diagrams">
+    <element xsi:type="archimate:ArchimateDiagramModel" name="Value Object" id="601dd2fe">
+      <child xsi:type="archimate:Group" id="5a1b3eb9" name="class concept and  link transmission concept" textAlignment="1">
+        <bounds x="230" y="-95" width="796" height="486"/>
+        <child xsi:type="archimate:DiagramObject" id="ee26b933" archimateElement="fe5240ac">
+          <bounds x="335" y="60" width="171" height="111"/>
+          <child xsi:type="archimate:Note" id="8d979007" targetConnections="e464a279" fontColor="#ffffff" fillColor="#000000" textPosition="1">
+            <bounds x="25" y="40" width="120" height="55"/>
+            <sourceConnection id="77b5cbef" source="8d979007" target="9d1aceee"/>
+            <content>object instance 1</content>
+          </child>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="897c52d2" archimateElement="51019f9c">
+          <bounds x="65" y="280" width="284" height="179"/>
+          <child xsi:type="archimate:Note" id="8185adb9" fontColor="#ffffff" fillColor="#000000" textPosition="1">
+            <bounds x="85" y="70" width="120" height="55"/>
+            <sourceConnection id="e464a279" source="8185adb9" target="8d979007"/>
+            <content>Ref to object1&#xD;
+</content>
+          </child>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="32848333" archimateElement="4afa2c42">
+          <bounds x="475" y="280" width="284" height="179"/>
+          <child xsi:type="archimate:Note" id="9d1aceee" targetConnections="77b5cbef" fontColor="#ffffff" fillColor="#000000" textPosition="1">
+            <bounds x="95" y="75" width="120" height="55"/>
+            <content>Ref to object1&#xD;
+</content>
+          </child>
+        </child>
+      </child>
+      <child xsi:type="archimate:Group" id="6bc69e56" name="value object concept and by value transfer concept" textAlignment="1">
+        <bounds x="230" y="450" width="796" height="486"/>
+        <child xsi:type="archimate:DiagramObject" id="90856096" archimateElement="c366cc75">
+          <bounds x="55" y="255" width="284" height="179"/>
+          <child xsi:type="archimate:Note" id="029337fb" fontColor="#ffffff" fillColor="#000000" textPosition="1">
+            <bounds x="85" y="70" width="120" height="55"/>
+            <content>object instance 1&#xD;
+</content>
+          </child>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="fac66e0e" archimateElement="ff580df6">
+          <bounds x="465" y="255" width="284" height="179"/>
+          <child xsi:type="archimate:Note" id="811dffc2" fontColor="#ffffff" fillColor="#000000" textPosition="1">
+            <bounds x="95" y="75" width="120" height="55"/>
+            <content>copy of object instance 1 (actually object instance 1a)&#xD;
+</content>
+          </child>
+        </child>
+      </child>
+      <child xsi:type="archimate:Group" id="64d53f39" name="array of objects" textAlignment="1">
+        <bounds x="1125" y="-95" width="796" height="486"/>
+        <child xsi:type="archimate:DiagramObject" id="54b61fc3" archimateElement="2a149a9b">
+          <bounds x="53" y="277" width="702" height="179"/>
+          <child xsi:type="archimate:Note" id="85d79f7a" targetConnections="67fa8405" fontColor="#ffffff" fillColor="#000000" textPosition="1">
+            <bounds x="45" y="85" width="120" height="55"/>
+            <content>Ref to object1&#xD;
+</content>
+          </child>
+          <child xsi:type="archimate:Note" id="29019e5f" targetConnections="d8b496a9" fontColor="#ffffff" fillColor="#000000" textPosition="1">
+            <bounds x="200" y="85" width="120" height="55"/>
+            <content>Ref to object2&#xD;
+</content>
+          </child>
+          <child xsi:type="archimate:Note" id="8cd41abd" targetConnections="500e0fd0" fontColor="#ffffff" fillColor="#000000" textPosition="1">
+            <bounds x="360" y="85" width="120" height="55"/>
+            <content>Ref to object3&#xD;
+</content>
+          </child>
+          <child xsi:type="archimate:Note" id="2199be77" targetConnections="ca0a1839" fontColor="#ffffff" fillColor="#000000" textPosition="1">
+            <bounds x="540" y="85" width="120" height="55"/>
+            <content>Ref to object4&#xD;
+</content>
+          </child>
+        </child>
+        <child xsi:type="archimate:Note" id="fbc2799c" fontColor="#ffffff" fillColor="#000000" textPosition="1">
+          <bounds x="80" y="140" width="120" height="55"/>
+          <sourceConnection id="67fa8405" source="fbc2799c" target="85d79f7a"/>
+          <content>object instance 1&#xD;
+</content>
+        </child>
+        <child xsi:type="archimate:Note" id="4648813f" fontColor="#ffffff" fillColor="#000000" textPosition="1">
+          <bounds x="235" y="140" width="120" height="55"/>
+          <sourceConnection id="d8b496a9" source="4648813f" target="29019e5f"/>
+          <content>object  instance 2&#xD;
+</content>
+        </child>
+        <child xsi:type="archimate:Note" id="c0105f61" fontColor="#ffffff" fillColor="#000000" textPosition="1">
+          <bounds x="395" y="140" width="120" height="55"/>
+          <sourceConnection id="500e0fd0" source="c0105f61" target="8cd41abd"/>
+          <content>object  instance 3&#xD;
+</content>
+        </child>
+        <child xsi:type="archimate:Note" id="e173de4c" fontColor="#ffffff" fillColor="#000000" textPosition="1">
+          <bounds x="575" y="140" width="120" height="55"/>
+          <sourceConnection id="ca0a1839" source="e173de4c" target="2199be77"/>
+          <content>object instance 4&#xD;
+</content>
+        </child>
+      </child>
+      <child xsi:type="archimate:Group" id="0de3d6b5" name="array of value objects" textAlignment="1">
+        <bounds x="1125" y="450" width="796" height="486"/>
+        <child xsi:type="archimate:DiagramObject" id="58c45a06" archimateElement="8a337ed3">
+          <bounds x="50" y="260" width="702" height="179"/>
+          <child xsi:type="archimate:Note" id="e1e849db" fontColor="#ffffff" fillColor="#000000" textPosition="1">
+            <bounds x="45" y="80" width="120" height="55"/>
+            <content>object instance 1&#xD;
+</content>
+          </child>
+          <child xsi:type="archimate:Note" id="d9d54fbc" fontColor="#ffffff" fillColor="#000000" textPosition="1">
+            <bounds x="200" y="80" width="120" height="55"/>
+            <content>object  instance 2&#xD;
+</content>
+          </child>
+          <child xsi:type="archimate:Note" id="b665270a" fontColor="#ffffff" fillColor="#000000" textPosition="1">
+            <bounds x="360" y="80" width="120" height="55"/>
+            <content>object  instance 3&#xD;
+</content>
+          </child>
+          <child xsi:type="archimate:Note" id="183180e4" fontColor="#ffffff" fillColor="#000000" textPosition="1">
+            <bounds x="540" y="80" width="120" height="55"/>
+            <content>object instance 4&#xD;
+</content>
+          </child>
+        </child>
+      </child>
+    </element>
+    <element xsi:type="archimate:ArchimateDiagramModel" name="Value Object (old)" id="3a2d4d6c">
+      <child xsi:type="archimate:Group" id="0844519c" name="class concept and  link transmission concept" textAlignment="1">
+        <bounds x="230" y="-95" width="796" height="486"/>
+        <child xsi:type="archimate:DiagramObject" id="ed8117b6" archimateElement="033c36a7">
+          <bounds x="69" y="200" width="212" height="231"/>
+          <sourceConnection xsi:type="archimate:Connection" id="1cfd4062" source="ed8117b6" target="0d6526a2" archimateRelationship="34421bac"/>
+          <sourceConnection xsi:type="archimate:Connection" id="1fe0548f" source="ed8117b6" target="5ff44eae" archimateRelationship="0f6dc24f"/>
+          <child xsi:type="archimate:DiagramObject" id="5ff44eae" targetConnections="1fe0548f" archimateElement="51c5ba12">
+            <bounds x="40" y="130" width="120" height="55"/>
+            <sourceConnection xsi:type="archimate:Connection" id="c9000c10" source="5ff44eae" target="2f92c110" archimateRelationship="49e22811"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="0d6526a2" targetConnections="1cfd4062" archimateElement="79a8accd">
+            <bounds x="40" y="65" width="120" height="55"/>
+            <sourceConnection xsi:type="archimate:Connection" id="03bf59ef" fontColor="#ff0000" source="0d6526a2" target="60e197a5" archimateRelationship="dccf2307">
+              <bendpoint startX="142" startY="-102" endX="-109" endY="74"/>
+            </sourceConnection>
+          </child>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="5c5f54eb" archimateElement="cdf4eac6">
+          <bounds x="530" y="200" width="212" height="231"/>
+          <sourceConnection xsi:type="archimate:Connection" id="6d1c29e8" source="5c5f54eb" target="2f92c110" archimateRelationship="16054e39"/>
+          <child xsi:type="archimate:DiagramObject" id="2f92c110" targetConnections="6d1c29e8 c9000c10" archimateElement="59a814ae">
+            <bounds x="50" y="95" width="120" height="55"/>
+            <sourceConnection xsi:type="archimate:Connection" id="adf03e41" fontColor="#ff0000" source="2f92c110" target="60e197a5" archimateRelationship="1b9430d6">
+              <bendpoint startX="-125" startY="-132" endX="95" endY="74"/>
+            </sourceConnection>
+          </child>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="60e197a5" targetConnections="adf03e41 03bf59ef" archimateElement="fe5240ac">
+          <bounds x="335" y="60" width="171" height="111"/>
+          <child xsi:type="archimate:Note" id="b4728915" fontColor="#ffffff" fillColor="#000000" textPosition="1">
+            <bounds x="25" y="40" width="120" height="55"/>
+            <content>object instance</content>
+          </child>
+        </child>
+        <child xsi:type="archimate:Note" id="d53e5549" fontColor="#ff0000" fillColor="#000000" textPosition="1">
+          <bounds x="350" y="303" width="120" height="55"/>
+          <content>Ref to object</content>
+        </child>
+      </child>
+      <child xsi:type="archimate:Group" id="cd060871" name="value object concept and by value transfer concept" textAlignment="1">
+        <bounds x="230" y="450" width="796" height="486"/>
+        <child xsi:type="archimate:DiagramObject" id="4dd7445a" archimateElement="ba658b61">
+          <bounds x="69" y="200" width="212" height="231"/>
+          <sourceConnection xsi:type="archimate:Connection" id="532cfd4c" source="4dd7445a" target="79d04f05" archimateRelationship="95f3bd31"/>
+          <sourceConnection xsi:type="archimate:Connection" id="91acc00a" source="4dd7445a" target="59713afd" archimateRelationship="c66c007b"/>
+          <child xsi:type="archimate:DiagramObject" id="59713afd" targetConnections="91acc00a" archimateElement="a0037c7f">
+            <bounds x="35" y="135" width="136" height="91"/>
+            <sourceConnection xsi:type="archimate:Connection" id="5d8297ee" source="59713afd" target="0bb663b4" archimateRelationship="e39e4b6c"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="79d04f05" targetConnections="532cfd4c" archimateElement="14eed138">
+            <bounds x="35" y="25" width="140" height="100"/>
+            <child xsi:type="archimate:Note" id="dca4dae0" fontColor="#ffffff" fillColor="#000000" textPosition="1">
+              <bounds x="10" y="35" width="120" height="55"/>
+              <content>IMMUTABLE object instance</content>
+            </child>
+          </child>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="4a3a145e" archimateElement="c521468e">
+          <bounds x="530" y="200" width="212" height="231"/>
+          <sourceConnection xsi:type="archimate:Connection" id="5219eab7" source="4a3a145e" target="0bb663b4" archimateRelationship="794c7b91"/>
+          <child xsi:type="archimate:DiagramObject" id="0bb663b4" targetConnections="5219eab7 5d8297ee" archimateElement="201e08e4">
+            <bounds x="50" y="105" width="120" height="55"/>
+          </child>
+        </child>
+        <child xsi:type="archimate:Note" id="aa6ad47a" fontColor="#ffffff" fillColor="#000000" textPosition="1">
+          <bounds x="330" y="320" width="120" height="55"/>
+          <content>IMMUTABLE object instance</content>
+        </child>
+      </child>
+    </element>
+  </folder>
+</archimate:model>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archimate:model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:archimate="http://www.archimatetool.com/archimate" name="3 processes" id="4028ed08" version="4.0.0">
+  <folder name="Strategy" id="16cc858f" type="strategy"/>
+  <folder name="Business" id="69bb06f8" type="business"/>
+  <folder name="Application" id="f79f4344" type="application"/>
+  <folder name="Technology &amp; Physical" id="3d89841d" type="technology"/>
+  <folder name="Motivation" id="47dc6a01" type="motivation"/>
+  <folder name="Implementation &amp; Migration" id="98a25a73" type="implementation_migration"/>
+  <folder name="Other" id="9437409c" type="other"/>
+  <folder name="Relations" id="c6eb10d3" type="relations"/>
+  <folder name="Views" id="75bd4f86" type="diagrams">
+    <element xsi:type="archimate:ArchimateDiagramModel" name="processes" id="9b7f2039">
+      <child xsi:type="archimate:Note" id="661e3e0e" textAlignment="1">
+        <bounds x="280" y="221" width="185" height="80"/>
+        <content>For example, processes can be represented as services (or as GoF pattern: strategy objects)</content>
+      </child>
+    </element>
+  </folder>
+</archimate:model>

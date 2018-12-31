@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archimate:model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:archimate="http://www.archimatetool.com/archimate" name="design patterns overview" id="5a4b03f0" version="4.0.0">
+  <folder name="Strategy" id="d9d70ecf" type="strategy"/>
+  <folder name="Business" id="f0909366" type="business">
+    <element xsi:type="archimate:BusinessObject" name="Business Object" id="2c37c934"/>
+  </folder>
+  <folder name="Application" id="d87611aa" type="application"/>
+  <folder name="Technology &amp; Physical" id="8e23dd71" type="technology"/>
+  <folder name="Motivation" id="ed0cf3f8" type="motivation"/>
+  <folder name="Implementation &amp; Migration" id="1df25379" type="implementation_migration"/>
+  <folder name="Other" id="8bb7fe9a" type="other">
+    <element xsi:type="archimate:Grouping" name="4 Prototype" id="14b58684"/>
+    <element xsi:type="archimate:Grouping" name="2 Builder" id="2aba2a80"/>
+    <element xsi:type="archimate:Grouping" name="Grouping" id="a15e4522"/>
+    <element xsi:type="archimate:Grouping" name="3 Factory Method" id="bc97dfcc"/>
+    <element xsi:type="archimate:Grouping" name="1 Abstract Factory" id="e5bb37de"/>
+    <element xsi:type="archimate:Grouping" name="Grouping" id="ff7a6138"/>
+    <element xsi:type="archimate:Grouping" name="Grouping (copy)" id="35ec24d7"/>
+    <element xsi:type="archimate:Grouping" name="Grouping (copy)" id="5d42f1f1"/>
+    <element xsi:type="archimate:Grouping" name="Grouping (copy)" id="c752e79a"/>
+    <element xsi:type="archimate:Grouping" name="5 Singleton" id="ff5ee466"/>
+    <element xsi:type="archimate:Grouping" name="Grouping (copy)" id="55041cbd"/>
+    <element xsi:type="archimate:Grouping" name="Grouping (copy)" id="f37d4261"/>
+    <element xsi:type="archimate:Grouping" name="Grouping (copy)" id="bb4d1f5f"/>
+    <element xsi:type="archimate:Grouping" name="Grouping (copy)" id="d054d4ac"/>
+    <element xsi:type="archimate:Grouping" name="4 Decorator" id="520e2be3"/>
+    <element xsi:type="archimate:Grouping" name="2 Bridge" id="a216642c"/>
+    <element xsi:type="archimate:Grouping" name="3 Composite" id="bd081a0d"/>
+    <element xsi:type="archimate:Grouping" name="1 Adapter" id="47dfd9e0"/>
+    <element xsi:type="archimate:Grouping" name="Grouping (copy) (copy)" id="a928f99c"/>
+    <element xsi:type="archimate:Grouping" name="6 Flyweight" id="9d40ed53"/>
+    <element xsi:type="archimate:Grouping" name="7 Proxy" id="341804e6"/>
+    <element xsi:type="archimate:Grouping" name="5 Facade" id="62887790"/>
+    <element xsi:type="archimate:Grouping" name="Grouping (copy) (copy)" id="c26b0508"/>
+    <element xsi:type="archimate:Grouping" name="Grouping (copy) (copy)" id="3debbd1a"/>
+    <element xsi:type="archimate:Grouping" name="Grouping (copy) (copy)" id="0f5228aa"/>
+    <element xsi:type="archimate:Grouping" name="Grouping (copy) (copy)" id="62fdc3e4"/>
+    <element xsi:type="archimate:Grouping" name="4 Iterator" id="af704474"/>
+    <element xsi:type="archimate:Grouping" name="2 Command" id="dca50c4c"/>
+    <element xsi:type="archimate:Grouping" name="3 Interpreter" id="2fe44a0f"/>
+    <element xsi:type="archimate:Grouping" name="1 Chain of Responsibility" id="b4fdf0d7"/>
+    <element xsi:type="archimate:Grouping" name="8 State" id="4143c2d3"/>
+    <element xsi:type="archimate:Grouping" name="6 Memento" id="dcd14142"/>
+    <element xsi:type="archimate:Grouping" name="7 Observer" id="9fa9cb9d"/>
+    <element xsi:type="archimate:Grouping" name="5 Mediator" id="da148b31"/>
+    <element xsi:type="archimate:Grouping" name="Grouping (copy) (copy)" id="a3b7933d"/>
+    <element xsi:type="archimate:Grouping" name="10 Template Method" id="89f9be7e"/>
+    <element xsi:type="archimate:Grouping" name="11 Visitor" id="a0aeeee5"/>
+    <element xsi:type="archimate:Grouping" name="9 Strategy" id="9680dc3c"/>
+  </folder>
+  <folder name="Relations" id="dffc8d66" type="relations"/>
+  <folder name="Views" id="a839858f" type="diagrams">
+    <element xsi:type="archimate:ArchimateDiagramModel" name="map" id="4b91674a">
+      <child xsi:type="archimate:Group" id="f79e649f" name="Creational patterns" textAlignment="1" fillColor="#c7e1e2">
+        <bounds x="102" y="84" width="754" height="527"/>
+        <child xsi:type="archimate:DiagramObject" id="8aad600f" archimateElement="14b58684">
+          <bounds x="555" y="70" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="02651d46" archimateElement="2aba2a80">
+          <bounds x="220" y="70" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="7cb7fb3b" archimateElement="bc97dfcc">
+          <bounds x="385" y="70" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="f76879f5" archimateElement="e5bb37de">
+          <bounds x="45" y="70" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="3170f520" archimateElement="ff5ee466">
+          <bounds x="45" y="190" width="120" height="55"/>
+        </child>
+      </child>
+      <child xsi:type="archimate:Group" id="f1d79841" name="Structural patterns" textAlignment="1" fillColor="#cedbd3">
+        <bounds x="102" y="660" width="754" height="527"/>
+        <child xsi:type="archimate:DiagramObject" id="636dc5bf" archimateElement="520e2be3">
+          <bounds x="600" y="70" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="a99d9cc3" archimateElement="a216642c">
+          <bounds x="235" y="70" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="2151c8ec" archimateElement="bd081a0d">
+          <bounds x="420" y="70" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="5cbf73be" archimateElement="47dfd9e0">
+          <bounds x="50" y="70" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="0937aae3" archimateElement="9d40ed53">
+          <bounds x="235" y="210" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="cc838c50" archimateElement="341804e6">
+          <bounds x="435" y="210" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="4a143e82" archimateElement="62887790">
+          <bounds x="50" y="210" width="120" height="55"/>
+        </child>
+      </child>
+      <child xsi:type="archimate:Group" id="7a7b97de" name="Behavioral patterns" textAlignment="1" fillColor="#d8d1d7">
+        <bounds x="102" y="1235" width="754" height="527"/>
+        <child xsi:type="archimate:DiagramObject" id="b38be3ce" archimateElement="af704474">
+          <bounds x="605" y="70" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="223cf6ef" archimateElement="dca50c4c">
+          <bounds x="235" y="70" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="d731db95" archimateElement="2fe44a0f">
+          <bounds x="410" y="70" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="f6cf757d" archimateElement="b4fdf0d7">
+          <bounds x="65" y="70" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="cb58a007" archimateElement="4143c2d3">
+          <bounds x="605" y="205" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="70f7e024" archimateElement="dcd14142">
+          <bounds x="235" y="205" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="313f9696" archimateElement="9fa9cb9d">
+          <bounds x="410" y="205" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="fda66806" archimateElement="da148b31">
+          <bounds x="65" y="205" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="59cdc186" archimateElement="89f9be7e">
+          <bounds x="235" y="345" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="ce06d9e8" archimateElement="a0aeeee5">
+          <bounds x="410" y="345" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="ca0d697b" archimateElement="9680dc3c">
+          <bounds x="65" y="345" width="120" height="55"/>
+        </child>
+      </child>
+    </element>
+    <element xsi:type="archimate:ArchimateDiagramModel" name="map (template temp)" id="3d3b7211">
+      <child xsi:type="archimate:Group" id="5f39fef1" name="Creational patterns" textAlignment="1" fillColor="#c7e1e2">
+        <bounds x="102" y="84" width="1966" height="791"/>
+        <child xsi:type="archimate:DiagramObject" id="35609139" archimateElement="14b58684">
+          <bounds x="1310" y="235" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="b93439f3" archimateElement="2aba2a80">
+          <bounds x="725" y="235" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="93b8110c" archimateElement="bc97dfcc">
+          <bounds x="1030" y="235" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="2e55ab25" archimateElement="e5bb37de">
+          <bounds x="430" y="235" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="022734c3" archimateElement="35ec24d7">
+          <bounds x="1310" y="375" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="3479102b" archimateElement="5d42f1f1">
+          <bounds x="725" y="375" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="0533bec0" archimateElement="c752e79a">
+          <bounds x="1030" y="375" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="65acc97a" archimateElement="ff5ee466">
+          <bounds x="430" y="375" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="22840a1a" archimateElement="55041cbd">
+          <bounds x="1310" y="545" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="5cea9963" archimateElement="f37d4261">
+          <bounds x="725" y="545" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="e06f8154" archimateElement="bb4d1f5f">
+          <bounds x="1030" y="545" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="6d44c707" archimateElement="d054d4ac">
+          <bounds x="430" y="545" width="120" height="55"/>
+        </child>
+      </child>
+      <child xsi:type="archimate:Group" id="397bee4c" name="Structural patterns" textAlignment="1" fillColor="#cedbd3">
+        <bounds x="102" y="929" width="1966" height="791"/>
+        <child xsi:type="archimate:DiagramObject" id="7bf7ed5f" archimateElement="520e2be3">
+          <bounds x="1330" y="220" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="ac42dbfb" archimateElement="a216642c">
+          <bounds x="745" y="220" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="df522f32" archimateElement="bd081a0d">
+          <bounds x="1050" y="220" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="910c3419" archimateElement="47dfd9e0">
+          <bounds x="450" y="220" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="0c2e0aff" archimateElement="a928f99c">
+          <bounds x="1330" y="360" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="e987dc14" archimateElement="9d40ed53">
+          <bounds x="745" y="360" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="9db4d62a" archimateElement="341804e6">
+          <bounds x="1050" y="360" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="b2fe55f7" archimateElement="62887790">
+          <bounds x="450" y="360" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="214d96a3" archimateElement="c26b0508">
+          <bounds x="1330" y="530" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="11633504" archimateElement="3debbd1a">
+          <bounds x="745" y="530" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="9e178d9e" archimateElement="0f5228aa">
+          <bounds x="1050" y="530" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="8d683473" archimateElement="62fdc3e4">
+          <bounds x="450" y="530" width="120" height="55"/>
+        </child>
+      </child>
+      <child xsi:type="archimate:Group" id="927523bd" name="Behavioral patterns" textAlignment="1" fillColor="#d8d1d7">
+        <bounds x="102" y="1779" width="1966" height="791"/>
+        <child xsi:type="archimate:DiagramObject" id="d9ad61bb" archimateElement="af704474">
+          <bounds x="1350" y="235" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="7f52170f" archimateElement="dca50c4c">
+          <bounds x="765" y="235" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="104f618f" archimateElement="2fe44a0f">
+          <bounds x="1070" y="235" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="01c848ab" archimateElement="b4fdf0d7">
+          <bounds x="470" y="235" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="abb7466b" archimateElement="4143c2d3">
+          <bounds x="1350" y="375" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="ad41636f" archimateElement="dcd14142">
+          <bounds x="765" y="375" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="0bd3b46d" archimateElement="9fa9cb9d">
+          <bounds x="1070" y="375" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="4f524bee" archimateElement="da148b31">
+          <bounds x="470" y="375" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="41013ee5" archimateElement="a3b7933d">
+          <bounds x="1350" y="545" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="97a2827b" archimateElement="89f9be7e">
+          <bounds x="765" y="545" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="51a989c8" archimateElement="a0aeeee5">
+          <bounds x="1070" y="545" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="e47e594c" archimateElement="9680dc3c">
+          <bounds x="470" y="545" width="120" height="55"/>
+        </child>
+      </child>
+    </element>
+  </folder>
+</archimate:model>

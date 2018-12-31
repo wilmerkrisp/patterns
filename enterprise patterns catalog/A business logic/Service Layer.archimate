@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archimate:model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:archimate="http://www.archimatetool.com/archimate" name="1 Service Layer" id="54c623e4" version="4.0.0">
+  <folder name="Strategy" id="c20faf41" type="strategy"/>
+  <folder name="Business" id="563e62c2" type="business"/>
+  <folder name="Application" id="5c4a4117" type="application">
+    <element xsi:type="archimate:DataObject" name="data set 3" id="d1e7b345"/>
+    <element xsi:type="archimate:DataObject" name="data set 2" id="d474e565"/>
+    <element xsi:type="archimate:DataObject" name="data set 1" id="664e2d94"/>
+    <element xsi:type="archimate:DataObject" name="data set 3" id="7e5702eb"/>
+    <element xsi:type="archimate:DataObject" name="data set 2" id="a8c07867"/>
+    <element xsi:type="archimate:DataObject" name="data set 1" id="c2b6821b"/>
+  </folder>
+  <folder name="Technology &amp; Physical" id="63ccc695" type="technology"/>
+  <folder name="Motivation" id="d8f6f13b" type="motivation"/>
+  <folder name="Implementation &amp; Migration" id="7a14e1b2" type="implementation_migration"/>
+  <folder name="Other" id="eab4e836" type="other">
+    <element xsi:type="archimate:Grouping" name="some presenter classes for client 1" id="c7815ba7"/>
+    <element xsi:type="archimate:Grouping" name="service layer classes" id="63d59b7d"/>
+    <element xsi:type="archimate:Grouping" name="class table module 2" id="3c8e95a9"/>
+    <element xsi:type="archimate:Grouping" name="class table module 3" id="3f915b2b"/>
+    <element xsi:type="archimate:Grouping" name="entity 1" id="93878e33"/>
+    <element xsi:type="archimate:Grouping" name="entity 3" id="ac1acfaf"/>
+    <element xsi:type="archimate:Grouping" name="entity 2" id="c27d16b7"/>
+    <element xsi:type="archimate:Grouping" name="dta source classes" id="2deddf24"/>
+    <element xsi:type="archimate:Grouping" name="domain classes" id="41a59f4c"/>
+    <element xsi:type="archimate:Grouping" name="some presenter classes for client 2" id="cf78bb27"/>
+  </folder>
+  <folder name="Relations" id="0d91c2c2" type="relations">
+    <element xsi:type="archimate:AssociationRelationship" id="290bcb9f" source="c7815ba7" target="63d59b7d"/>
+    <element xsi:type="archimate:AssociationRelationship" id="72d6a5da" source="c27d16b7" target="ac1acfaf"/>
+    <element xsi:type="archimate:AssociationRelationship" id="ce3fd6fa" source="3c8e95a9" target="c27d16b7"/>
+    <element xsi:type="archimate:AssociationRelationship" id="d80ba6ad" source="63d59b7d" target="93878e33"/>
+    <element xsi:type="archimate:AssociationRelationship" id="35237f49" source="3f915b2b" target="ac1acfaf"/>
+    <element xsi:type="archimate:AssociationRelationship" id="49f9e5ff" source="c7815ba7" target="3f915b2b"/>
+    <element xsi:type="archimate:AssociationRelationship" id="b8fccc5c" source="93878e33" target="c27d16b7"/>
+    <element xsi:type="archimate:AssociationRelationship" id="947759f7" source="c7815ba7" target="3c8e95a9"/>
+    <element xsi:type="archimate:AssociationRelationship" id="f5f60058" source="63d59b7d" target="41a59f4c"/>
+    <element xsi:type="archimate:AssociationRelationship" id="e8522cfc" source="41a59f4c" target="2deddf24"/>
+    <element xsi:type="archimate:AssociationRelationship" name="for example: JMS, POJO, EJB" id="161a3001" source="63d59b7d" target="cf78bb27"/>
+  </folder>
+  <folder name="Views" id="05ec2274" type="diagrams">
+    <element xsi:type="archimate:ArchimateDiagramModel" name="Service Layer" id="005593ec">
+      <child xsi:type="archimate:Group" id="00b270f4" name="presentation" textAlignment="1" fillColor="#c7e1e2">
+        <bounds x="315" y="211" width="1966" height="791"/>
+        <child xsi:type="archimate:DiagramObject" id="472dc399" archimateElement="c7815ba7">
+          <bounds x="270" y="510" width="365" height="125"/>
+          <sourceConnection xsi:type="archimate:Connection" id="3ff5ed42" source="472dc399" target="4763a3fb" archimateRelationship="290bcb9f"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="e4a5368b" targetConnections="ae3ee333" archimateElement="cf78bb27">
+          <bounds x="690" y="510" width="365" height="125"/>
+        </child>
+      </child>
+      <child xsi:type="archimate:Group" id="d294a197" name="domain" textAlignment="1" fillColor="#cedbd3">
+        <bounds x="315" y="1137" width="1966" height="791"/>
+        <child xsi:type="archimate:Group" id="b7bb26d7" name="GoF: facade" textAlignment="1">
+          <bounds x="15" y="65" width="1940" height="256"/>
+          <child xsi:type="archimate:DiagramObject" id="4763a3fb" targetConnections="3ff5ed42" archimateElement="63d59b7d">
+            <bounds x="535" y="55" width="330" height="187"/>
+            <sourceConnection xsi:type="archimate:Connection" id="90c4f731" source="4763a3fb" target="9b63fb30" archimateRelationship="f5f60058">
+              <bendpoint startY="160" endX="-10" endY="-174"/>
+            </sourceConnection>
+            <sourceConnection xsi:type="archimate:Connection" id="ae3ee333" source="4763a3fb" target="e4a5368b" archimateRelationship="161a3001"/>
+          </child>
+          <documentation>gang of four classic design pattern</documentation>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="9b63fb30" targetConnections="90c4f731" archimateElement="41a59f4c">
+          <bounds x="560" y="455" width="330" height="187"/>
+          <sourceConnection xsi:type="archimate:Connection" id="d3d613e6" source="9b63fb30" target="bc7f3b17" archimateRelationship="e8522cfc">
+            <bendpoint startX="-10" startY="376" endX="-24" endY="-368"/>
+          </sourceConnection>
+        </child>
+      </child>
+      <child xsi:type="archimate:Group" id="28046acf" name="data source" textAlignment="1" fillColor="#d8d1d7">
+        <bounds x="315" y="2061" width="1966" height="791"/>
+        <child xsi:type="archimate:DiagramObject" id="bc7f3b17" targetConnections="d3d613e6" archimateElement="2deddf24">
+          <bounds x="575" y="275" width="330" height="187"/>
+        </child>
+      </child>
+      <child xsi:type="archimate:Note" id="b0e36852" fontColor="#ff0000" textAlignment="1">
+        <bounds x="745" y="1001" width="271" height="122"/>
+        <content>- different categories of clients are adress to the same façade&#xD;
+- differrent layer of aggregated interfaces&#xD;
+- General operations&#xD;
+- for example CRUD operations on data&#xD;
+- more distinct interfaces for internal use&#xD;
+- NOT FOR REMOTE USE</content>
+      </child>
+    </element>
+  </folder>
+</archimate:model>

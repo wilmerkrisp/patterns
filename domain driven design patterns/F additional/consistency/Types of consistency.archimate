@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archimate:model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:archimate="http://www.archimatetool.com/archimate" name="Types of consistency" id="6a1178b4" version="4.0.0">
+  <folder name="Strategy" id="4495a071" type="strategy"/>
+  <folder name="Business" id="3980a056" type="business">
+    <element xsi:type="archimate:BusinessActor" name="Actor 1" id="202fec56"/>
+    <element xsi:type="archimate:BusinessActor" name="Actor 2" id="987339b7"/>
+    <element xsi:type="archimate:BusinessActor" name="Actor 1 " id="4eb1e8cf"/>
+    <element xsi:type="archimate:BusinessActor" name="Actor 2 " id="386562d2"/>
+  </folder>
+  <folder name="Application" id="565e104b" type="application">
+    <element xsi:type="archimate:ApplicationEvent" name="business transaction 1" id="912eabdc"/>
+    <element xsi:type="archimate:ApplicationEvent" name="business transaction 2" id="4e26333d"/>
+    <element xsi:type="archimate:ApplicationEvent" name="distributed transaction" id="f76cbe57"/>
+    <element xsi:type="archimate:ApplicationEvent" name="distributed transaction (copy)" id="cda25434"/>
+    <element xsi:type="archimate:ApplicationEvent" name="attempt to access system 1" id="dd09a709"/>
+    <element xsi:type="archimate:ApplicationEvent" name="attempt to access system 2" id="8d412c37"/>
+    <element xsi:type="archimate:ApplicationProcess" name="Retry attempts to access the system" id="b132b432"/>
+    <element xsi:type="archimate:ApplicationProcess" name="Retry attempts to access the system" id="4d0c95a9"/>
+    <element xsi:type="archimate:ApplicationProcess" name="Retry attempts to commit distributed transaction" id="c8b3d8c7"/>
+    <element xsi:type="archimate:ApplicationEvent" name="attempt to access system 1 (copy)" id="f1affb1f"/>
+    <element xsi:type="archimate:ApplicationFunction" name="system 1 task" id="28b23906"/>
+    <element xsi:type="archimate:ApplicationFunction" name="system 2 task" id="2d239603"/>
+    <element xsi:type="archimate:ApplicationFunction" name="system 1 task " id="18879795"/>
+    <element xsi:type="archimate:ApplicationFunction" name="system 2 task " id="8498b088"/>
+  </folder>
+  <folder name="Technology &amp; Physical" id="ee721ce2" type="technology"/>
+  <folder name="Motivation" id="3d9d875c" type="motivation">
+    <element xsi:type="archimate:Meaning" name="Meaning" id="c23d308b"/>
+    <element xsi:type="archimate:Requirement" name=" smaller aggregates" id="7fbf1dbb"/>
+    <element xsi:type="archimate:Outcome" name="reduce transactional locking" id="44b6ebf8"/>
+    <element xsi:type="archimate:Outcome" name="reduce consistency complexities" id="ba1281cb"/>
+  </folder>
+  <folder name="Implementation &amp; Migration" id="09b56db3" type="implementation_migration"/>
+  <folder name="Other" id="68996b81" type="other">
+    <element xsi:type="archimate:Grouping" name="system 1" id="84f4d64c"/>
+    <element xsi:type="archimate:Grouping" name="system 2" id="b8e0c309"/>
+    <element xsi:type="archimate:Grouping" name="system 1" id="52b275fd"/>
+    <element xsi:type="archimate:Grouping" name="system 2" id="9fa2f0b3"/>
+    <element xsi:type="archimate:Grouping" name="Transactional Boundary" id="85609849"/>
+    <element xsi:type="archimate:Grouping" name="Transactional Boundary " id="19e695af"/>
+    <element xsi:type="archimate:Grouping" name="Transaction 1 boundary" id="a4c8b471"/>
+    <element xsi:type="archimate:Grouping" name="Transaction 2 boundary" id="4f27e0a1"/>
+  </folder>
+  <folder name="Relations" id="0742d308" type="relations">
+    <element xsi:type="archimate:CompositionRelationship" id="cec93f91" source="f76cbe57" target="912eabdc"/>
+    <element xsi:type="archimate:CompositionRelationship" id="ee38f297" source="f76cbe57" target="4e26333d"/>
+    <element xsi:type="archimate:TriggeringRelationship" name="request" id="ff47e1bf" source="912eabdc" target="84f4d64c"/>
+    <element xsi:type="archimate:TriggeringRelationship" name="response" id="ac3c16f5" source="84f4d64c" target="912eabdc"/>
+    <element xsi:type="archimate:TriggeringRelationship" name="request" id="88357bdb" source="4e26333d" target="b8e0c309"/>
+    <element xsi:type="archimate:TriggeringRelationship" name="response" id="e7ede966" source="b8e0c309" target="4e26333d"/>
+    <element xsi:type="archimate:CompositionRelationship" id="506e7559" source="cda25434" target="8d412c37"/>
+    <element xsi:type="archimate:CompositionRelationship" id="250df832" source="cda25434" target="dd09a709"/>
+    <element xsi:type="archimate:TriggeringRelationship" name="response" id="e7bd9544" source="52b275fd" target="dd09a709"/>
+    <element xsi:type="archimate:TriggeringRelationship" name="request" id="ef47368c" source="dd09a709" target="52b275fd"/>
+    <element xsi:type="archimate:TriggeringRelationship" name="request" id="9701f2e8" source="8d412c37" target="9fa2f0b3"/>
+    <element xsi:type="archimate:TriggeringRelationship" name="response" id="da862877" source="9fa2f0b3" target="8d412c37"/>
+    <element xsi:type="archimate:CompositionRelationship" id="8357ebbf" source="85609849" target="28b23906"/>
+    <element xsi:type="archimate:CompositionRelationship" id="9925b26f" source="85609849" target="2d239603"/>
+    <element xsi:type="archimate:AssociationRelationship" id="7ad13f7f" source="987339b7" target="2d239603"/>
+    <element xsi:type="archimate:AssociationRelationship" name="The first actor performs a task that involves both systems" id="55b50be4" source="202fec56" target="85609849"/>
+    <element xsi:type="archimate:AssociationRelationship" name="The first actor performs a task that involves both systems" id="116b2186" source="4eb1e8cf" target="19e695af"/>
+    <element xsi:type="archimate:CompositionRelationship" id="bb4325a4" source="19e695af" target="18879795"/>
+    <element xsi:type="archimate:CompositionRelationship" id="2f6c7e3c" source="19e695af" target="8498b088"/>
+    <element xsi:type="archimate:AssociationRelationship" id="89e6b0c0" source="386562d2" target="4f27e0a1"/>
+    <element xsi:type="archimate:CompositionRelationship" id="3348ebbd" source="a4c8b471" target="18879795"/>
+    <element xsi:type="archimate:CompositionRelationship" id="3ea037d1" source="4f27e0a1" target="8498b088"/>
+    <element xsi:type="archimate:AssociationRelationship" id="4b215b8d" source="4eb1e8cf" target="a4c8b471"/>
+    <element xsi:type="archimate:AssociationRelationship" id="54dc436c" source="4eb1e8cf" target="4f27e0a1"/>
+    <element xsi:type="archimate:InfluenceRelationship" id="86e8bfbc" source="7fbf1dbb" target="44b6ebf8"/>
+    <element xsi:type="archimate:InfluenceRelationship" id="5a841013" source="7fbf1dbb" target="ba1281cb"/>
+  </folder>
+  <folder name="Views" id="3aa41e8e" type="diagrams">
+    <element xsi:type="archimate:ArchimateDiagramModel" name="Types of consistency" id="0de79f25">
+      <child xsi:type="archimate:Note" id="644daa56" font="1|Segoe UI|18.0|0|WINDOWS|1|-24|0|0|0|400|0|0|0|-52|3|2|1|34|Segoe UI" fontColor="#ff0000" textAlignment="1">
+        <bounds x="160" y="1289" width="1697" height="412"/>
+        <content>timeline ->&#xD;
+users get an immediate confrmation that the response 1 received or response 2 received</content>
+      </child>
+      <child xsi:type="archimate:Note" id="b649411e" font="1|Segoe UI|18.0|0|WINDOWS|1|-24|0|0|0|400|0|0|0|-52|3|2|1|34|Segoe UI" fontColor="#ff0000" textAlignment="1">
+        <bounds x="160" y="180" width="1697" height="412"/>
+        <content>timeline ->&#xD;
+users wait until the whole transaction completes</content>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="72adf9b7" targetConnections="41b35368" archimateElement="84f4d64c">
+        <bounds x="430" y="745" width="400" height="140"/>
+        <sourceConnection xsi:type="archimate:Connection" id="3723c1d2" source="72adf9b7" target="67d87379" archimateRelationship="ac3c16f5">
+          <bendpoint startX="135" startY="-220" endX="130" endY="190"/>
+        </sourceConnection>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="48e9c728" targetConnections="93aff5f0" archimateElement="b8e0c309">
+        <bounds x="1030" y="745" width="400" height="140"/>
+        <sourceConnection xsi:type="archimate:Connection" id="f180eac5" source="48e9c728" target="1805a000" archimateRelationship="e7ede966">
+          <bendpoint startX="140" startY="-225" endX="160" endY="185"/>
+        </sourceConnection>
+      </child>
+      <child xsi:type="archimate:Note" id="cedc6f28" fontColor="#ff0000" textAlignment="1">
+        <bounds x="1436" y="494" width="185" height="80"/>
+        <content>If the error in the second transaction is that both the first and the second rollback</content>
+      </child>
+      <child xsi:type="archimate:Note" id="0a285a1d" fontColor="#ff0000" textAlignment="1" fillColor="#ffffff">
+        <bounds x="1271" y="1545" width="185" height="80"/>
+        <content>Without transactions there are no locks, two processes are performed separately</content>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="2d8cb05c" targetConnections="ed0c273f" archimateElement="52b275fd">
+        <bounds x="736" y="1051" width="400" height="140"/>
+        <sourceConnection xsi:type="archimate:Connection" id="2b9eeffe" source="2d8cb05c" target="b0f6ffce" archimateRelationship="e7bd9544">
+          <bendpoint startX="156" startY="144" endX="190" endY="-68"/>
+        </sourceConnection>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="7dca5531" targetConnections="7ef1e66c" archimateElement="9fa2f0b3">
+        <bounds x="755" y="1820" width="400" height="140"/>
+        <sourceConnection xsi:type="archimate:Connection" id="cf24a2d7" source="7dca5531" target="f1544965" archimateRelationship="da862877">
+          <bendpoint startX="140" startY="-225" endX="160" endY="185"/>
+        </sourceConnection>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="22beb0b7" archimateElement="b132b432">
+        <bounds x="600" y="1385" width="672" height="101"/>
+        <child xsi:type="archimate:DiagramObject" id="b0f6ffce" targetConnections="2b9eeffe" fillColor="#b5ffff" archimateElement="dd09a709">
+          <bounds x="60" y="30" width="570" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="ed0c273f" source="b0f6ffce" target="2d8cb05c" archimateRelationship="ef47368c">
+            <bendpoint startX="-134" startY="-72" endX="-168" endY="140"/>
+          </sourceConnection>
+        </child>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="4a30599f" archimateElement="4d0c95a9">
+        <bounds x="600" y="1525" width="672" height="91"/>
+        <child xsi:type="archimate:DiagramObject" id="f1544965" targetConnections="cf24a2d7" archimateElement="8d412c37">
+          <bounds x="60" y="25" width="570" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="7ef1e66c" source="f1544965" target="7dca5531" archimateRelationship="9701f2e8">
+            <bendpoint startX="-129" startY="190" endX="-149" endY="-220"/>
+          </sourceConnection>
+        </child>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="0c31c8ba" archimateElement="c8b3d8c7">
+        <bounds x="235" y="250" width="1318" height="245"/>
+        <child xsi:type="archimate:DiagramObject" id="ec26d1f8" archimateElement="f76cbe57">
+          <bounds x="45" y="60" width="1236" height="156"/>
+          <sourceConnection xsi:type="archimate:Connection" id="ae70f38c" source="ec26d1f8" target="67d87379" archimateRelationship="cec93f91"/>
+          <sourceConnection xsi:type="archimate:Connection" id="2ac21cf8" source="ec26d1f8" target="1805a000" archimateRelationship="ee38f297"/>
+          <child xsi:type="archimate:DiagramObject" id="67d87379" targetConnections="ae70f38c 3723c1d2" fillColor="#b5ffff" archimateElement="912eabdc">
+            <bounds x="40" y="60" width="570" height="55"/>
+            <sourceConnection xsi:type="archimate:Connection" id="41b35368" source="67d87379" target="72adf9b7" archimateRelationship="ff47e1bf">
+              <bendpoint startX="-154" startY="190" endX="-149" endY="-220"/>
+            </sourceConnection>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="1805a000" targetConnections="2ac21cf8 f180eac5" archimateElement="4e26333d">
+            <bounds x="645" y="60" width="511" height="55"/>
+            <sourceConnection xsi:type="archimate:Connection" id="93aff5f0" source="1805a000" target="48e9c728" archimateRelationship="88357bdb">
+              <bendpoint startX="-129" startY="190" endX="-149" endY="-220"/>
+            </sourceConnection>
+          </child>
+        </child>
+      </child>
+      <child xsi:type="archimate:Note" id="6f038fb4" textAlignment="1">
+        <bounds x="95" y="70" width="461" height="90"/>
+        <content>Transactional consistency.  &#xD;
+When a transaction is finished the system is in a consistent state.&#xD;
+ACID (Atomicity, Consistency, Isolation, Durability)&#xD;
+The more objects involve a distributed transaction, the greater the risk of potential locks and conflicts</content>
+      </child>
+      <child xsi:type="archimate:Note" id="f8dbd97d" textAlignment="1">
+        <bounds x="120" y="1190" width="461" height="80"/>
+        <content>Eventual Consistency.&#xD;
+BASE (Basically Available, Soft state, Eventual consistency)</content>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="7c791500" targetConnections="50f76c22" archimateElement="85609849">
+        <bounds x="2220" y="305" width="1236" height="156"/>
+        <sourceConnection xsi:type="archimate:Connection" id="bdf00f01" source="7c791500" target="a7928f72" archimateRelationship="8357ebbf"/>
+        <sourceConnection xsi:type="archimate:Connection" id="dd4a8d77" source="7c791500" target="609ac3ee" archimateRelationship="9925b26f"/>
+        <child xsi:type="archimate:DiagramObject" id="a7928f72" targetConnections="bdf00f01" archimateElement="28b23906">
+          <bounds x="35" y="65" width="570" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="609ac3ee" targetConnections="dd4a8d77 a8338af7" archimateElement="2d239603">
+          <bounds x="620" y="65" width="570" height="55"/>
+        </child>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="6fe054ca" archimateElement="202fec56">
+        <bounds x="2355" y="159" width="120" height="55"/>
+        <sourceConnection xsi:type="archimate:Connection" id="50f76c22" source="6fe054ca" target="7c791500" archimateRelationship="55b50be4"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="05b070f7" archimateElement="987339b7">
+        <bounds x="3090" y="159" width="120" height="55"/>
+        <sourceConnection xsi:type="archimate:Connection" id="a8338af7" lineColor="#ff0000" source="05b070f7" target="609ac3ee" archimateRelationship="7ad13f7f"/>
+      </child>
+      <child xsi:type="archimate:Note" id="903e6076" fontColor="#ff0000" borderType="2">
+        <bounds x="2898" y="250" width="503" height="44"/>
+        <content>At the same time, the second actor can not access the second system, even if it is now free&#xD;
+(because both systems are blocked by the first transaction)</content>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="771fb301" archimateElement="4eb1e8cf">
+        <bounds x="2511" y="1190" width="120" height="55"/>
+        <sourceConnection xsi:type="archimate:Connection" id="694d2716" source="771fb301" target="b6982615" archimateRelationship="4b215b8d"/>
+        <sourceConnection xsi:type="archimate:Connection" id="1e44c781" source="771fb301" target="2a78a902" archimateRelationship="54dc436c">
+          <bendpoint startX="44" startY="158" endX="-180" endY="-170"/>
+        </sourceConnection>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="65c09c01" archimateElement="386562d2">
+        <bounds x="2880" y="1720" width="120" height="55"/>
+        <sourceConnection xsi:type="archimate:Connection" id="69035d66" lineColor="#ff0000" source="65c09c01" target="2a78a902" archimateRelationship="89e6b0c0"/>
+      </child>
+      <child xsi:type="archimate:Note" id="53faaaf1" fontColor="#ff0000" borderType="2">
+        <bounds x="2720" y="1640" width="503" height="44"/>
+        <content>At the same time, the second actor can access the second system if it is now free &#xD;
+(and not necessarily wait for the first system as in the previous example)</content>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="b6982615" targetConnections="694d2716" archimateElement="a4c8b471">
+        <bounds x="2460" y="1355" width="672" height="101"/>
+        <sourceConnection xsi:type="archimate:Connection" id="12484cdf" source="b6982615" target="cf14bc7f" archimateRelationship="3348ebbd"/>
+        <child xsi:type="archimate:DiagramObject" id="cf14bc7f" targetConnections="12484cdf" archimateElement="18879795">
+          <bounds x="60" y="35" width="570" height="55"/>
+        </child>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="2a78a902" targetConnections="1e44c781 69035d66" archimateElement="4f27e0a1">
+        <bounds x="2460" y="1500" width="672" height="91"/>
+        <sourceConnection xsi:type="archimate:Connection" id="dcbea1d1" source="2a78a902" target="52524bdb" archimateRelationship="3ea037d1"/>
+        <child xsi:type="archimate:DiagramObject" id="52524bdb" targetConnections="dcbea1d1" archimateElement="8498b088">
+          <bounds x="60" y="25" width="570" height="55"/>
+        </child>
+      </child>
+      <child xsi:type="archimate:Note" id="fd761d2c" fontColor="#ff0000" textAlignment="1" borderType="2">
+        <bounds x="3175" y="1155" width="206" height="90"/>
+        <content>If this principle is applied to aggregates, then it turns out that the fewer objects in the aggregate, the less the probability of locks and conflicts</content>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="7523bbb8" archimateElement="7fbf1dbb">
+        <bounds x="3115" y="1244" width="120" height="55"/>
+        <sourceConnection xsi:type="archimate:Connection" id="d0cb1d31" source="7523bbb8" target="906f905a" archimateRelationship="86e8bfbc"/>
+        <sourceConnection xsi:type="archimate:Connection" id="625352ba" source="7523bbb8" target="c312a3da" archimateRelationship="5a841013"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="906f905a" targetConnections="d0cb1d31" archimateElement="44b6ebf8">
+        <bounds x="3271" y="1045" width="130" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="c312a3da" targetConnections="625352ba" archimateElement="ba1281cb">
+        <bounds x="3384" y="1127" width="120" height="55"/>
+      </child>
+    </element>
+  </folder>
+</archimate:model>

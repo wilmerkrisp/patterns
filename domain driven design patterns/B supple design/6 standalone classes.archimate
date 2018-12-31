@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archimate:model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:archimate="http://www.archimatetool.com/archimate" name="6 standalone classes" id="625e5daa" version="4.0.0">
+  <folder name="Strategy" id="070f1cdf" type="strategy"/>
+  <folder name="Business" id="f8a04f01" type="business">
+    <element xsi:type="archimate:BusinessObject" name="entity 1" id="5ecb963a"/>
+    <element xsi:type="archimate:BusinessObject" name="entity 2" id="0475f579"/>
+    <element xsi:type="archimate:BusinessObject" name="entity 3" id="0befcc6a"/>
+  </folder>
+  <folder name="Application" id="ed62298d" type="application">
+    <element xsi:type="archimate:ApplicationComponent" name="class 1" id="bb904048"/>
+    <element xsi:type="archimate:ApplicationComponent" name="class 2" id="565ed6e9"/>
+    <element xsi:type="archimate:ApplicationComponent" name="class 3" id="e3bfe936"/>
+  </folder>
+  <folder name="Technology &amp; Physical" id="dbef3e1a" type="technology"/>
+  <folder name="Motivation" id="58c6a29f" type="motivation">
+    <element xsi:type="archimate:Meaning" name="conceptual contour 1" id="bcb862a8"/>
+    <element xsi:type="archimate:Meaning" name="conceptual contour 2" id="9159209a"/>
+    <element xsi:type="archimate:Meaning" name="conceptual contour 3" id="ac1ffbef"/>
+    <element xsi:type="archimate:Meaning" name="Domain consistency" id="b18c93f2"/>
+    <element xsi:type="archimate:Meaning" name="high cohesion inside class " id="6f26e633">
+      <documentation>А плохо связанные между собой фраrменты информации так же трудно понять, как&#xD;
+неструктурированную &quot;кашу&quot; из идей (отсюда высокая внутренняя связность)</documentation>
+    </element>
+    <element xsi:type="archimate:Meaning" name="high cohesion inside class" id="76ad652d">
+      <documentation>А плохо связанные между собой фраrменты информации так же трудно понять, как&#xD;
+неструктурированную &quot;кашу&quot; из идей (отсюда высокая внутренняя связность)</documentation>
+    </element>
+    <element xsi:type="archimate:Meaning" name="high cohesion inside class " id="01193a3b">
+      <documentation>А плохо связанные между собой фраrменты информации так же трудно понять, как&#xD;
+неструктурированную &quot;кашу&quot; из идей (отсюда высокая внутренняя связность)</documentation>
+    </element>
+    <element xsi:type="archimate:Meaning" name="low coupling between classes" id="f83e0b72">
+      <documentation>Человек не может одновременно удерживать в уме слишком MHoro предметов (отсюда низкая внешняя зависимость)&#xD;
+&#xD;
+- нельзя разделять до бесконечности - у человеческого ума есть свои пределы, до&#xD;
+которых он еще способен соединять разделенное; если среда выходит за эти пределы, разработчики предметной области теряют способность расчленять модель&#xD;
+на осмысленные фрагменты.</documentation>
+    </element>
+  </folder>
+  <folder name="Implementation &amp; Migration" id="6f46661c" type="implementation_migration"/>
+  <folder name="Other" id="3b46f56d" type="other">
+    <element xsi:type="archimate:Grouping" name="module 1" id="a1bf60bd"/>
+    <element xsi:type="archimate:Grouping" name="module 2" id="a844bd36"/>
+    <element xsi:type="archimate:Grouping" name="module 3" id="fca16dc7"/>
+  </folder>
+  <folder name="Relations" id="39208d6c" type="relations">
+    <element xsi:type="archimate:AssociationRelationship" id="d60f90c8" source="565ed6e9" target="0475f579"/>
+    <element xsi:type="archimate:AssociationRelationship" id="656c8f85" source="0befcc6a" target="e3bfe936"/>
+    <element xsi:type="archimate:AssociationRelationship" id="419f7705" source="0befcc6a" target="b18c93f2"/>
+    <element xsi:type="archimate:AssociationRelationship" id="c565f0ee" source="e3bfe936" target="f83e0b72"/>
+    <element xsi:type="archimate:AssociationRelationship" id="cafbce18" source="0475f579" target="b18c93f2"/>
+    <element xsi:type="archimate:AssociationRelationship" id="8f4963ea" source="bb904048" target="5ecb963a"/>
+    <element xsi:type="archimate:AssociationRelationship" name="                         " id="961a29a2" source="5ecb963a" target="b18c93f2"/>
+    <element xsi:type="archimate:AssociationRelationship" id="46c6a76c" source="565ed6e9" target="f83e0b72"/>
+    <element xsi:type="archimate:AssociationRelationship" id="8f7c8295" source="bb904048" target="f83e0b72"/>
+    <element xsi:type="archimate:CompositionRelationship" id="833684c4" source="a1bf60bd" target="bb904048"/>
+    <element xsi:type="archimate:CompositionRelationship" id="9ef65e03" source="a844bd36" target="565ed6e9"/>
+    <element xsi:type="archimate:CompositionRelationship" id="9eb7bea1" source="fca16dc7" target="e3bfe936"/>
+  </folder>
+  <folder name="Views" id="ec8b4903" type="diagrams">
+    <element xsi:type="archimate:ArchimateDiagramModel" name="standalone classes" id="11c7f109">
+      <child xsi:type="archimate:Group" id="926e98ca" name="Conceptual domain model (business layer)" textAlignment="1">
+        <bounds x="65" y="45" width="902" height="472"/>
+        <child xsi:type="archimate:DiagramObject" id="8eeb3669" targetConnections="c1e35e71" archimateElement="5ecb963a">
+          <bounds x="110" y="270" width="145" height="85"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="22acc1d8" targetConnections="1c6cbfd5" archimateElement="0475f579">
+          <bounds x="380" y="115" width="145" height="85"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="ab2f11f7" archimateElement="0befcc6a">
+          <bounds x="615" y="315" width="145" height="85"/>
+          <sourceConnection xsi:type="archimate:Connection" id="e8b7ee45" lineColor="#c0c0c0" source="ab2f11f7" target="0139ea8d" archimateRelationship="656c8f85"/>
+        </child>
+        <child xsi:type="archimate:Note" id="d27930e7" fontColor="#ff0000" textAlignment="1">
+          <bounds x="370" y="290" width="185" height="80"/>
+          <content>Try to leave only conceptual dependencies between entities and remove all nonessential dependencies</content>
+        </child>
+      </child>
+      <child xsi:type="archimate:Group" id="6ecffebd" name="Domain model (information systems: application layer)                                           " textAlignment="1">
+        <bounds x="65" y="611" width="902" height="472"/>
+        <child xsi:type="archimate:DiagramObject" id="9f8b7e9a" archimateElement="a1bf60bd">
+          <bounds x="75" y="205" width="216" height="142"/>
+          <sourceConnection xsi:type="archimate:Connection" id="f54fc611" source="9f8b7e9a" target="97f8ba1c" archimateRelationship="833684c4"/>
+          <child xsi:type="archimate:DiagramObject" id="97f8ba1c" targetConnections="f54fc611" archimateElement="bb904048">
+            <bounds x="30" y="35" width="145" height="85"/>
+            <sourceConnection xsi:type="archimate:Connection" id="c1e35e71" lineColor="#c0c0c0" source="97f8ba1c" target="8eeb3669" archimateRelationship="8f4963ea"/>
+          </child>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="0127e92f" archimateElement="a844bd36">
+          <bounds x="360" y="75" width="216" height="142"/>
+          <sourceConnection xsi:type="archimate:Connection" id="ac04aafd" source="0127e92f" target="3dd276e3" archimateRelationship="9ef65e03"/>
+          <child xsi:type="archimate:DiagramObject" id="3dd276e3" targetConnections="ac04aafd" archimateElement="565ed6e9">
+            <bounds x="30" y="35" width="145" height="85"/>
+            <sourceConnection xsi:type="archimate:Connection" id="1c6cbfd5" lineColor="#c0c0c0" source="3dd276e3" target="22acc1d8" archimateRelationship="d60f90c8"/>
+          </child>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="f7c299b1" archimateElement="fca16dc7">
+          <bounds x="590" y="300" width="216" height="142"/>
+          <sourceConnection xsi:type="archimate:Connection" id="d452f49a" source="f7c299b1" target="0139ea8d" archimateRelationship="9eb7bea1"/>
+          <child xsi:type="archimate:DiagramObject" id="0139ea8d" targetConnections="e8b7ee45 d452f49a" archimateElement="e3bfe936">
+            <bounds x="30" y="40" width="145" height="85"/>
+          </child>
+        </child>
+        <child xsi:type="archimate:Note" id="6cb966fb" fontColor="#ff0000" textAlignment="1">
+          <bounds x="375" y="280" width="185" height="80"/>
+          <content>Standalone classes are the boundary case of low coupling between classes</content>
+        </child>
+        <child xsi:type="archimate:Note" id="792c6666" fontColor="#ff0000" textAlignment="1" fillColor="#ffffff">
+          <bounds x="515" y="55" width="225" height="80"/>
+          <content>Standalone classes are fully self-contained classes that can be studied and understood separately from others</content>
+        </child>
+      </child>
+    </element>
+  </folder>
+</archimate:model>

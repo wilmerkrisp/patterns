@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archimate:model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:archimate="http://www.archimatetool.com/archimate" name="12 Association Patterns" id="225eff63-035e-479a-be23-84c6a33e696d" version="4.0.0">
+  <folder name="Strategy" id="91f63ac4-57f6-444a-b4c7-79365835bd8f" type="strategy"/>
+  <folder name="Business" id="98bbd362-f7ae-4082-ac99-79afde5c8329" type="business">
+    <element xsi:type="archimate:BusinessObject" name="employee " id="34b38af4"/>
+    <element xsi:type="archimate:BusinessObject" name="organization " id="5e29f24e"/>
+    <element xsi:type="archimate:BusinessObject" name="employee " id="75e1a92b"/>
+    <element xsi:type="archimate:BusinessObject" name="organization " id="eb054864"/>
+    <element xsi:type="archimate:BusinessObject" name="employee  " id="98b9e0e6"/>
+    <element xsi:type="archimate:BusinessObject" name="organization  " id="89ed14f5"/>
+  </folder>
+  <folder name="Application" id="187b9aeb-e29b-4235-9c88-90034848ca2b" type="application">
+    <element xsi:type="archimate:ApplicationComponent" name="class employee " id="260b3804"/>
+    <element xsi:type="archimate:DataObject" name="pointer to organization" id="3dfa7b28"/>
+    <element xsi:type="archimate:ApplicationComponent" name="class organization " id="68472db1"/>
+    <element xsi:type="archimate:ApplicationComponent" name="class employee " id="ae146af0"/>
+    <element xsi:type="archimate:DataObject" name="array of references to the employees" id="286992a7"/>
+    <element xsi:type="archimate:ApplicationComponent" name="class organization " id="ca1f0964"/>
+    <element xsi:type="archimate:ApplicationComponent" name="class employee  " id="62c1a502"/>
+    <element xsi:type="archimate:ApplicationComponent" name="class organization  " id="46fa67ed"/>
+    <element xsi:type="archimate:DataObject" name="ordered list of references " id="f4f73189"/>
+  </folder>
+  <folder name="Technology &amp; Physical" id="fd01b8bf-fcc5-47a0-877b-9308edf31a49" type="technology"/>
+  <folder name="Motivation" id="e7d873de-ebaa-4f8e-a838-609c04df22de" type="motivation"/>
+  <folder name="Implementation &amp; Migration" id="e261c43b-d7d0-4dee-b1c7-523e5c60dd0e" type="implementation_migration"/>
+  <folder name="Other" id="15f9deff-2108-4f04-8b47-2ae59d8f8ad9" type="other"/>
+  <folder name="Relations" id="a8e6c226-0f50-49ef-a728-f41aa3776916" type="relations">
+    <element xsi:type="archimate:AssociationRelationship" id="993b03b9" source="68472db1" target="5e29f24e"/>
+    <element xsi:type="archimate:AccessRelationship" id="b877c858" source="260b3804" target="3dfa7b28"/>
+    <element xsi:type="archimate:AssociationRelationship" id="66d7116c" source="260b3804" target="34b38af4"/>
+    <element xsi:type="archimate:AssociationRelationship" id="6e76130e" source="3dfa7b28" target="68472db1"/>
+    <element xsi:type="archimate:AssociationRelationship" name="N|0 - 1 employer                                " id="c5a3a671" source="34b38af4" target="5e29f24e"/>
+    <element xsi:type="archimate:AssociationRelationship" id="29eae3f8" source="ca1f0964" target="eb054864"/>
+    <element xsi:type="archimate:AccessRelationship" id="fcde38fc" source="ae146af0" target="286992a7"/>
+    <element xsi:type="archimate:AssociationRelationship" id="aed74a9f" source="ae146af0" target="75e1a92b"/>
+    <element xsi:type="archimate:AssociationRelationship" id="7a997433" source="286992a7" target="ca1f0964"/>
+    <element xsi:type="archimate:AssociationRelationship" name="N|0 - 1 employer                                " id="fa799719" source="75e1a92b" target="eb054864"/>
+    <element xsi:type="archimate:AccessRelationship" id="75c95347" source="ca1f0964" target="286992a7"/>
+    <element xsi:type="archimate:AssociationRelationship" id="dcdeb337" source="286992a7" target="ae146af0"/>
+    <element xsi:type="archimate:AssociationRelationship" id="f4e38060" source="62c1a502" target="98b9e0e6"/>
+    <element xsi:type="archimate:AssociationRelationship" id="99da6de6" source="f4f73189" target="62c1a502"/>
+    <element xsi:type="archimate:AssociationRelationship" name="N|0 - 1 employer [ordered list]                               " id="4ae9fd24" source="98b9e0e6" target="89ed14f5"/>
+    <element xsi:type="archimate:AssociationRelationship" id="b24e0e2a" source="f4f73189" target="46fa67ed"/>
+    <element xsi:type="archimate:AssociationRelationship" id="1047a0f2" source="46fa67ed" target="89ed14f5"/>
+    <element xsi:type="archimate:AccessRelationship" id="3552446a" source="46fa67ed" target="f4f73189"/>
+  </folder>
+  <folder name="Views" id="29b6971b-7e70-41b8-8ddd-68359ae1fa64" type="diagrams">
+    <element xsi:type="archimate:ArchimateDiagramModel" name="Association Patterns" id="e823b254-9c49-41a0-aa07-b524fbcc5b02"/>
+    <element xsi:type="archimate:ArchimateDiagramModel" name="1 Associative Type " id="6d65206e-ad8a-46d0-a6e0-2aec3b8aae99"/>
+    <element xsi:type="archimate:ArchimateDiagramModel" name="2 Keyed Mapping " id="7eab36f5-bce7-4f4d-ab0c-b87b4a162347"/>
+    <element xsi:type="archimate:ArchimateDiagramModel" name="3 Historic Mapping" id="b92aac6e-0266-4b7f-b54a-819e9fa4cef0"/>
+  </folder>
+</archimate:model>

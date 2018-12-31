@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archimate:model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:archimate="http://www.archimatetool.com/archimate" name="analysis patterns overview" id="c9b77453" version="4.0.0">
+  <folder name="Strategy" id="1337a496" type="strategy"/>
+  <folder name="Business" id="7f341359" type="business"/>
+  <folder name="Application" id="0c4d50e1" type="application"/>
+  <folder name="Technology &amp; Physical" id="4e9f17cd" type="technology"/>
+  <folder name="Motivation" id="b56845c8" type="motivation"/>
+  <folder name="Implementation &amp; Migration" id="5b34ada9" type="implementation_migration"/>
+  <folder name="Other" id="7d7c3ede" type="other">
+    <element xsi:type="archimate:Grouping" name="1 Abstract Factory" id="bccdabcd"/>
+    <element xsi:type="archimate:Grouping" name="1 Abstract Factory" id="6d4e22d3"/>
+    <element xsi:type="archimate:Grouping" name="1 Abstract Factory" id="ae40a014"/>
+    <element xsi:type="archimate:Grouping" name="1 Abstract Factory" id="2ab5687a"/>
+    <element xsi:type="archimate:Grouping" name="1 Abstract Factory" id="9d7d45e9"/>
+    <element xsi:type="archimate:Grouping" name="1 Abstract Factory" id="3994f024"/>
+    <element xsi:type="archimate:Grouping" name="1 Abstract Factory" id="29060cb3"/>
+    <element xsi:type="archimate:Grouping" name="1 Abstract Factory" id="9825041f"/>
+    <element xsi:type="archimate:Grouping" name="4 Referring to Objects" id="1787ea59"/>
+    <element xsi:type="archimate:Grouping" name="3 Observations for Corporate Finance" id="c1018520"/>
+    <element xsi:type="archimate:Grouping" name="2 Observations and Measurements" id="4df9c7cd"/>
+    <element xsi:type="archimate:Grouping" name="1 Accountability" id="8ebb6014"/>
+    <element xsi:type="archimate:Grouping" name="8 Derivative Contracts" id="3f16c902"/>
+    <element xsi:type="archimate:Grouping" name="7 Trading" id="5d92a9c7"/>
+    <element xsi:type="archimate:Grouping" name="6 Planning" id="4a495d00"/>
+    <element xsi:type="archimate:Grouping" name="5 Inventory and Accounting" id="0c1f0bd9"/>
+    <element xsi:type="archimate:Grouping" name="12 Association Patterns" id="e954e7e6"/>
+    <element xsi:type="archimate:Grouping" name="11 Patterns for Type Model Design" id="0997dc8d"/>
+    <element xsi:type="archimate:Grouping" name="10 Layered Architecture for Information Systems" id="fb8c4584"/>
+    <element xsi:type="archimate:Grouping" name="9 Trading Packages" id="71a9b85b"/>
+    <element xsi:type="archimate:Grouping" name="1 Abstract Factory (copy)" id="e4e51bf9"/>
+    <element xsi:type="archimate:Grouping" name="1 Abstract Factory (copy)" id="881755c5"/>
+    <element xsi:type="archimate:Grouping" name="1 Abstract Factory (copy)" id="94fd2461"/>
+    <element xsi:type="archimate:Grouping" name="1 Abstract Factory (copy)" id="6e4bb78c"/>
+  </folder>
+  <folder name="Relations" id="f6febac9" type="relations"/>
+  <folder name="Views" id="96d9edda" type="diagrams">
+    <element xsi:type="archimate:ArchimateDiagramModel" name="map" id="89cffa82">
+      <child xsi:type="archimate:DiagramObject" id="01f3b146" archimateElement="1787ea59">
+        <bounds x="805" y="-15" width="268" height="122"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="b2cd84e3" archimateElement="c1018520">
+        <bounds x="520" y="-15" width="268" height="122"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="7191da0d" archimateElement="4df9c7cd">
+        <bounds x="235" y="-15" width="268" height="122"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="5d103b58" archimateElement="8ebb6014">
+        <bounds x="-50" y="-15" width="268" height="122"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="e04c58e1" archimateElement="3f16c902">
+        <bounds x="805" y="130" width="268" height="122"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="2ea7323c" archimateElement="5d92a9c7">
+        <bounds x="520" y="130" width="268" height="122"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="b04bf165" archimateElement="4a495d00">
+        <bounds x="235" y="130" width="268" height="122"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="e32aba72" archimateElement="0c1f0bd9">
+        <bounds x="-50" y="130" width="268" height="122"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="f1f2a583" archimateElement="e954e7e6">
+        <bounds x="805" y="280" width="268" height="122"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="08223ed2" archimateElement="0997dc8d">
+        <bounds x="520" y="280" width="268" height="122"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="d302786e" archimateElement="fb8c4584">
+        <bounds x="235" y="280" width="268" height="122"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="d2e869c4" archimateElement="71a9b85b">
+        <bounds x="-50" y="280" width="268" height="122"/>
+      </child>
+    </element>
+  </folder>
+</archimate:model>

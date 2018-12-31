@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archimate:model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:archimate="http://www.archimatetool.com/archimate" name="?6 declarative style" id="d5582922" version="4.0.0">
+  <folder name="Strategy" id="5e9114a9" type="strategy"/>
+  <folder name="Business" id="e89181ae" type="business"/>
+  <folder name="Application" id="a3465951" type="application"/>
+  <folder name="Technology &amp; Physical" id="2c939514" type="technology"/>
+  <folder name="Motivation" id="2ffb3eba" type="motivation"/>
+  <folder name="Implementation &amp; Migration" id="9cd13a06" type="implementation_migration"/>
+  <folder name="Other" id="d269622c" type="other"/>
+  <folder name="Relations" id="896f73a7" type="relations"/>
+  <folder name="Views" id="781e0524" type="diagrams">
+    <element xsi:type="archimate:ArchimateDiagramModel" name="declarative style" id="47ff238d"/>
+  </folder>
+</archimate:model>

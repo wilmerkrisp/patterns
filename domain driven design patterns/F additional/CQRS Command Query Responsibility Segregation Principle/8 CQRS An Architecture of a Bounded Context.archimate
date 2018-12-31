@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archimate:model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:archimate="http://www.archimatetool.com/archimate" name="CQRS An Architecture of a Bounded Context" id="16fbbe4b" version="4.0.0">
+  <folder name="Strategy" id="8c53c336" type="strategy"/>
+  <folder name="Business" id="8f7b1512" type="business"/>
+  <folder name="Application" id="b3765822" type="application"/>
+  <folder name="Technology &amp; Physical" id="ab3b36f8" type="technology"/>
+  <folder name="Motivation" id="633d96d6" type="motivation"/>
+  <folder name="Implementation &amp; Migration" id="ab9fbbc4" type="implementation_migration"/>
+  <folder name="Other" id="c4e2ab26" type="other"/>
+  <folder name="Relations" id="cabb7f2b" type="relations"/>
+  <folder name="Views" id="1fe5bb5d" type="diagrams">
+    <element xsi:type="archimate:ArchimateDiagramModel" name="CQRS: An Architecture of a Bounded Context" id="94ad43f7">
+      <child xsi:type="archimate:Note" id="41fe9fd2" textAlignment="1">
+        <bounds x="36" y="258" width="185" height="80"/>
+        <content>Command Query Responsibility&#xD;
+Segregation (CQRS) </content>
+      </child>
+    </element>
+  </folder>
+</archimate:model>

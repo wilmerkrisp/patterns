@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archimate:model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:archimate="http://www.archimatetool.com/archimate" name="10 Mapper" id="60219d9b" version="4.0.0">
+  <folder name="Strategy" id="63eac42b" type="strategy"/>
+  <folder name="Business" id="a171c087" type="business"/>
+  <folder name="Application" id="663d569c" type="application"/>
+  <folder name="Technology &amp; Physical" id="9caaf10f" type="technology"/>
+  <folder name="Motivation" id="5b32a873" type="motivation"/>
+  <folder name="Implementation &amp; Migration" id="eed98e7b" type="implementation_migration"/>
+  <folder name="Other" id="8005b16c" type="other">
+    <element xsi:type="archimate:Grouping" name="classes 1" id="65b2cd60"/>
+    <element xsi:type="archimate:Grouping" name="mapper" id="d3053229"/>
+    <element xsi:type="archimate:Grouping" name="classes 2" id="8caca8f2"/>
+  </folder>
+  <folder name="Relations" id="805c22b2" type="relations">
+    <element xsi:type="archimate:TriggeringRelationship" id="32c1eb93" source="65b2cd60" target="d3053229"/>
+    <element xsi:type="archimate:TriggeringRelationship" id="52b26822" source="d3053229" target="8caca8f2"/>
+    <element xsi:type="archimate:TriggeringRelationship" id="509354a1" source="8caca8f2" target="d3053229"/>
+    <element xsi:type="archimate:TriggeringRelationship" id="9d5978d6" source="d3053229" target="65b2cd60"/>
+    <element xsi:type="archimate:TriggeringRelationship" id="084f4c2c" source="65b2cd60" target="d3053229"/>
+    <element xsi:type="archimate:TriggeringRelationship" id="36a0134e" source="d3053229" target="8caca8f2"/>
+  </folder>
+  <folder name="Views" id="fc421ebb" type="diagrams">
+    <element xsi:type="archimate:ArchimateDiagramModel" name="Mapper" id="94337a64">
+      <child xsi:type="archimate:Note" id="00446f35" fontColor="#ff0000" textAlignment="1">
+        <bounds x="40" y="384" width="421" height="345"/>
+        <content>- translate messages of &#xD;
+classes 1 type &#xD;
+to messages of &#xD;
+classes 2 and vice versa&#xD;
+- unlike the mediator does not &#xD;
+control the interaction between&#xD;
+ the systems but simply translates&#xD;
+ the requests and responses, &#xD;
+transforming message formats&#xD;
+</content>
+      </child>
+      <child xsi:type="archimate:Group" id="b6685ded" name="layer 1" textAlignment="1">
+        <bounds x="263" y="188" width="548" height="183"/>
+        <child xsi:type="archimate:DiagramObject" id="7c04a726" targetConnections="560eb438" archimateElement="65b2cd60">
+          <bounds x="55" y="30" width="400" height="140"/>
+          <sourceConnection xsi:type="archimate:Connection" id="2b8dbde4" source="7c04a726" target="dfeb999b" archimateRelationship="32c1eb93">
+            <bendpoint startX="136" startY="132" endX="132" endY="-104"/>
+          </sourceConnection>
+          <sourceConnection xsi:type="archimate:Connection" id="a76b3bf1" lineColor="#ff0000" source="7c04a726" target="dfeb999b" archimateRelationship="084f4c2c">
+            <bendpoint startX="-138" startY="146" endX="-142" endY="-90"/>
+          </sourceConnection>
+        </child>
+      </child>
+      <child xsi:type="archimate:Group" id="7db03f00" name="layer 2 (GoF pattern: mediator) (Fowlers pattern: gateway)" textAlignment="1">
+        <bounds x="263" y="465" width="548" height="183"/>
+        <child xsi:type="archimate:DiagramObject" id="dfeb999b" targetConnections="2b8dbde4 d791596b a76b3bf1" archimateElement="d3053229">
+          <bounds x="59" y="30" width="400" height="140"/>
+          <sourceConnection xsi:type="archimate:Connection" id="24e53e2a" source="dfeb999b" target="44d11d41" archimateRelationship="52b26822">
+            <bendpoint startX="142" startY="120" endX="142" endY="-110"/>
+          </sourceConnection>
+          <sourceConnection xsi:type="archimate:Connection" id="560eb438" source="dfeb999b" target="7c04a726" archimateRelationship="9d5978d6"/>
+          <sourceConnection xsi:type="archimate:Connection" id="dd89ee83" lineColor="#ff0000" source="dfeb999b" target="44d11d41" archimateRelationship="36a0134e">
+            <bendpoint startX="-138" startY="126" endX="-138" endY="-104"/>
+          </sourceConnection>
+        </child>
+      </child>
+      <child xsi:type="archimate:Group" id="75c6622e" name="layer 3" textAlignment="1">
+        <bounds x="263" y="745" width="548" height="183"/>
+        <child xsi:type="archimate:DiagramObject" id="44d11d41" targetConnections="24e53e2a dd89ee83" archimateElement="8caca8f2">
+          <bounds x="60" y="35" width="400" height="140"/>
+          <sourceConnection xsi:type="archimate:Connection" id="d791596b" source="44d11d41" target="dfeb999b" archimateRelationship="509354a1"/>
+        </child>
+      </child>
+      <child xsi:type="archimate:Note" id="c48ad05f" fontColor="#ff0000" fillColor="#000000" textPosition="1">
+        <bounds x="320" y="395" width="120" height="55"/>
+        <content>some message of type 1&#xD;
+&#xD;
+</content>
+      </child>
+      <child xsi:type="archimate:Note" id="4850abe7" fontColor="#ff0000" fillColor="#000000" textPosition="1">
+        <bounds x="320" y="670" width="120" height="55"/>
+        <content>some message of type 2&#xD;
+&#xD;
+</content>
+      </child>
+    </element>
+  </folder>
+</archimate:model>

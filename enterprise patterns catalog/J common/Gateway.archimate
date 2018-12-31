@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archimate:model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:archimate="http://www.archimatetool.com/archimate" name="10 Gateway" id="a27642c2" version="4.0.0">
+  <folder name="Strategy" id="3e7ea700" type="strategy"/>
+  <folder name="Business" id="d9daa1fb" type="business"/>
+  <folder name="Application" id="805df0c8" type="application">
+    <element xsi:type="archimate:ApplicationFunction" name="call gateways" id="baa8b0d0"/>
+    <element xsi:type="archimate:ApplicationComponent" name="class gateway B" id="2e34a749"/>
+    <element xsi:type="archimate:ApplicationComponent" name="class A" id="6bda8379"/>
+    <element xsi:type="archimate:ApplicationComponent" name="class B" id="077a5fbb"/>
+    <element xsi:type="archimate:ApplicationComponent" name="class C" id="37190d81"/>
+    <element xsi:type="archimate:ApplicationComponent" name="facade 2" id="9482d7b8"/>
+    <element xsi:type="archimate:ApplicationComponent" name="class D" id="9bee57f5"/>
+    <element xsi:type="archimate:ApplicationComponent" name="class E" id="22f4e1e2"/>
+    <element xsi:type="archimate:ApplicationComponent" name="class F" id="88d0bf0a"/>
+    <element xsi:type="archimate:ApplicationComponent" name="facade 3" id="06aa9c60"/>
+    <element xsi:type="archimate:ApplicationComponent" name="class G" id="3a49f004"/>
+    <element xsi:type="archimate:ApplicationComponent" name="class H" id="a8a5157b"/>
+    <element xsi:type="archimate:ApplicationComponent" name="class J" id="fc0d6d14"/>
+    <element xsi:type="archimate:ApplicationFunction" name="call facade methods (copy)" id="53f6128b"/>
+    <element xsi:type="archimate:ApplicationComponent" name="facade 1 (copy)" id="943dce24"/>
+    <element xsi:type="archimate:ApplicationComponent" name="class A (copy)" id="a9947e2a"/>
+    <element xsi:type="archimate:ApplicationComponent" name="class B (copy)" id="be9aa881"/>
+    <element xsi:type="archimate:ApplicationComponent" name="class C (copy)" id="627eab32"/>
+    <element xsi:type="archimate:ApplicationComponent" name="class gateway A" id="6f825be7"/>
+    <element xsi:type="archimate:ApplicationComponent" name="class gateway C" id="415001b9"/>
+    <element xsi:type="archimate:ApplicationFunction" name="call gateways" id="520f648d"/>
+    <element xsi:type="archimate:ApplicationComponent" name="class gateway B (copy)" id="94666bb2"/>
+    <element xsi:type="archimate:ApplicationComponent" name="class A (copy)" id="57566437"/>
+    <element xsi:type="archimate:ApplicationComponent" name="class B (copy)" id="a7807a6c"/>
+    <element xsi:type="archimate:ApplicationComponent" name="class C (copy)" id="5aca87e1"/>
+    <element xsi:type="archimate:ApplicationComponent" name="class gateway C (copy)" id="7a415719"/>
+    <element xsi:type="archimate:ApplicationComponent" name="class gateway A (copy)" id="05cfb925"/>
+    <element xsi:type="archimate:ApplicationComponent" name="client 1" id="c445fc31"/>
+    <element xsi:type="archimate:ApplicationComponent" name="client 1" id="e4ddebeb"/>
+    <element xsi:type="archimate:ApplicationFunction" name="call gateways" id="2c861e87"/>
+    <element xsi:type="archimate:ApplicationComponent" name="class gateway B (copy)" id="58c5e45c"/>
+    <element xsi:type="archimate:ApplicationComponent" name="class A (copy)" id="256474fb"/>
+    <element xsi:type="archimate:ApplicationComponent" name="class B (copy)" id="2cb03453"/>
+    <element xsi:type="archimate:ApplicationComponent" name="class C (copy)" id="febeae99"/>
+    <element xsi:type="archimate:ApplicationComponent" name="class gateway C (copy)" id="0a1d6686"/>
+    <element xsi:type="archimate:ApplicationComponent" name="class gateway A (copy)" id="a2a94f7f"/>
+  </folder>
+  <folder name="Technology &amp; Physical" id="b1ba71e3" type="technology"/>
+  <folder name="Motivation" id="fa85a258" type="motivation"/>
+  <folder name="Implementation &amp; Migration" id="a49d9dbd" type="implementation_migration"/>
+  <folder name="Other" id="8b0dd042" type="other"/>
+  <folder name="Relations" id="f735e18c" type="relations">
+    <element xsi:type="archimate:ServingRelationship" name=" access between the layers only through facades" id="5569d7ed" source="06aa9c60" target="88d0bf0a"/>
+    <element xsi:type="archimate:ServingRelationship" id="60bed9e1" source="37190d81" target="415001b9"/>
+    <element xsi:type="archimate:ServingRelationship" name="use  some methods of classes" id="546e83b8" source="a8a5157b" target="06aa9c60"/>
+    <element xsi:type="archimate:ServingRelationship" id="706aae4b" source="9bee57f5" target="9482d7b8"/>
+    <element xsi:type="archimate:ServingRelationship" id="4e3a1eb2" source="88d0bf0a" target="9482d7b8"/>
+    <element xsi:type="archimate:ServingRelationship" id="c0914dd1" source="6bda8379" target="6f825be7"/>
+    <element xsi:type="archimate:ServingRelationship" id="a42eaf12" source="2e34a749" target="baa8b0d0"/>
+    <element xsi:type="archimate:ServingRelationship" id="7f89e51b" source="3a49f004" target="06aa9c60"/>
+    <element xsi:type="archimate:ServingRelationship" id="3a7f41ba" source="fc0d6d14" target="06aa9c60"/>
+    <element xsi:type="archimate:ServingRelationship" name="use  some methods of classes" id="fa0c2bb2" source="077a5fbb" target="2e34a749"/>
+    <element xsi:type="archimate:ServingRelationship" name=" access between the layers only through facades" id="a3336669" source="9482d7b8" target="6bda8379"/>
+    <element xsi:type="archimate:ServingRelationship" name="use  some methods of classes" id="12316579" source="22f4e1e2" target="9482d7b8"/>
+    <element xsi:type="archimate:ServingRelationship" id="47be249d" source="9482d7b8" target="37190d81"/>
+    <element xsi:type="archimate:ServingRelationship" name="use  some methods of classes" id="3ad70344" source="be9aa881" target="943dce24"/>
+    <element xsi:type="archimate:ServingRelationship" id="d10ab93f" source="a9947e2a" target="943dce24"/>
+    <element xsi:type="archimate:ServingRelationship" id="618c439f" source="627eab32" target="943dce24"/>
+    <element xsi:type="archimate:ServingRelationship" name=" access between the layers only through facades" id="87f574fa" source="943dce24" target="53f6128b"/>
+    <element xsi:type="archimate:ServingRelationship" id="2b2bb5db" source="6f825be7" target="baa8b0d0"/>
+    <element xsi:type="archimate:ServingRelationship" id="e3dfb066" source="415001b9" target="baa8b0d0"/>
+    <element xsi:type="archimate:ServingRelationship" id="56446c3a" source="05cfb925" target="520f648d"/>
+    <element xsi:type="archimate:ServingRelationship" id="d6681d4a" source="57566437" target="05cfb925"/>
+    <element xsi:type="archimate:ServingRelationship" name="use  some methods of classes" id="5aea3417" source="a7807a6c" target="94666bb2"/>
+    <element xsi:type="archimate:ServingRelationship" id="842ae346" source="5aca87e1" target="7a415719"/>
+    <element xsi:type="archimate:ServingRelationship" id="a5f45408" source="7a415719" target="520f648d"/>
+    <element xsi:type="archimate:ServingRelationship" name=" access between the layers only through facades" id="bb51c3c6" source="94666bb2" target="520f648d"/>
+    <element xsi:type="archimate:AssignmentRelationship" id="192b2c1a" source="c445fc31" target="baa8b0d0"/>
+    <element xsi:type="archimate:ServingRelationship" id="bda40d41" source="a2a94f7f" target="2c861e87"/>
+    <element xsi:type="archimate:ServingRelationship" id="4610a047" source="256474fb" target="a2a94f7f"/>
+    <element xsi:type="archimate:ServingRelationship" name="use  some methods of classes" id="e8b6b9c0" source="2cb03453" target="58c5e45c"/>
+    <element xsi:type="archimate:ServingRelationship" id="5a2cf015" source="febeae99" target="0a1d6686"/>
+    <element xsi:type="archimate:AssignmentRelationship" id="2fa27e0f" source="e4ddebeb" target="2c861e87"/>
+    <element xsi:type="archimate:ServingRelationship" id="ed8fe890" source="0a1d6686" target="2c861e87"/>
+    <element xsi:type="archimate:ServingRelationship" name=" access between the layers only through facades" id="824b4fa6" source="58c5e45c" target="2c861e87"/>
+    <element xsi:type="archimate:TriggeringRelationship" id="6b8d3421" source="baa8b0d0" target="6f825be7"/>
+    <element xsi:type="archimate:TriggeringRelationship" id="5dca6251" source="6f825be7" target="6bda8379"/>
+    <element xsi:type="archimate:TriggeringRelationship" id="bce1136a" source="baa8b0d0" target="2e34a749"/>
+    <element xsi:type="archimate:TriggeringRelationship" id="da7af75e" source="2e34a749" target="077a5fbb"/>
+    <element xsi:type="archimate:TriggeringRelationship" id="25131eb8" source="baa8b0d0" target="415001b9"/>
+    <element xsi:type="archimate:TriggeringRelationship" id="952950d6" source="415001b9" target="37190d81"/>
+  </folder>
+  <folder name="Views" id="208fef86" type="diagrams">
+    <element xsi:type="archimate:ArchimateDiagramModel" name="Gateway" id="0e50e9d8">
+      <child xsi:type="archimate:Group" id="aec19f7c" name="some layer 1" textAlignment="1">
+        <bounds x="476" y="223" width="797" height="140"/>
+        <child xsi:type="archimate:DiagramObject" id="96228e8e" archimateElement="c445fc31">
+          <bounds x="90" y="35" width="585" height="91"/>
+          <sourceConnection xsi:type="archimate:Connection" id="fdbf4541" source="96228e8e" target="df530e59" archimateRelationship="192b2c1a"/>
+          <child xsi:type="archimate:DiagramObject" id="df530e59" targetConnections="fdbf4541" archimateElement="baa8b0d0">
+            <bounds x="35" y="25" width="520" height="55"/>
+            <sourceConnection xsi:type="archimate:Connection" id="e729724a" lineColor="#ff0000" source="df530e59" target="a973e422" archimateRelationship="6b8d3421">
+              <bendpoint startX="-196" startY="155" endX="-6" endY="-74"/>
+            </sourceConnection>
+            <sourceConnection xsi:type="archimate:Connection" id="50980b24" lineColor="#ff0000" source="df530e59" target="52185e81" archimateRelationship="bce1136a">
+              <bendpoint startX="-16" startY="165" endX="-1" endY="-64"/>
+            </sourceConnection>
+            <sourceConnection xsi:type="archimate:Connection" id="b730d6ab" lineColor="#ff0000" source="df530e59" target="6ab59cbc" archimateRelationship="25131eb8">
+              <bendpoint startX="179" startY="160" endX="-1" endY="-69"/>
+            </sourceConnection>
+          </child>
+        </child>
+      </child>
+      <child xsi:type="archimate:Group" id="dd0c3c2e" name="some layer 2" fontColor="#000000" textAlignment="1" fillColor="#d2d7d7">
+        <bounds x="476" y="412" width="797" height="433"/>
+        <child xsi:type="archimate:DiagramObject" id="79183ee5" targetConnections="a6fd31c7" archimateElement="6bda8379">
+          <bounds x="140" y="270" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="6d3718f8" targetConnections="0af45dc7" archimateElement="077a5fbb">
+          <bounds x="315" y="270" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="7e1bfe22" targetConnections="795ba25c" archimateElement="37190d81">
+          <bounds x="510" y="270" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:Group" id="ff4f1a71" name="gateways (GoF: facade, adapter, mediator)" textAlignment="1">
+          <bounds x="100" y="45" width="550" height="140"/>
+          <child xsi:type="archimate:DiagramObject" id="a973e422" targetConnections="e729724a" fontColor="#ff0000" archimateElement="6f825be7">
+            <bounds x="35" y="55" width="120" height="55"/>
+            <sourceConnection xsi:type="archimate:Connection" id="a6fd31c7" source="a973e422" target="79183ee5" archimateRelationship="5dca6251">
+              <bendpoint startX="-1" startY="121" endX="-6" endY="-49"/>
+            </sourceConnection>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="52185e81" targetConnections="50980b24" fontColor="#ff0000" archimateElement="2e34a749">
+            <bounds x="210" y="55" width="120" height="55"/>
+            <sourceConnection xsi:type="archimate:Connection" id="0af45dc7" source="52185e81" target="6d3718f8" archimateRelationship="da7af75e">
+              <bendpoint startX="-1" startY="121" endX="-6" endY="-49"/>
+            </sourceConnection>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="6ab59cbc" targetConnections="b730d6ab" fontColor="#ff0000" archimateElement="415001b9">
+            <bounds x="405" y="55" width="120" height="55"/>
+            <sourceConnection xsi:type="archimate:Connection" id="795ba25c" source="6ab59cbc" target="7e1bfe22" archimateRelationship="952950d6">
+              <bendpoint startX="-1" startY="111" endX="-6" endY="-59"/>
+            </sourceConnection>
+          </child>
+        </child>
+      </child>
+      <child xsi:type="archimate:Note" id="42f8aecb" fontColor="#ff0000" textAlignment="1">
+        <bounds x="230" y="270" width="206" height="239"/>
+        <content>- a wrapper of classes that simplifies access it from the CLIENT 1&#xD;
+- not too simplifying to all possible clients (as in the facade pattern)&#xD;
+- And not adapting one class to another (as in the adapter) because both sides are developed at the same time</content>
+      </child>
+    </element>
+  </folder>
+</archimate:model>

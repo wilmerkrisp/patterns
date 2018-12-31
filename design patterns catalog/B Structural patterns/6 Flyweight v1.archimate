@@ -1,0 +1,698 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archimate:model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:archimate="http://www.archimatetool.com/archimate" name="Flyweight" id="518ca2aa" version="4.0.0">
+  <folder name="Strategy" id="3fce08d0" type="strategy"/>
+  <folder name="Business" id="de629e5b" type="business"/>
+  <folder name="Application" id="d8b0eaf9" type="application">
+    <element xsi:type="archimate:ApplicationProcess" name="create flyweight" id="17c9d7c7"/>
+    <element xsi:type="archimate:ApplicationProcess" name="create context" id="3832f8bb"/>
+    <element xsi:type="archimate:ApplicationProcess" name="leaf create&amp;add to composite" id="f8cce31a"/>
+    <element xsi:type="archimate:ApplicationProcess" name="some operation on composite with context" id="b4a3a31b"/>
+    <element xsi:type="archimate:ApplicationInterface" name="interface flyweight" id="8d52c876"/>
+    <element xsi:type="archimate:ApplicationFunction" name="operation 1 (outer unshared state)" id="b850779b"/>
+    <element xsi:type="archimate:ApplicationFunction" name="getComposite" id="15a4c029"/>
+    <element xsi:type="archimate:ApplicationFunction" name="add(component)" id="9d1fbf21"/>
+    <element xsi:type="archimate:ApplicationFunction" name="remove(component)" id="bb27d2c1"/>
+    <element xsi:type="archimate:ApplicationFunction" name="getChields()" id="1a229d10"/>
+    <element xsi:type="archimate:ApplicationComponent" name="class concreteFlyweight" id="a40fad9a"/>
+    <element xsi:type="archimate:ApplicationFunction" name="operation 1 (outer unshared state)" id="291b5e36"/>
+    <element xsi:type="archimate:ApplicationProcess" name="some operation on leaf" id="fcd7e2e7"/>
+    <element xsi:type="archimate:ApplicationFunction" name="getComposite" id="a30828ae"/>
+    <element xsi:type="archimate:ApplicationProcess" name="return NULL" id="85f74839"/>
+    <element xsi:type="archimate:ApplicationFunction" name="remove(component)" id="f2daeb36"/>
+    <element xsi:type="archimate:ApplicationFunction" name="add(component)" id="255d5f8f"/>
+    <element xsi:type="archimate:ApplicationFunction" name="getChields()" id="9bac44f5"/>
+    <element xsi:type="archimate:ApplicationComponent" name="class UnsharedConcreteFlyweight" id="e1162153"/>
+    <element xsi:type="archimate:ApplicationFunction" name="getComposite" id="2eeac1c4"/>
+    <element xsi:type="archimate:ApplicationProcess" name="return SELF" id="b779798e"/>
+    <element xsi:type="archimate:ApplicationFunction" name="operation 1 (outer unshared state)" id="566e40b1"/>
+    <element xsi:type="archimate:ApplicationProcess" name="for each list member" id="a0bc7ece"/>
+    <element xsi:type="archimate:ApplicationProcess" name="call operation on each list" id="e41b7121"/>
+    <element xsi:type="archimate:ApplicationFunction" name="getChields()" id="43e3e4d0"/>
+    <element xsi:type="archimate:ApplicationProcess" name="get components list" id="e9bcc411"/>
+    <element xsi:type="archimate:ApplicationFunction" name="add(component)" id="e6ac15a8"/>
+    <element xsi:type="archimate:ApplicationProcess" name="add component to list" id="e178456b"/>
+    <element xsi:type="archimate:ApplicationFunction" name="remove(component)" id="9972ee02"/>
+    <element xsi:type="archimate:ApplicationProcess" name="remove component from list" id="bcecd7a5"/>
+    <element xsi:type="archimate:DataObject" name="REF composite" id="38293223"/>
+    <element xsi:type="archimate:DataObject" name="REF leaf" id="bed16896"/>
+    <element xsi:type="archimate:DataObject" name="REF composite" id="3b50bf57"/>
+    <element xsi:type="archimate:DataObject" name="REF leaf" id="e9c25414"/>
+    <element xsi:type="archimate:DataObject" name="REF leaf" id="38fdfadc"/>
+    <element xsi:type="archimate:DataObject" name="REF leaf" id="b8f32bce"/>
+    <element xsi:type="archimate:DataObject" name="REF leaf" id="21d461de"/>
+    <element xsi:type="archimate:DataObject" name="inner shared state" id="b7692eaf"/>
+    <element xsi:type="archimate:ApplicationComponent" name="class context (outer unshared state)" id="bfcda8e8"/>
+    <element xsi:type="archimate:ApplicationComponent" name="class factory" id="e9f3a141"/>
+    <element xsi:type="archimate:ApplicationFunction" name="create unshared concrete flyweight" id="f9e61602"/>
+    <element xsi:type="archimate:ApplicationFunction" name="get or create shared flyweight (input = inner shared state)" id="45265e04"/>
+    <element xsi:type="archimate:ApplicationProcess" name="get instance already exists from dictionary" id="2fdbb360"/>
+    <element xsi:type="archimate:ApplicationFunction" name="create concrete flyweight with given inner shared state" id="c57f27d9"/>
+    <element xsi:type="archimate:DataObject" name="dictionary (key=inner shared state ,value=ref to shared instance)" id="f358afdd"/>
+    <element xsi:type="archimate:ApplicationProcess" name="write instance into dictionary" id="105af7cc"/>
+    <element xsi:type="archimate:ApplicationProcess" name="create flyweight (the same)" id="05b5d132"/>
+    <element xsi:type="archimate:DataObject" name="JSON text" id="588934e2"/>
+    <element xsi:type="archimate:DataObject" name="JSON text" id="cb212da4"/>
+    <element xsi:type="archimate:DataObject" name="JSON text" id="ae83fa2a"/>
+    <element xsi:type="archimate:DataObject" name="JSON text" id="8f0c1c69"/>
+    <element xsi:type="archimate:DataObject" name="JSON text" id="eb7eedf2"/>
+    <element xsi:type="archimate:DataObject" name="JSON text" id="edaced27"/>
+    <element xsi:type="archimate:DataObject" name="JSON text" id="7a3c3879"/>
+    <element xsi:type="archimate:ApplicationFunction" name="get info attrs for some element in tree" id="d592fe0d"/>
+    <element xsi:type="archimate:ApplicationProcess" name="get additional info from context" id="16896675"/>
+    <element xsi:type="archimate:DataObject" name="real composite instance" id="614f1215"/>
+    <element xsi:type="archimate:DataObject" name="real composite instance" id="0c608251"/>
+    <element xsi:type="archimate:DataObject" name="concrete flyweight instance" id="4cdcf611"/>
+    <element xsi:type="archimate:DataObject" name="concrete flyweight instance" id="52f1388a"/>
+    <element xsi:type="archimate:ApplicationComponent" name="client" id="9720c34f"/>
+  </folder>
+  <folder name="Technology &amp; Physical" id="427f7fff" type="technology"/>
+  <folder name="Motivation" id="fb109c3f" type="motivation"/>
+  <folder name="Implementation &amp; Migration" id="10362a13" type="implementation_migration"/>
+  <folder name="Other" id="96866a57" type="other">
+    <element xsi:type="archimate:Junction" name="Junction" id="1136b0dc" type="or"/>
+  </folder>
+  <folder name="Relations" id="a86622cf" type="relations">
+    <element xsi:type="archimate:ServingRelationship" id="1e2ef88e" source="9d1fbf21" target="f8cce31a"/>
+    <element xsi:type="archimate:CompositionRelationship" id="80d3e1ca" source="a30828ae" target="85f74839"/>
+    <element xsi:type="archimate:AssignmentRelationship" id="9dd59d1c" source="a40fad9a" target="9bac44f5"/>
+    <element xsi:type="archimate:ServingRelationship" name="work throught interface" id="7ca0bda2" source="15a4c029" target="3832f8bb"/>
+    <element xsi:type="archimate:CompositionRelationship" id="7bf84441" source="3832f8bb" target="f8cce31a"/>
+    <element xsi:type="archimate:CompositionRelationship" id="3b430418" source="38293223" target="bed16896"/>
+    <element xsi:type="archimate:CompositionRelationship" id="c01c159c" source="291b5e36" target="fcd7e2e7"/>
+    <element xsi:type="archimate:RealizationRelationship" id="15c1bb67" source="a40fad9a" target="8d52c876"/>
+    <element xsi:type="archimate:CompositionRelationship" id="b36d3520" source="a0bc7ece" target="e41b7121"/>
+    <element xsi:type="archimate:CompositionRelationship" id="09147ff3" source="3b50bf57" target="b8f32bce"/>
+    <element xsi:type="archimate:CompositionRelationship" id="22457363" source="566e40b1" target="a0bc7ece"/>
+    <element xsi:type="archimate:AssociationRelationship" id="2010920f" source="8d52c876" target="b850779b"/>
+    <element xsi:type="archimate:CompositionRelationship" id="c9375ea6" source="43e3e4d0" target="e9bcc411"/>
+    <element xsi:type="archimate:AssociationRelationship" id="0ac418e9" source="17c9d7c7" target="3b50bf57"/>
+    <element xsi:type="archimate:AssignmentRelationship" id="6650aa48" source="e1162153" target="2eeac1c4"/>
+    <element xsi:type="archimate:AssociationRelationship" id="2379d355" source="8d52c876" target="1a229d10"/>
+    <element xsi:type="archimate:AssignmentRelationship" id="1cb33e48" source="a40fad9a" target="291b5e36"/>
+    <element xsi:type="archimate:CompositionRelationship" id="effcc8d2" source="3b50bf57" target="38fdfadc"/>
+    <element xsi:type="archimate:AssociationRelationship" id="461a81d4" source="8d52c876" target="bb27d2c1"/>
+    <element xsi:type="archimate:AssociationRelationship" id="7a428c18" source="8d52c876" target="15a4c029"/>
+    <element xsi:type="archimate:AssignmentRelationship" id="032dd708" source="e1162153" target="566e40b1"/>
+    <element xsi:type="archimate:FlowRelationship" id="90878b97" source="3832f8bb" target="b4a3a31b"/>
+    <element xsi:type="archimate:CompositionRelationship" id="b602251d" source="e6ac15a8" target="e178456b"/>
+    <element xsi:type="archimate:AssignmentRelationship" id="88730456" source="e1162153" target="9972ee02"/>
+    <element xsi:type="archimate:CompositionRelationship" name="composite relation" id="0c3adc08" source="e1162153" target="8d52c876"/>
+    <element xsi:type="archimate:ServingRelationship" name="work throught factory" id="656790f3" source="c57f27d9" target="17c9d7c7"/>
+    <element xsi:type="archimate:AssignmentRelationship" id="a6774af2" source="e1162153" target="43e3e4d0"/>
+    <element xsi:type="archimate:AssignmentRelationship" id="67eed9ea" source="a40fad9a" target="a30828ae"/>
+    <element xsi:type="archimate:ServingRelationship" id="12028fb9" source="b850779b" target="b4a3a31b"/>
+    <element xsi:type="archimate:FlowRelationship" id="d229d702" source="17c9d7c7" target="05b5d132"/>
+    <element xsi:type="archimate:AssignmentRelationship" id="1d29df61" source="e1162153" target="e6ac15a8"/>
+    <element xsi:type="archimate:AssignmentRelationship" id="f4278db8" source="a40fad9a" target="f2daeb36"/>
+    <element xsi:type="archimate:CompositionRelationship" id="506561aa" source="9972ee02" target="bcecd7a5"/>
+    <element xsi:type="archimate:CompositionRelationship" id="0a8db6eb" source="2eeac1c4" target="b779798e"/>
+    <element xsi:type="archimate:AssignmentRelationship" id="78133d16" source="a40fad9a" target="255d5f8f"/>
+    <element xsi:type="archimate:AssociationRelationship" id="12abeaf5" source="e9c25414" target="f8cce31a"/>
+    <element xsi:type="archimate:CompositionRelationship" id="5a993b38" source="38293223" target="3b50bf57"/>
+    <element xsi:type="archimate:AssociationRelationship" id="306b2180" source="8d52c876" target="9d1fbf21"/>
+    <element xsi:type="archimate:RealizationRelationship" id="6029a48b" source="e1162153" target="8d52c876"/>
+    <element xsi:type="archimate:CompositionRelationship" id="9ccca0c3" source="3b50bf57" target="e9c25414"/>
+    <element xsi:type="archimate:CompositionRelationship" id="990ace00" source="38293223" target="21d461de"/>
+    <element xsi:type="archimate:AssociationRelationship" id="b0713f37" source="a40fad9a" target="b7692eaf"/>
+    <element xsi:type="archimate:ServingRelationship" id="e9b9efa5" source="bfcda8e8" target="b850779b"/>
+    <element xsi:type="archimate:AssignmentRelationship" id="23263e6a" source="e9f3a141" target="f9e61602"/>
+    <element xsi:type="archimate:AssignmentRelationship" id="ef629ab6" source="e9f3a141" target="45265e04"/>
+    <element xsi:type="archimate:CompositionRelationship" id="f8c86817" source="45265e04" target="2fdbb360"/>
+    <element xsi:type="archimate:CompositionRelationship" id="8c003854" source="45265e04" target="c57f27d9"/>
+    <element xsi:type="archimate:AssociationRelationship" id="9d61e03b" source="e9f3a141" target="f358afdd"/>
+    <element xsi:type="archimate:AssignmentRelationship" id="172ab1a3" source="45265e04" target="1136b0dc"/>
+    <element xsi:type="archimate:TriggeringRelationship" id="a2cbcac2" source="45265e04" target="1136b0dc"/>
+    <element xsi:type="archimate:TriggeringRelationship" name="get" id="520c9d19" source="1136b0dc" target="2fdbb360"/>
+    <element xsi:type="archimate:TriggeringRelationship" name="create" id="c42bcd2b" source="1136b0dc" target="c57f27d9"/>
+    <element xsi:type="archimate:ServingRelationship" id="c92b6c2c" source="e1162153" target="f9e61602"/>
+    <element xsi:type="archimate:AccessRelationship" id="e867ced5" source="2fdbb360" target="f358afdd"/>
+    <element xsi:type="archimate:ServingRelationship" id="bb6239af" source="a40fad9a" target="c57f27d9"/>
+    <element xsi:type="archimate:CompositionRelationship" id="cf374bc8" source="c57f27d9" target="105af7cc"/>
+    <element xsi:type="archimate:AccessRelationship" id="56138aa1" source="105af7cc" target="f358afdd"/>
+    <element xsi:type="archimate:FlowRelationship" id="a7b4410e" source="05b5d132" target="3832f8bb"/>
+    <element xsi:type="archimate:ServingRelationship" id="4373abaf" source="2fdbb360" target="05b5d132"/>
+    <element xsi:type="archimate:ServingRelationship" id="ed079051" source="bfcda8e8" target="3832f8bb"/>
+    <element xsi:type="archimate:CompositionRelationship" id="43c9e278" source="588934e2" target="7a3c3879"/>
+    <element xsi:type="archimate:CompositionRelationship" id="5f16740e" source="ae83fa2a" target="eb7eedf2"/>
+    <element xsi:type="archimate:CompositionRelationship" id="9222231c" source="ae83fa2a" target="8f0c1c69"/>
+    <element xsi:type="archimate:CompositionRelationship" id="083ac7e3" source="ae83fa2a" target="edaced27"/>
+    <element xsi:type="archimate:CompositionRelationship" id="a174a012" source="588934e2" target="cb212da4"/>
+    <element xsi:type="archimate:CompositionRelationship" id="f966b5db" source="588934e2" target="ae83fa2a"/>
+    <element xsi:type="archimate:AssignmentRelationship" id="fd989aba" source="bfcda8e8" target="d592fe0d"/>
+    <element xsi:type="archimate:CompositionRelationship" id="7b553bc1" source="291b5e36" target="16896675"/>
+    <element xsi:type="archimate:ServingRelationship" id="82509bf1" source="d592fe0d" target="16896675"/>
+    <element xsi:type="archimate:AssociationRelationship" id="e0380dc5" source="38293223" target="614f1215"/>
+    <element xsi:type="archimate:AssociationRelationship" id="9bd1ae5b" source="3b50bf57" target="0c608251"/>
+    <element xsi:type="archimate:AssociationRelationship" id="00e9b156" source="bed16896" target="4cdcf611"/>
+    <element xsi:type="archimate:AssociationRelationship" id="4a56106c" source="21d461de" target="52f1388a"/>
+    <element xsi:type="archimate:AssociationRelationship" id="41bfa035" source="b8f32bce" target="52f1388a"/>
+    <element xsi:type="archimate:AssociationRelationship" id="232f1a15" source="38fdfadc" target="4cdcf611"/>
+    <element xsi:type="archimate:AssociationRelationship" id="9fdde383" source="e9c25414" target="4cdcf611"/>
+    <element xsi:type="archimate:ServingRelationship" id="70b2a6dd" source="a40fad9a" target="9720c34f"/>
+    <element xsi:type="archimate:ServingRelationship" id="5415dc9f" source="e1162153" target="9720c34f"/>
+    <element xsi:type="archimate:ServingRelationship" id="4a4f094a" source="e9f3a141" target="9720c34f"/>
+    <element xsi:type="archimate:AggregationRelationship" id="280c6a6a" source="e9f3a141" target="8d52c876"/>
+    <element xsi:type="archimate:AccessRelationship" id="9a35f43b" source="a40fad9a" target="b7692eaf"/>
+    <element xsi:type="archimate:AccessRelationship" id="5cdec597" source="e9f3a141" target="f358afdd"/>
+    <element xsi:type="archimate:AssociationRelationship" id="8564de76" source="c57f27d9" target="a40fad9a"/>
+    <element xsi:type="archimate:AssociationRelationship" id="303999b5" source="f9e61602" target="e1162153"/>
+    <element xsi:type="archimate:FlowRelationship" id="702b4a46" source="16896675" target="d592fe0d"/>
+    <element xsi:type="archimate:FlowRelationship" id="e0dc1922" source="b850779b" target="291b5e36"/>
+  </folder>
+  <folder name="Views" id="9714c025" type="diagrams">
+    <element xsi:type="archimate:ArchimateDiagramModel" name="fly+composite" id="6aa7879b">
+      <child xsi:type="archimate:Note" id="1b4ce1a7" fontColor="#ff0000" textAlignment="1">
+        <bounds x="2125" y="511" width="183" height="364"/>
+        <content>EXAMPLE&#xD;
+- count of real instances much more less then REF</content>
+      </child>
+      <child xsi:type="archimate:Note" id="9a1815ba" fontColor="#808080" textAlignment="1">
+        <bounds x="1563" y="511" width="494" height="364"/>
+        <sourceConnection id="29877dd9" lineColor="#808080" source="9a1815ba" target="9c036ca4"/>
+        <content>example: &#xD;
+- full tree component instances &#xD;
+(leafs and composites)</content>
+      </child>
+      <child xsi:type="archimate:Group" id="12913929" name="programm" textAlignment="1">
+        <bounds x="-240" y="198" width="2297" height="154"/>
+        <child xsi:type="archimate:DiagramObject" id="a7774751" targetConnections="f01a0604" archimateElement="17c9d7c7">
+          <bounds x="115" y="40" width="160" height="96"/>
+          <sourceConnection xsi:type="archimate:Connection" id="4335dc5a" source="a7774751" target="b8e234be" archimateRelationship="d229d702"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="30d4d323" targetConnections="57980f77 41f1b2d0" archimateElement="3832f8bb">
+          <bounds x="575" y="40" width="160" height="96"/>
+          <sourceConnection xsi:type="archimate:Connection" id="f9da1891" source="30d4d323" target="770d4328" archimateRelationship="90878b97"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="770d4328" targetConnections="958673ad f9da1891" archimateElement="b4a3a31b">
+          <bounds x="1360" y="40" width="160" height="96"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="b8e234be" targetConnections="4335dc5a 2caf8fc2" archimateElement="05b5d132">
+          <bounds x="358" y="40" width="160" height="96"/>
+          <sourceConnection xsi:type="archimate:Connection" id="57980f77" source="b8e234be" target="30d4d323" archimateRelationship="a7b4410e"/>
+        </child>
+      </child>
+      <child xsi:type="archimate:Group" id="fd17e6af" name="interface flyweight" targetConnections="7d8092a9" lineColor="#808080" textAlignment="1">
+        <bounds x="965" y="505" width="465" height="371"/>
+        <child xsi:type="archimate:DiagramObject" id="e55381da" targetConnections="ffdd371b 670d6293 c9065ad6" archimateElement="8d52c876">
+          <bounds x="10" y="25" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="c762a56c" lineColor="#808080" source="e55381da" target="49203578" archimateRelationship="306b2180"/>
+          <sourceConnection xsi:type="archimate:Connection" id="8adb2cea" lineColor="#808080" source="e55381da" target="8222923b" archimateRelationship="461a81d4"/>
+          <sourceConnection xsi:type="archimate:Connection" id="3b9dc34d" lineColor="#808080" source="e55381da" target="1f9f12a2" archimateRelationship="2379d355"/>
+          <sourceConnection xsi:type="archimate:Connection" id="2614d424" lineColor="#808080" source="e55381da" target="4491e542" archimateRelationship="2010920f"/>
+          <sourceConnection xsi:type="archimate:Connection" id="e4adaf7d" lineColor="#808080" source="e55381da" target="950e5c84" archimateRelationship="7a428c18"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="4491e542" targetConnections="2614d424 37f20290" archimateElement="b850779b">
+          <bounds x="155" y="60" width="168" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="958673ad" fontColor="#ff0000" lineColor="#ff0000" source="4491e542" target="770d4328" archimateRelationship="12028fb9"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="950e5c84" targetConnections="e4adaf7d" fontColor="#808080" lineColor="#808080" archimateElement="15a4c029">
+          <bounds x="155" y="120" width="168" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="49203578" targetConnections="c762a56c" fontColor="#808080" lineColor="#808080" fillColor="#b5ffff" archimateElement="9d1fbf21">
+          <bounds x="155" y="180" width="168" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="8222923b" targetConnections="8adb2cea" fontColor="#808080" lineColor="#808080" fillColor="#b5ffff" archimateElement="bb27d2c1">
+          <bounds x="155" y="240" width="168" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="1f9f12a2" targetConnections="3b9dc34d" fontColor="#808080" lineColor="#808080" fillColor="#b5ffff" archimateElement="1a229d10">
+          <bounds x="155" y="300" width="168" height="55"/>
+        </child>
+      </child>
+      <child xsi:type="archimate:Group" id="01c134c8" name="class concreteFlyweight" lineColor="#808080" textAlignment="1">
+        <bounds x="965" y="935" width="465" height="723"/>
+        <child xsi:type="archimate:DiagramObject" id="5c0831b4" archimateElement="a40fad9a">
+          <bounds x="10" y="30" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="a298037f" lineColor="#808080" source="5c0831b4" target="ccbe2e8e" archimateRelationship="1cb33e48"/>
+          <sourceConnection xsi:type="archimate:Connection" id="ffdd371b" lineColor="#808080" source="5c0831b4" target="e55381da" archimateRelationship="15c1bb67"/>
+          <sourceConnection xsi:type="archimate:Connection" id="95142e37" lineColor="#808080" source="5c0831b4" target="9e94996e" archimateRelationship="78133d16"/>
+          <sourceConnection xsi:type="archimate:Connection" id="1fd0c66c" lineColor="#808080" source="5c0831b4" target="16e81887" archimateRelationship="9dd59d1c"/>
+          <sourceConnection xsi:type="archimate:Connection" id="87962d97" lineColor="#808080" source="5c0831b4" target="10341647" archimateRelationship="f4278db8"/>
+          <sourceConnection xsi:type="archimate:Connection" id="45ecee00" lineColor="#808080" source="5c0831b4" target="a2bd58b2" archimateRelationship="67eed9ea"/>
+          <sourceConnection xsi:type="archimate:Connection" id="0e1557a1" source="5c0831b4" target="9b2a2b23" archimateRelationship="b0713f37"/>
+          <sourceConnection xsi:type="archimate:Connection" id="0de45d3a" source="5c0831b4" target="ebc81b90" archimateRelationship="bb6239af">
+            <bendpoint startY="720" endX="990" endY="892"/>
+            <bendpoint startX="-870" startY="714" endX="120" endY="886"/>
+          </sourceConnection>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="ccbe2e8e" targetConnections="a298037f" archimateElement="291b5e36">
+          <bounds x="165" y="133" width="206" height="144"/>
+          <sourceConnection xsi:type="archimate:Connection" id="72569ec6" source="ccbe2e8e" target="54ce7b8b" archimateRelationship="c01c159c"/>
+          <sourceConnection xsi:type="archimate:Connection" id="6f91e49a" source="ccbe2e8e" target="128756cb" archimateRelationship="7b553bc1"/>
+          <child xsi:type="archimate:DiagramObject" id="54ce7b8b" targetConnections="72569ec6" archimateElement="fcd7e2e7">
+            <bounds x="35" y="90" width="149" height="40"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="128756cb" targetConnections="6f91e49a 4c987b51" archimateElement="16896675">
+            <bounds x="35" y="45" width="150" height="40"/>
+          </child>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="a2bd58b2" targetConnections="45ecee00" fontColor="#808080" lineColor="#808080" fillColor="#b5ffff" archimateElement="a30828ae">
+          <bounds x="165" y="285" width="206" height="100"/>
+          <sourceConnection xsi:type="archimate:Connection" id="7d835f0e" source="a2bd58b2" target="b4e5e3a5" archimateRelationship="80d3e1ca"/>
+          <child xsi:type="archimate:DiagramObject" id="b4e5e3a5" targetConnections="7d835f0e" fontColor="#808080" lineColor="#808080" fillColor="#b5ffff" archimateElement="85f74839">
+            <bounds x="30" y="40" width="120" height="55"/>
+          </child>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="10341647" targetConnections="87962d97" fontColor="#808080" lineColor="#808080" fillColor="#b5ffff" archimateElement="f2daeb36">
+          <bounds x="165" y="500" width="206" height="100"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="9e94996e" targetConnections="95142e37" fontColor="#808080" lineColor="#808080" fillColor="#b5ffff" archimateElement="255d5f8f">
+          <bounds x="165" y="393" width="206" height="100"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="16e81887" targetConnections="1fd0c66c" fontColor="#808080" lineColor="#808080" fillColor="#b5ffff" archimateElement="9bac44f5">
+          <bounds x="165" y="610" width="206" height="100"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="9b2a2b23" targetConnections="0e1557a1" font="1|Segoe UI|9.0|1|WINDOWS|1|-12|0|0|0|700|0|0|0|-52|3|2|1|34|Segoe UI" fontColor="#ff0000" archimateElement="b7692eaf">
+          <bounds x="165" y="65" width="206" height="55"/>
+        </child>
+      </child>
+      <child xsi:type="archimate:Group" id="43048a9d" name="class UnsharedConcreteFlyweight" lineColor="#808080" textAlignment="1">
+        <bounds x="1580" y="935" width="465" height="723"/>
+        <sourceConnection id="20d3cb31" name="VARIABLE is a part of COMPOSITE" fontColor="#0000ff" lineColor="#0000ff" source="43048a9d" target="0c5412d3"/>
+        <child xsi:type="archimate:DiagramObject" id="bdea3c76" archimateElement="e1162153">
+          <bounds x="15" y="30" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="2790fccd" lineColor="#808080" source="bdea3c76" target="4229423c" archimateRelationship="1d29df61"/>
+          <sourceConnection xsi:type="archimate:Connection" id="78d9d71c" lineColor="#808080" source="bdea3c76" target="3f12331b" archimateRelationship="a6774af2"/>
+          <sourceConnection xsi:type="archimate:Connection" id="670d6293" fontColor="#0000ff" lineColor="#0000ff" source="bdea3c76" target="e55381da" archimateRelationship="0c3adc08">
+            <bendpoint startX="-104" startY="-167" endX="516" endY="268"/>
+            <bendpoint startX="-364" startY="-322" endX="256" endY="113"/>
+          </sourceConnection>
+          <sourceConnection xsi:type="archimate:Connection" id="beb0aafc" lineColor="#808080" source="bdea3c76" target="7401fb4f" archimateRelationship="6650aa48"/>
+          <sourceConnection xsi:type="archimate:Connection" id="fe30bb27" lineColor="#808080" source="bdea3c76" target="aff495d4" archimateRelationship="88730456"/>
+          <sourceConnection xsi:type="archimate:Connection" id="65410b55" lineColor="#808080" source="bdea3c76" target="b27c74f6" archimateRelationship="032dd708"/>
+          <sourceConnection xsi:type="archimate:Connection" id="c9065ad6" lineColor="#808080" source="bdea3c76" target="e55381da" archimateRelationship="6029a48b">
+            <bendpoint startX="-40" startY="-86" endX="580" endY="350"/>
+            <bendpoint startX="-579" startY="-82" endX="41" endY="353"/>
+          </sourceConnection>
+          <sourceConnection xsi:type="archimate:Connection" id="2bb069c6" source="bdea3c76" target="d5b4bf79" archimateRelationship="c92b6c2c">
+            <bendpoint startX="6" startY="744" endX="1590" endY="1162"/>
+            <bendpoint startX="-154" startY="744" endX="1430" endY="1162"/>
+            <bendpoint startX="-1530" startY="730" endX="54" endY="1148"/>
+            <bendpoint startX="-1520" startY="174" endX="64" endY="592"/>
+          </sourceConnection>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="7401fb4f" targetConnections="beb0aafc" fontColor="#808080" lineColor="#808080" fillColor="#b5ffff" archimateElement="2eeac1c4">
+          <bounds x="170" y="287" width="169" height="100"/>
+          <sourceConnection xsi:type="archimate:Connection" id="94c8554c" source="7401fb4f" target="241b2a8b" archimateRelationship="0a8db6eb"/>
+          <child xsi:type="archimate:DiagramObject" id="241b2a8b" targetConnections="94c8554c" fontColor="#808080" lineColor="#808080" fillColor="#b5ffff" archimateElement="b779798e">
+            <bounds x="30" y="40" width="120" height="55"/>
+          </child>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="b27c74f6" targetConnections="65410b55" archimateElement="566e40b1">
+          <bounds x="170" y="135" width="169" height="144"/>
+          <sourceConnection xsi:type="archimate:Connection" id="79822d54" source="b27c74f6" target="19aa479e" archimateRelationship="22457363"/>
+          <child xsi:type="archimate:DiagramObject" id="19aa479e" targetConnections="79822d54" archimateElement="a0bc7ece">
+            <bounds x="10" y="35" width="145" height="96"/>
+            <sourceConnection xsi:type="archimate:Connection" id="737c93c1" source="19aa479e" target="ae37e42b" archimateRelationship="b36d3520"/>
+            <child xsi:type="archimate:DiagramObject" id="ae37e42b" targetConnections="737c93c1" archimateElement="e41b7121">
+              <bounds x="15" y="35" width="120" height="55"/>
+            </child>
+          </child>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="3f12331b" targetConnections="78d9d71c" fontColor="#808080" lineColor="#808080" fillColor="#b5ffff" archimateElement="43e3e4d0">
+          <bounds x="170" y="612" width="169" height="100"/>
+          <sourceConnection xsi:type="archimate:Connection" id="1b32fc7c" source="3f12331b" target="63b88da7" archimateRelationship="c9375ea6"/>
+          <child xsi:type="archimate:DiagramObject" id="63b88da7" targetConnections="1b32fc7c" fontColor="#808080" lineColor="#808080" fillColor="#b5ffff" archimateElement="e9bcc411">
+            <bounds x="30" y="40" width="120" height="55"/>
+          </child>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="4229423c" targetConnections="2790fccd" fontColor="#808080" lineColor="#808080" fillColor="#b5ffff" archimateElement="e6ac15a8">
+          <bounds x="170" y="395" width="169" height="100"/>
+          <sourceConnection xsi:type="archimate:Connection" id="925d5444" source="4229423c" target="70144a02" archimateRelationship="b602251d"/>
+          <child xsi:type="archimate:DiagramObject" id="70144a02" targetConnections="925d5444" fontColor="#808080" lineColor="#808080" fillColor="#b5ffff" archimateElement="e178456b">
+            <bounds x="30" y="35" width="120" height="55"/>
+          </child>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="aff495d4" targetConnections="fe30bb27" fontColor="#808080" lineColor="#808080" fillColor="#b5ffff" archimateElement="9972ee02">
+          <bounds x="170" y="502" width="169" height="100"/>
+          <sourceConnection xsi:type="archimate:Connection" id="de6baf60" source="aff495d4" target="d5a1b0ec" archimateRelationship="506561aa"/>
+          <child xsi:type="archimate:DiagramObject" id="d5a1b0ec" targetConnections="de6baf60" fontColor="#808080" lineColor="#808080" fillColor="#b5ffff" archimateElement="bcecd7a5">
+            <bounds x="30" y="35" width="120" height="55"/>
+          </child>
+        </child>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="2ed850d4" archimateElement="38293223">
+        <bounds x="1736" y="570" width="120" height="55"/>
+        <sourceConnection xsi:type="archimate:Connection" id="c875e04a" source="2ed850d4" target="9bebd2b7" archimateRelationship="990ace00"/>
+        <sourceConnection xsi:type="archimate:Connection" id="e4d07487" source="2ed850d4" target="e2a8e8ea" archimateRelationship="3b430418"/>
+        <sourceConnection xsi:type="archimate:Connection" id="531e47b4" source="2ed850d4" target="bfc21375" archimateRelationship="5a993b38"/>
+        <sourceConnection xsi:type="archimate:Connection" id="9977ff02" lineColor="#c0c0c0" source="2ed850d4" target="bb7760eb" archimateRelationship="e0380dc5"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="e2a8e8ea" targetConnections="e4d07487" archimateElement="bed16896">
+        <bounds x="1592" y="652" width="120" height="55"/>
+        <sourceConnection xsi:type="archimate:Connection" id="39508085" lineColor="#c0c0c0" source="e2a8e8ea" target="cb26d1b6" archimateRelationship="00e9b156"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="bfc21375" targetConnections="531e47b4" archimateElement="3b50bf57">
+        <bounds x="1742" y="652" width="120" height="55"/>
+        <sourceConnection xsi:type="archimate:Connection" id="0d4f7a54" source="bfc21375" target="f9cbdf45" archimateRelationship="effcc8d2"/>
+        <sourceConnection xsi:type="archimate:Connection" id="6f61bd77" source="bfc21375" target="21568a2f" archimateRelationship="09147ff3"/>
+        <sourceConnection xsi:type="archimate:Connection" id="0ab9db9d" source="bfc21375" target="7b6507cb" archimateRelationship="9ccca0c3"/>
+        <sourceConnection xsi:type="archimate:Connection" id="9f2cb6ce" lineColor="#c0c0c0" source="bfc21375" target="5f0038c3" archimateRelationship="9bd1ae5b"/>
+      </child>
+      <child xsi:type="archimate:Group" id="0c5412d3" name="VARIABLE: list of instances of FLYWEIGHT type" targetConnections="20d3cb31" textAlignment="1">
+        <bounds x="1577" y="735" width="469" height="116"/>
+        <sourceConnection id="7d8092a9" name="each list member of FLYWEIGHT type" fontColor="#0000ff" lineColor="#0000ff" source="0c5412d3" target="fd17e6af">
+          <bendpoint startX="-312" startY="-102" endX="298" endY="26"/>
+          <bendpoint startX="-357" startY="-128" endX="253"/>
+        </sourceConnection>
+        <child xsi:type="archimate:DiagramObject" id="7b6507cb" targetConnections="0ab9db9d" archimateElement="e9c25414">
+          <bounds x="20" y="40" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="f51a219a" lineColor="#c0c0c0" source="7b6507cb" target="cb26d1b6" archimateRelationship="9fdde383">
+            <bendpoint startX="288" startY="48" endX="-285" endY="13"/>
+          </sourceConnection>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="f9cbdf45" targetConnections="0d4f7a54" archimateElement="38fdfadc">
+          <bounds x="170" y="40" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="f42518f9" lineColor="#c0c0c0" source="f9cbdf45" target="cb26d1b6" archimateRelationship="232f1a15">
+            <bendpoint startX="214" startY="33" endX="-209" endY="-2"/>
+          </sourceConnection>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="21568a2f" targetConnections="6f61bd77" archimateElement="b8f32bce">
+          <bounds x="325" y="40" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="2d753d1f" lineColor="#c0c0c0" source="21568a2f" target="02f4f7b6" archimateRelationship="41bfa035"/>
+        </child>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="9bebd2b7" targetConnections="c875e04a" archimateElement="21d461de">
+        <bounds x="1897" y="652" width="120" height="55"/>
+        <sourceConnection xsi:type="archimate:Connection" id="9eec1fca" lineColor="#c0c0c0" source="9bebd2b7" target="02f4f7b6" archimateRelationship="4a56106c"/>
+      </child>
+      <child xsi:type="archimate:Group" id="3f6c9624" name="class context (outer unshared state)" targetConnections="b97641ec" textAlignment="1">
+        <bounds x="335" y="935" width="465" height="723"/>
+        <child xsi:type="archimate:DiagramObject" id="fede5f5b" archimateElement="bfcda8e8">
+          <bounds x="40" y="60" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="41f1b2d0" source="fede5f5b" target="30d4d323" archimateRelationship="ed079051"/>
+          <sourceConnection xsi:type="archimate:Connection" id="37f20290" fontColor="#ff0000" lineColor="#ff0000" source="fede5f5b" target="4491e542" archimateRelationship="e9b9efa5"/>
+          <sourceConnection xsi:type="archimate:Connection" id="5e9af0fa" lineColor="#808080" source="fede5f5b" target="78b5c865" archimateRelationship="fd989aba"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="78b5c865" targetConnections="5e9af0fa" archimateElement="d592fe0d">
+          <bounds x="205" y="140" width="169" height="100"/>
+          <sourceConnection xsi:type="archimate:Connection" id="4c987b51" fontColor="#ff0000" lineColor="#ff0000" source="78b5c865" target="128756cb" archimateRelationship="82509bf1"/>
+        </child>
+      </child>
+      <child xsi:type="archimate:Group" id="806e4248" name="class factory" lineColor="#808080" textAlignment="1">
+        <bounds x="-240" y="505" width="465" height="371"/>
+        <child xsi:type="archimate:DiagramObject" id="5a09ccf9" archimateElement="e9f3a141">
+          <bounds x="5" y="30" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="f706fc7a" lineColor="#808080" source="5a09ccf9" target="d5b4bf79" archimateRelationship="23263e6a"/>
+          <sourceConnection xsi:type="archimate:Connection" id="8397d960" lineColor="#808080" source="5a09ccf9" target="cdbdac87" archimateRelationship="ef629ab6"/>
+          <sourceConnection xsi:type="archimate:Connection" id="f58c2605" source="5a09ccf9" target="15b9f28a" archimateRelationship="9d61e03b"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="d5b4bf79" targetConnections="f706fc7a 2bb069c6" archimateElement="f9e61602">
+          <bounds x="180" y="43" width="260" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="cdbdac87" targetConnections="8397d960" font="1|Segoe UI|9.0|1|WINDOWS|1|-12|0|0|0|700|0|0|0|-52|3|2|1|34|Segoe UI" fontColor="#ff0000" archimateElement="45265e04">
+          <bounds x="70" y="180" width="372" height="180"/>
+          <sourceConnection xsi:type="archimate:Connection" id="2d929cde" source="cdbdac87" target="392bd467" archimateRelationship="f8c86817"/>
+          <sourceConnection xsi:type="archimate:Connection" id="2375ac16" source="cdbdac87" target="ebc81b90" archimateRelationship="8c003854"/>
+          <sourceConnection xsi:type="archimate:Connection" id="f5479747" source="cdbdac87" target="a087e4dd" archimateRelationship="172ab1a3"/>
+          <sourceConnection xsi:type="archimate:Connection" id="3c40e46a" source="cdbdac87" target="a087e4dd" archimateRelationship="a2cbcac2"/>
+          <child xsi:type="archimate:DiagramObject" id="392bd467" targetConnections="2d929cde da4525d3" archimateElement="2fdbb360">
+            <bounds x="89" y="40" width="253" height="40"/>
+            <sourceConnection xsi:type="archimate:Connection" id="9689499e" source="392bd467" target="15b9f28a" archimateRelationship="e867ced5"/>
+            <sourceConnection xsi:type="archimate:Connection" id="2caf8fc2" fontColor="#ff0000" lineColor="#ff0000" source="392bd467" target="b8e234be" archimateRelationship="4373abaf"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="ebc81b90" targetConnections="2375ac16 0d4e70f5 0de45d3a" archimateElement="c57f27d9">
+            <bounds x="89" y="96" width="253" height="80"/>
+            <sourceConnection xsi:type="archimate:Connection" id="788121e9" source="ebc81b90" target="57f11332" archimateRelationship="cf374bc8"/>
+            <sourceConnection xsi:type="archimate:Connection" id="f01a0604" fontColor="#ff0000" lineColor="#ff0000" source="ebc81b90" target="a7774751" archimateRelationship="656790f3"/>
+            <child xsi:type="archimate:DiagramObject" id="57f11332" targetConnections="788121e9" archimateElement="105af7cc">
+              <bounds x="30" y="45" width="200" height="31"/>
+              <sourceConnection xsi:type="archimate:Connection" id="d522417e" source="57f11332" target="15b9f28a" archimateRelationship="56138aa1"/>
+            </child>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="a087e4dd" targetConnections="f5479747 3c40e46a" archimateElement="1136b0dc">
+            <bounds x="15" y="96" width="15" height="15"/>
+            <sourceConnection xsi:type="archimate:Connection" id="da4525d3" source="a087e4dd" target="392bd467" archimateRelationship="520c9d19"/>
+            <sourceConnection xsi:type="archimate:Connection" id="0d4e70f5" source="a087e4dd" target="ebc81b90" archimateRelationship="c42bcd2b"/>
+          </child>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="15b9f28a" targetConnections="f58c2605 9689499e d522417e" archimateElement="f358afdd">
+          <bounds x="180" y="110" width="260" height="55"/>
+        </child>
+      </child>
+      <child xsi:type="archimate:Note" id="46e440ef" fontColor="#808080" textAlignment="1">
+        <bounds x="335" y="511" width="494" height="364"/>
+        <sourceConnection id="b97641ec" name="JSON VARIABLE is a part of CONTEXT" fontColor="#0000ff" lineColor="#0000ff" source="46e440ef" target="3f6c9624"/>
+        <sourceConnection id="847bd704" lineColor="#808080" source="46e440ef" target="9c036ca4"/>
+        <content>example: &#xD;
+- the same tree(+additional attrs) but in JSON format&#xD;
+- keep the tree in JSON format is much cheaper than wood objects</content>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="b7371e5b" archimateElement="588934e2">
+        <bounds x="508" y="586" width="120" height="55"/>
+        <sourceConnection xsi:type="archimate:Connection" id="43e44651" source="b7371e5b" target="ecb8e1e5" archimateRelationship="43c9e278"/>
+        <sourceConnection xsi:type="archimate:Connection" id="2612b54d" source="b7371e5b" target="c0e1307f" archimateRelationship="a174a012"/>
+        <sourceConnection xsi:type="archimate:Connection" id="04b6484c" source="b7371e5b" target="8d499660" archimateRelationship="f966b5db"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="c0e1307f" targetConnections="2612b54d" archimateElement="cb212da4">
+        <bounds x="364" y="668" width="120" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="8d499660" targetConnections="04b6484c" archimateElement="ae83fa2a">
+        <bounds x="514" y="668" width="120" height="55"/>
+        <sourceConnection xsi:type="archimate:Connection" id="558ca7eb" source="8d499660" target="3c48290b" archimateRelationship="083ac7e3"/>
+        <sourceConnection xsi:type="archimate:Connection" id="adfdde9c" source="8d499660" target="9029948c" archimateRelationship="5f16740e"/>
+        <sourceConnection xsi:type="archimate:Connection" id="3de1c5cf" source="8d499660" target="2a1cfcb5" archimateRelationship="9222231c"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="ecb8e1e5" targetConnections="43e44651" archimateElement="7a3c3879">
+        <bounds x="669" y="668" width="120" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="2a1cfcb5" targetConnections="3de1c5cf" archimateElement="8f0c1c69">
+        <bounds x="358" y="787" width="120" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="9029948c" targetConnections="adfdde9c" archimateElement="eb7eedf2">
+        <bounds x="508" y="787" width="120" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="3c48290b" targetConnections="558ca7eb" archimateElement="edaced27">
+        <bounds x="663" y="787" width="120" height="55"/>
+      </child>
+      <child xsi:type="archimate:Note" id="9c036ca4" targetConnections="847bd704 29877dd9" fontColor="#ff0000" textAlignment="1">
+        <bounds x="340" y="395" width="500" height="51"/>
+        <content>- we need to add INFO both place (add ATTRS into context and REF into composite)&#xD;
+- context object should be less than the sum of the cost of storage flyweights&#xD;
+</content>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="bb7760eb" targetConnections="9977ff02" archimateElement="614f1215">
+        <bounds x="2170" y="560" width="120" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="5f0038c3" targetConnections="9f2cb6ce" archimateElement="0c608251">
+        <bounds x="2170" y="637" width="120" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="cb26d1b6" targetConnections="39508085 f42518f9 f51a219a" archimateElement="4cdcf611">
+        <bounds x="2170" y="809" width="120" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="02f4f7b6" targetConnections="9eec1fca 2d753d1f" archimateElement="52f1388a">
+        <bounds x="2170" y="719" width="120" height="55"/>
+      </child>
+    </element>
+    <element xsi:type="archimate:ArchimateDiagramModel" name="fly" id="8fc9dd8a">
+      <child xsi:type="archimate:Group" id="ced6a246" name="programm" textAlignment="1">
+        <bounds x="-240" y="198" width="1621" height="154"/>
+        <child xsi:type="archimate:DiagramObject" id="1878e579" targetConnections="0da241c7" archimateElement="17c9d7c7">
+          <bounds x="67" y="40" width="160" height="96"/>
+          <sourceConnection xsi:type="archimate:Connection" id="c80fd44f" source="1878e579" target="f6a8de00" archimateRelationship="d229d702"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="f57c8b1f" targetConnections="a28f2937 94d295bf" archimateElement="3832f8bb">
+          <bounds x="575" y="40" width="160" height="96"/>
+          <sourceConnection xsi:type="archimate:Connection" id="643f2dc9" source="f57c8b1f" target="0929ea2f" archimateRelationship="90878b97"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="0929ea2f" targetConnections="643f2dc9 5be51f70" archimateElement="b4a3a31b">
+          <bounds x="1360" y="40" width="160" height="96"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="f6a8de00" targetConnections="c80fd44f db3ccd91" archimateElement="05b5d132">
+          <bounds x="310" y="40" width="160" height="96"/>
+          <sourceConnection xsi:type="archimate:Connection" id="a28f2937" source="f6a8de00" target="f57c8b1f" archimateRelationship="a7b4410e"/>
+        </child>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="79aa7418" targetConnections="2ecee665" archimateElement="e1162153">
+        <bounds x="335" y="955" width="465" height="371"/>
+        <sourceConnection xsi:type="archimate:Connection" id="706d5638" lineColor="#808080" source="79aa7418" target="ca5969ba" archimateRelationship="032dd708"/>
+        <sourceConnection xsi:type="archimate:Connection" id="c49b3c17" lineColor="#0000ff" source="79aa7418" target="26b8c743" archimateRelationship="6029a48b"/>
+        <child xsi:type="archimate:DiagramObject" id="ca5969ba" targetConnections="706d5638" archimateElement="566e40b1">
+          <bounds x="205" y="120" width="206" height="144"/>
+        </child>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="b2de6dc4" targetConnections="e31465b6" archimateElement="a40fad9a">
+        <bounds x="915" y="955" width="465" height="371"/>
+        <sourceConnection xsi:type="archimate:Connection" id="6878f5d6" lineColor="#808080" source="b2de6dc4" target="7602fb8c" archimateRelationship="1cb33e48"/>
+        <sourceConnection xsi:type="archimate:Connection" id="54ab70ba" lineColor="#0000ff" source="b2de6dc4" target="26b8c743" archimateRelationship="15c1bb67">
+          <bendpoint startX="-202" startY="-211" endX="-202" endY="220"/>
+        </sourceConnection>
+        <sourceConnection xsi:type="archimate:Connection" id="e85c27ad" lineColor="#808080" source="b2de6dc4" target="298cbc4c" archimateRelationship="b0713f37"/>
+        <sourceConnection xsi:type="archimate:Connection" id="d6a5b508" source="b2de6dc4" target="298cbc4c" archimateRelationship="9a35f43b"/>
+        <child xsi:type="archimate:DiagramObject" id="298cbc4c" targetConnections="e85c27ad d6a5b508" font="1|Segoe UI|9.0|1|WINDOWS|1|-12|0|0|0|700|0|0|0|-52|3|2|1|34|Segoe UI" fontColor="#ff0000" archimateElement="b7692eaf">
+          <bounds x="175" y="60" width="206" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="7602fb8c" targetConnections="6878f5d6 cebceaa7" archimateElement="291b5e36">
+          <bounds x="175" y="150" width="206" height="144"/>
+          <sourceConnection xsi:type="archimate:Connection" id="c94ff25d" source="7602fb8c" target="759d3434" archimateRelationship="c01c159c"/>
+          <sourceConnection xsi:type="archimate:Connection" id="1dbf02b9" source="7602fb8c" target="5a82b879" archimateRelationship="7b553bc1"/>
+          <child xsi:type="archimate:DiagramObject" id="759d3434" targetConnections="c94ff25d" archimateElement="fcd7e2e7">
+            <bounds x="35" y="90" width="149" height="40"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="5a82b879" targetConnections="1dbf02b9" archimateElement="16896675">
+            <bounds x="35" y="45" width="150" height="40"/>
+            <sourceConnection xsi:type="archimate:Connection" id="403a5fb3" fontColor="#ff0000" lineColor="#ff0000" source="5a82b879" target="b618305d" archimateRelationship="702b4a46">
+              <bendpoint startX="-76" startY="-349" endX="458" endY="6"/>
+            </sourceConnection>
+          </child>
+        </child>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="0a7c9dee" archimateElement="bfcda8e8">
+        <bounds x="335" y="505" width="465" height="371"/>
+        <sourceConnection xsi:type="archimate:Connection" id="94d295bf" source="0a7c9dee" target="f57c8b1f" archimateRelationship="ed079051"/>
+        <sourceConnection xsi:type="archimate:Connection" id="9e5ae585" lineColor="#808080" source="0a7c9dee" target="b618305d" archimateRelationship="fd989aba"/>
+        <child xsi:type="archimate:DiagramObject" id="b618305d" targetConnections="9e5ae585 403a5fb3" archimateElement="d592fe0d">
+          <bounds x="220" y="250" width="225" height="80"/>
+        </child>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="26b8c743" targetConnections="54ab70ba c49b3c17" archimateElement="8d52c876">
+        <bounds x="915" y="505" width="465" height="371"/>
+        <sourceConnection xsi:type="archimate:Connection" id="56a45bdf" lineColor="#808080" source="26b8c743" target="b186db8c" archimateRelationship="2010920f"/>
+        <child xsi:type="archimate:DiagramObject" id="b186db8c" targetConnections="56a45bdf" archimateElement="b850779b">
+          <bounds x="145" y="105" width="206" height="144"/>
+          <sourceConnection xsi:type="archimate:Connection" id="5be51f70" fontColor="#ff0000" lineColor="#ff0000" source="b186db8c" target="0929ea2f" archimateRelationship="12028fb9"/>
+          <sourceConnection xsi:type="archimate:Connection" id="cebceaa7" fontColor="#ff0000" lineColor="#ff0000" source="b186db8c" target="7602fb8c" archimateRelationship="e0dc1922">
+            <bendpoint startX="27" startY="233" endX="-3" endY="-242"/>
+          </sourceConnection>
+        </child>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="093a88f2" archimateElement="e9f3a141">
+        <bounds x="-240" y="505" width="465" height="820"/>
+        <sourceConnection xsi:type="archimate:Connection" id="4daeff78" lineColor="#808080" source="093a88f2" target="ecafe2ce" archimateRelationship="23263e6a"/>
+        <sourceConnection xsi:type="archimate:Connection" id="34deda1f" lineColor="#808080" source="093a88f2" target="e9dba853" archimateRelationship="ef629ab6"/>
+        <sourceConnection xsi:type="archimate:Connection" id="ae617af7" lineColor="#808080" source="093a88f2" target="0b5af582" archimateRelationship="9d61e03b"/>
+        <sourceConnection xsi:type="archimate:Connection" id="a8b7173a" source="093a88f2" target="0b5af582" archimateRelationship="5cdec597"/>
+        <child xsi:type="archimate:DiagramObject" id="ecafe2ce" targetConnections="4daeff78" archimateElement="f9e61602">
+          <bounds x="48" y="560" width="372" height="245"/>
+          <sourceConnection xsi:type="archimate:Connection" id="2ecee665" lineColor="#808080" source="ecafe2ce" target="79aa7418" archimateRelationship="303999b5"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="0b5af582" targetConnections="ae617af7 fae15ab3 af02cda8 a8b7173a" archimateElement="f358afdd">
+          <bounds x="160" y="95" width="260" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="e9dba853" targetConnections="34deda1f" font="1|Segoe UI|9.0|1|WINDOWS|1|-12|0|0|0|700|0|0|0|-52|3|2|1|34|Segoe UI" fontColor="#ff0000" archimateElement="45265e04">
+          <bounds x="48" y="225" width="372" height="306"/>
+          <sourceConnection xsi:type="archimate:Connection" id="367ecf0f" source="e9dba853" target="d79ad3dd" archimateRelationship="f8c86817"/>
+          <sourceConnection xsi:type="archimate:Connection" id="33c1e85a" source="e9dba853" target="49994351" archimateRelationship="8c003854"/>
+          <sourceConnection xsi:type="archimate:Connection" id="88a38370" source="e9dba853" target="4eff7e66" archimateRelationship="172ab1a3"/>
+          <sourceConnection xsi:type="archimate:Connection" id="f1143e0b" source="e9dba853" target="4eff7e66" archimateRelationship="a2cbcac2"/>
+          <child xsi:type="archimate:DiagramObject" id="d79ad3dd" targetConnections="367ecf0f 389eb27e" archimateElement="2fdbb360">
+            <bounds x="89" y="51" width="253" height="105"/>
+            <sourceConnection xsi:type="archimate:Connection" id="fae15ab3" lineColor="#ff0000" source="d79ad3dd" target="0b5af582" archimateRelationship="e867ced5">
+              <bendpoint startX="92" startY="-112" endX="65" endY="94"/>
+            </sourceConnection>
+            <sourceConnection xsi:type="archimate:Connection" id="db3ccd91" fontColor="#ff0000" lineColor="#ff0000" source="d79ad3dd" target="f6a8de00" archimateRelationship="4373abaf">
+              <bendpoint startX="67" startY="-268" endX="-60" endY="279"/>
+            </sourceConnection>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="49994351" targetConnections="33c1e85a ed6e629b" archimateElement="c57f27d9">
+            <bounds x="89" y="185" width="253" height="105"/>
+            <sourceConnection xsi:type="archimate:Connection" id="59205f61" source="49994351" target="fa0021e4" archimateRelationship="cf374bc8"/>
+            <sourceConnection xsi:type="archimate:Connection" id="0da241c7" fontColor="#ff0000" lineColor="#ff0000" source="49994351" target="1878e579" archimateRelationship="656790f3">
+              <bendpoint startX="-88" startY="-532" endX="28" endY="149"/>
+            </sourceConnection>
+            <sourceConnection xsi:type="archimate:Connection" id="e31465b6" lineColor="#808080" source="49994351" target="b2de6dc4" archimateRelationship="8564de76"/>
+            <child xsi:type="archimate:DiagramObject" id="fa0021e4" targetConnections="59205f61" archimateElement="105af7cc">
+              <bounds x="30" y="55" width="200" height="40"/>
+              <sourceConnection xsi:type="archimate:Connection" id="af02cda8" lineColor="#ff0000" source="fa0021e4" target="0b5af582" archimateRelationship="56138aa1">
+                <bendpoint startX="-57" startY="-175" endX="-80" endY="188"/>
+              </sourceConnection>
+            </child>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="4eff7e66" targetConnections="88a38370 f1143e0b" archimateElement="1136b0dc">
+            <bounds x="10" y="171" width="15" height="15"/>
+            <sourceConnection xsi:type="archimate:Connection" id="389eb27e" source="4eff7e66" target="d79ad3dd" archimateRelationship="520c9d19"/>
+            <sourceConnection xsi:type="archimate:Connection" id="ed6e629b" source="4eff7e66" target="49994351" archimateRelationship="c42bcd2b"/>
+          </child>
+        </child>
+        <child xsi:type="archimate:Note" id="134170eb" fontColor="#ff0000" textAlignment="1">
+          <bounds x="5" y="28" width="141" height="80"/>
+          <content>shares a small number of object instances</content>
+        </child>
+      </child>
+    </element>
+    <element xsi:type="archimate:ArchimateDiagramModel" name="uml" id="61754c3c">
+      <child xsi:type="archimate:Group" id="e6ba0424" name="programm" textAlignment="1">
+        <bounds x="-240" y="198" width="2297" height="154"/>
+        <child xsi:type="archimate:DiagramObject" id="b11a4490" targetConnections="8d58cd12 8cbda09c dc6d278b" archimateElement="9720c34f">
+          <bounds x="94" y="40" width="120" height="55"/>
+        </child>
+      </child>
+      <child xsi:type="archimate:Group" id="bcaabf1e" name="interface flyweight" lineColor="#808080" textAlignment="1">
+        <bounds x="965" y="505" width="465" height="371"/>
+        <child xsi:type="archimate:DiagramObject" id="635af403" targetConnections="c9b3c170 64fe9a69 2ed2d5eb" archimateElement="8d52c876">
+          <bounds x="10" y="25" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="59ca76cf" lineColor="#808080" source="635af403" target="3b31527f" archimateRelationship="2010920f"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="3b31527f" targetConnections="59ca76cf" archimateElement="b850779b">
+          <bounds x="155" y="60" width="168" height="55"/>
+        </child>
+      </child>
+      <child xsi:type="archimate:Group" id="fd688eea" name="class concreteFlyweight" lineColor="#808080" textAlignment="1">
+        <bounds x="965" y="935" width="465" height="723"/>
+        <child xsi:type="archimate:DiagramObject" id="079ada53" archimateElement="a40fad9a">
+          <bounds x="10" y="30" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="eda59a2f" lineColor="#808080" source="079ada53" target="7b5afb32" archimateRelationship="1cb33e48"/>
+          <sourceConnection xsi:type="archimate:Connection" id="c9b3c170" lineColor="#808080" source="079ada53" target="635af403" archimateRelationship="15c1bb67"/>
+          <sourceConnection xsi:type="archimate:Connection" id="b3037148" lineColor="#808080" source="079ada53" target="8313f9db" archimateRelationship="b0713f37"/>
+          <sourceConnection xsi:type="archimate:Connection" id="8d58cd12" source="079ada53" target="b11a4490" archimateRelationship="70b2a6dd">
+            <bendpoint startX="-410" startY="12" endX="711" endY="740"/>
+            <bendpoint startX="-410" startY="-498" endX="711" endY="230"/>
+            <bendpoint startX="-1100" startY="-498" endX="21" endY="230"/>
+          </sourceConnection>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="7b5afb32" targetConnections="eda59a2f" archimateElement="291b5e36">
+          <bounds x="165" y="133" width="206" height="144"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="8313f9db" targetConnections="b3037148" font="1|Segoe UI|9.0|1|WINDOWS|1|-12|0|0|0|700|0|0|0|-52|3|2|1|34|Segoe UI" fontColor="#ff0000" archimateElement="b7692eaf">
+          <bounds x="165" y="65" width="206" height="55"/>
+        </child>
+      </child>
+      <child xsi:type="archimate:Group" id="7f029de5" name="class UnsharedConcreteFlyweight" lineColor="#808080" textAlignment="1">
+        <bounds x="1580" y="935" width="465" height="723"/>
+        <child xsi:type="archimate:DiagramObject" id="eeb68159" archimateElement="e1162153">
+          <bounds x="15" y="30" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="b2c6c02c" lineColor="#808080" source="eeb68159" target="badbb979" archimateRelationship="032dd708"/>
+          <sourceConnection xsi:type="archimate:Connection" id="64fe9a69" lineColor="#808080" source="eeb68159" target="635af403" archimateRelationship="6029a48b">
+            <bendpoint startX="-40" startY="-86" endX="580" endY="350"/>
+            <bendpoint startX="-579" startY="-82" endX="41" endY="353"/>
+          </sourceConnection>
+          <sourceConnection xsi:type="archimate:Connection" id="8cbda09c" source="eeb68159" target="b11a4490" archimateRelationship="5415dc9f">
+            <bendpoint startX="-34" startY="-508" endX="1707" endY="220"/>
+            <bendpoint startX="-1710" startY="-512" endX="31" endY="216"/>
+          </sourceConnection>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="badbb979" targetConnections="b2c6c02c" archimateElement="566e40b1">
+          <bounds x="170" y="135" width="169" height="144"/>
+        </child>
+      </child>
+      <child xsi:type="archimate:Group" id="92e527d0" name="class factory" lineColor="#808080" textAlignment="1">
+        <bounds x="-240" y="505" width="465" height="371"/>
+        <child xsi:type="archimate:DiagramObject" id="fc086b02" archimateElement="e9f3a141">
+          <bounds x="5" y="30" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="f8d3581c" lineColor="#808080" source="fc086b02" target="9e5d3583" archimateRelationship="ef629ab6"/>
+          <sourceConnection xsi:type="archimate:Connection" id="dc6d278b" source="fc086b02" target="b11a4490" archimateRelationship="4a4f094a"/>
+          <sourceConnection xsi:type="archimate:Connection" id="2ed2d5eb" lineColor="#ff0000" source="fc086b02" target="635af403" archimateRelationship="280c6a6a"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="9e5d3583" targetConnections="f8d3581c" font="1|Segoe UI|9.0|1|WINDOWS|1|-12|0|0|0|700|0|0|0|-52|3|2|1|34|Segoe UI" fontColor="#ff0000" archimateElement="45265e04">
+          <bounds x="70" y="180" width="372" height="180"/>
+          <child xsi:type="archimate:Note" id="5d52bb88" fontColor="#ff0000" textAlignment="1">
+            <bounds x="35" y="20" width="261" height="156"/>
+            <content>IF flyweights[key] exists&#xD;
+    {&#xD;
+    return flyweight[key]&#xD;
+    }&#xD;
+else&#xD;
+    {&#xD;
+    create new flyweight&#xD;
+    add to flyweights&#xD;
+    return new flyweight&#xD;
+   }</content>
+          </child>
+        </child>
+        <child xsi:type="archimate:Note" id="79edf8cb" font="1|Segoe UI|12.0|1|WINDOWS|1|-16|0|0|0|700|0|0|0|-52|3|2|1|34|Segoe UI" fontColor="#ff0000" textAlignment="1" fillColor="#d2d7d7" borderType="2">
+          <bounds x="150" y="20" width="106" height="45"/>
+          <content>flyweights</content>
+        </child>
+      </child>
+    </element>
+  </folder>
+</archimate:model>

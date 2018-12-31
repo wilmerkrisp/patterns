@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archimate:model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:archimate="http://www.archimatetool.com/archimate" name="3 domain vision statement" id="d8169a4f" version="4.0.0">
+  <folder name="Strategy" id="d27b2bb4" type="strategy"/>
+  <folder name="Business" id="ee76166d" type="business"/>
+  <folder name="Application" id="1de9a871" type="application"/>
+  <folder name="Technology &amp; Physical" id="d8ab9e1c" type="technology"/>
+  <folder name="Motivation" id="5b446c19" type="motivation"/>
+  <folder name="Implementation &amp; Migration" id="7050c403" type="implementation_migration">
+    <element xsi:type="archimate:Plateau" name="Initial stages of the project " id="6042363e"/>
+    <element xsi:type="archimate:Plateau" name="Further stages of the project" id="7e97e483"/>
+    <element xsi:type="archimate:Deliverable" name="domain vision statement" id="b86a4b6a">
+      <documentation>For new enhancements, a product manager produces an internal press release&#xD;
+announcing the fnished product, listing the benefts the feature brings. </documentation>
+    </element>
+    <element xsi:type="archimate:ImplementationEvent" name="Start of the project" id="1873aee4"/>
+    <element xsi:type="archimate:Deliverable" name="domain models" id="48d66af7"/>
+    <element xsi:type="archimate:Deliverable" name="ubiquitous language" id="7146c320"/>
+    <element xsi:type="archimate:Deliverable" name="diagram" id="542d1749"/>
+    <element xsi:type="archimate:Deliverable" name="Program code" id="8d983c00"/>
+  </folder>
+  <folder name="Other" id="1a0ca285" type="other"/>
+  <folder name="Relations" id="df736097" type="relations">
+    <element xsi:type="archimate:TriggeringRelationship" id="6b280555" source="1873aee4" target="6042363e"/>
+    <element xsi:type="archimate:TriggeringRelationship" id="21b0c812" source="6042363e" target="7e97e483"/>
+    <element xsi:type="archimate:RealizationRelationship" id="ec32e75a" source="b86a4b6a" target="6042363e"/>
+    <element xsi:type="archimate:CompositionRelationship" id="a90a96e1" source="48d66af7" target="7146c320"/>
+    <element xsi:type="archimate:CompositionRelationship" id="f44f3f37" source="48d66af7" target="542d1749"/>
+    <element xsi:type="archimate:RealizationRelationship" id="f99a4acf" source="48d66af7" target="7e97e483"/>
+    <element xsi:type="archimate:AssociationRelationship" id="b78231e7" source="b86a4b6a" target="48d66af7"/>
+  </folder>
+  <folder name="Views" id="f413c49a" type="diagrams">
+    <element xsi:type="archimate:ArchimateDiagramModel" name="domain vision statement" id="3aff592a">
+      <child xsi:type="archimate:DiagramObject" id="bbe85a70" targetConnections="ffab6807 6695778a" archimateElement="6042363e">
+        <bounds x="275" y="315" width="306" height="140"/>
+        <sourceConnection xsi:type="archimate:Connection" id="e7b2e35a" source="bbe85a70" target="6b86b41c" archimateRelationship="21b0c812"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="6b86b41c" targetConnections="e7b2e35a 38f85bf6" archimateElement="7e97e483">
+        <bounds x="765" y="315" width="306" height="140"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="1caf1c15" fontColor="#ff0000" archimateElement="b86a4b6a">
+        <bounds x="375" y="180" width="120" height="55"/>
+        <sourceConnection xsi:type="archimate:Connection" id="6695778a" source="1caf1c15" target="bbe85a70" archimateRelationship="ec32e75a"/>
+        <sourceConnection xsi:type="archimate:Connection" id="db5105bd" source="1caf1c15" target="efe234a4" archimateRelationship="b78231e7"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="49e7bcc4" archimateElement="1873aee4">
+        <bounds x="40" y="357" width="120" height="55"/>
+        <sourceConnection xsi:type="archimate:Connection" id="ffab6807" source="49e7bcc4" target="bbe85a70" archimateRelationship="6b280555"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="efe234a4" targetConnections="db5105bd" archimateElement="48d66af7">
+        <bounds x="765" y="135" width="306" height="140"/>
+        <sourceConnection xsi:type="archimate:Connection" id="a6050a5c" source="efe234a4" target="cc85c4bd" archimateRelationship="a90a96e1"/>
+        <sourceConnection xsi:type="archimate:Connection" id="21c8ba6e" source="efe234a4" target="fe61458e" archimateRelationship="f44f3f37"/>
+        <sourceConnection xsi:type="archimate:Connection" id="38f85bf6" source="efe234a4" target="6b86b41c" archimateRelationship="f99a4acf"/>
+        <child xsi:type="archimate:DiagramObject" id="cc85c4bd" targetConnections="a6050a5c" archimateElement="7146c320">
+          <bounds x="15" y="45" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="fe61458e" targetConnections="21c8ba6e" archimateElement="542d1749">
+          <bounds x="165" y="45" width="120" height="55"/>
+        </child>
+      </child>
+      <child xsi:type="archimate:Note" id="0e5404de" fontColor="#ff0000" textAlignment="1">
+        <bounds x="195" y="55" width="393" height="106"/>
+        <content>This document is a guideline that sets the direction before the development of the model.&#xD;
+Defines the core domain in the most general terms. &#xD;
+Draw out the reason you are opting to build rather than buy a product.&#xD;
+How is this different from what has been done before?&#xD;
+Announcing the fnished product, listing the benefts the feature bring.</content>
+      </child>
+    </element>
+  </folder>
+</archimate:model>

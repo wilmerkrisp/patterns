@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archimate:model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:archimate="http://www.archimatetool.com/archimate" name="4 knowledge level" id="9df82eac" version="4.0.0">
+  <folder name="Strategy" id="b66a3917" type="strategy"/>
+  <folder name="Business" id="8daaffa8" type="business"/>
+  <folder name="Application" id="1988b23e" type="application"/>
+  <folder name="Technology &amp; Physical" id="7b6675cb" type="technology"/>
+  <folder name="Motivation" id="0fc27029" type="motivation"/>
+  <folder name="Implementation &amp; Migration" id="5dcf8d80" type="implementation_migration"/>
+  <folder name="Other" id="b55fec16" type="other">
+    <element xsi:type="archimate:Grouping" name="Metainformation about something" id="5d857c27-5950-4072-9398-42e8f7b3ea24">
+      <documentation>УРОВЕНЬ ЗНАНИЙ представляет собою применение к уровню предметной области шаб­  OHa REFLECTION (ОТРАЖЕI-IИЕ), который используется во многих программных архитек­ lурах и технических инфраструктурах.</documentation>
+    </element>
+    <element xsi:type="archimate:Grouping" name="Bounded context 2" id="e659bef5-838c-41ac-b0f2-e32d06f39ce6"/>
+    <element xsi:type="archimate:Grouping" name="Bounded context 6" id="88e80b4c-62c1-44f5-a61f-13b81d9517ca"/>
+    <element xsi:type="archimate:Grouping" name="something" id="34603edc-04fc-4e4c-824d-fa88968fc734"/>
+    <element xsi:type="archimate:Grouping" name="Bounded context 3" id="46192b99-ad32-4444-996f-eea94090ebad"/>
+  </folder>
+  <folder name="Relations" id="6694b841" type="relations">
+    <element xsi:type="archimate:AssociationRelationship" id="08c8f03a-4f12-4c62-83d5-50a6299d75f2" source="5d857c27-5950-4072-9398-42e8f7b3ea24" target="88e80b4c-62c1-44f5-a61f-13b81d9517ca"/>
+    <element xsi:type="archimate:AssociationRelationship" id="a6513634-3499-4c14-810a-941d32d30767" source="88e80b4c-62c1-44f5-a61f-13b81d9517ca" target="e659bef5-838c-41ac-b0f2-e32d06f39ce6"/>
+    <element xsi:type="archimate:AssociationRelationship" id="8fa36073-4b61-40e6-ba61-127b6c7881a1" source="88e80b4c-62c1-44f5-a61f-13b81d9517ca" target="46192b99-ad32-4444-996f-eea94090ebad"/>
+    <element xsi:type="archimate:AssociationRelationship" id="2b1fb895-32ed-47e4-ba86-65fa80024bb6" source="88e80b4c-62c1-44f5-a61f-13b81d9517ca" target="34603edc-04fc-4e4c-824d-fa88968fc734"/>
+    <element xsi:type="archimate:AssociationRelationship" id="f45c135e-dc97-4d38-82c1-89b4e4a11b9b" source="34603edc-04fc-4e4c-824d-fa88968fc734" target="5d857c27-5950-4072-9398-42e8f7b3ea24"/>
+  </folder>
+  <folder name="Views" id="add4b22a" type="diagrams">
+    <element xsi:type="archimate:ArchimateDiagramModel" name="knowledge level" id="17b21562">
+      <child xsi:type="archimate:Group" id="1e1ce4a0-753a-4796-9784-03e7e39cd510" name="knowledge level (meta level)" fontColor="#ff0000" textAlignment="1" fillColor="#d2d7d7">
+        <bounds x="35" y="55" width="581" height="140"/>
+        <child xsi:type="archimate:DiagramObject" id="ce0f5fab-eec3-4b01-a7de-22d9270ec59a" targetConnections="f128efde-a0ba-495e-94df-f3da64755ecc" archimateElement="5d857c27-5950-4072-9398-42e8f7b3ea24">
+          <bounds x="170" y="50" width="211" height="55"/>
+        </child>
+      </child>
+      <child xsi:type="archimate:Group" id="ceadaf84-c911-4b1f-b772-d84f70d82e65" name="operations level (base level)" fontColor="#ff0000" textAlignment="1" fillColor="#d2d7d7">
+        <bounds x="35" y="215" width="581" height="140"/>
+        <child xsi:type="archimate:DiagramObject" id="03457eb0-34a7-4eb4-93ee-b048168112b8" archimateElement="34603edc-04fc-4e4c-824d-fa88968fc734">
+          <bounds x="170" y="60" width="211" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="f128efde-a0ba-495e-94df-f3da64755ecc" source="03457eb0-34a7-4eb4-93ee-b048168112b8" target="ce0f5fab-eec3-4b01-a7de-22d9270ec59a" archimateRelationship="f45c135e-dc97-4d38-82c1-89b4e4a11b9b"/>
+        </child>
+      </child>
+    </element>
+  </folder>
+</archimate:model>

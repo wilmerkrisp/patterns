@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archimate:model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:archimate="http://www.archimatetool.com/archimate" name="10 Layered Architecture for Information Systems" id="2ecbde29-8836-4cae-b1d8-45eb8f1b8421" version="4.0.0">
+  <folder name="Strategy" id="ade92dc3-cfc8-4cbc-a6d1-53fe7e701f11" type="strategy"/>
+  <folder name="Business" id="07aaa762-69f5-4e65-a86d-e3d19738d2f2" type="business"/>
+  <folder name="Application" id="2a3d48c5-b43d-40e9-baf3-c1d4f4896f87" type="application">
+    <element xsi:type="archimate:ApplicationComponent" name="database" id="08905d9a"/>
+    <element xsi:type="archimate:ApplicationComponent" name="application" id="4432cfe4"/>
+    <element xsi:type="archimate:ApplicationComponent" name="application" id="2ba01a1c"/>
+    <element xsi:type="archimate:ApplicationComponent" name="database" id="7e58f544"/>
+    <element xsi:type="archimate:ApplicationComponent" name="domain" id="6ca406bb"/>
+    <element xsi:type="archimate:ApplicationComponent" name="presentation" id="c7e8a0b6"/>
+    <element xsi:type="archimate:ApplicationComponent" name="facades" id="8cb0ea70">
+      <documentation>single point of refer-ence for&#xD;
+client/server interaction</documentation>
+    </element>
+    <element xsi:type="archimate:ApplicationComponent" name="domain model" id="62bc496e"/>
+    <element xsi:type="archimate:ApplicationComponent" name="data source" id="959e1251"/>
+    <element xsi:type="archimate:ApplicationComponent" name="domain model " id="dda6078c"/>
+    <element xsi:type="archimate:ApplicationComponent" name="data source " id="47f1f1cb"/>
+    <element xsi:type="archimate:ApplicationComponent" name="facades" id="526224ba">
+      <documentation>his facade selects and simplifies the object&#xD;
+structure and performs type conversion to the simpler external type system</documentation>
+    </element>
+  </folder>
+  <folder name="Technology &amp; Physical" id="798849b6-2e2c-4b6b-8a96-18fcd8a9bd6b" type="technology">
+    <element xsi:type="archimate:Device" name="server" id="f12d6043"/>
+    <element xsi:type="archimate:Device" name="client" id="4f178ad0"/>
+    <element xsi:type="archimate:Node" name="clent" id="ed26b5b2">
+      <documentation>desktop machines</documentation>
+    </element>
+    <element xsi:type="archimate:Node" name="server" id="a5b0c6cd"/>
+    <element xsi:type="archimate:Node" name="clent " id="a4174e8a"/>
+    <element xsi:type="archimate:Node" name="server " id="77ac56ea"/>
+    <element xsi:type="archimate:Node" name="client or server" id="06d39935"/>
+  </folder>
+  <folder name="Motivation" id="cc1f739b-93dc-4051-93c4-9efa8211da42" type="motivation"/>
+  <folder name="Implementation &amp; Migration" id="fa3efae0-03b0-4a4c-97a4-dbdd5534b90e" type="implementation_migration"/>
+  <folder name="Other" id="997c4dbf-a2a7-49ea-bd35-62896d682a6b" type="other"/>
+  <folder name="Relations" id="b375b75f-18ac-4d7a-a81c-6b4ac4285e30" type="relations">
+    <element xsi:type="archimate:ServingRelationship" id="51a91f05" source="a5b0c6cd" target="08905d9a"/>
+    <element xsi:type="archimate:ServingRelationship" id="85fa3716" source="ed26b5b2" target="4432cfe4"/>
+    <element xsi:type="archimate:AssociationRelationship" id="d3999f30" source="4432cfe4" target="08905d9a"/>
+    <element xsi:type="archimate:ServingRelationship" id="1366a2a9" source="77ac56ea" target="7e58f544"/>
+    <element xsi:type="archimate:AssociationRelationship" id="84065405" source="2ba01a1c" target="7e58f544"/>
+    <element xsi:type="archimate:ServingRelationship" id="12aeb06a" source="a4174e8a" target="2ba01a1c"/>
+    <element xsi:type="archimate:ServingRelationship" id="9bb177bd" source="06d39935" target="6ca406bb"/>
+    <element xsi:type="archimate:AssociationRelationship" id="5d812c69" source="c7e8a0b6" target="8cb0ea70"/>
+    <element xsi:type="archimate:AssociationRelationship" id="73171df3" source="8cb0ea70" target="62bc496e"/>
+    <element xsi:type="archimate:AssociationRelationship" id="0e914055" source="62bc496e" target="959e1251"/>
+    <element xsi:type="archimate:AssociationRelationship" id="330608ee" source="dda6078c" target="526224ba"/>
+    <element xsi:type="archimate:AssociationRelationship" id="d7519cf8" source="526224ba" target="47f1f1cb"/>
+  </folder>
+  <folder name="Views" id="9e055545-c80e-491a-9b29-908df81d3c92" type="diagrams">
+    <element xsi:type="archimate:ArchimateDiagramModel" name="Layered Architecture for Information Systems" id="ee789949-b48e-44a3-9ab0-ca81647656c2"/>
+    <element xsi:type="archimate:ArchimateDiagramModel" name="1 Two-Tier Architecture" id="2855e7c0-d41a-41ca-ae71-e617efa7846c">
+      <child xsi:type="archimate:Group" id="41852c46" name="client tier" textAlignment="1">
+        <bounds x="170" y="350" width="206" height="271"/>
+        <child xsi:type="archimate:DiagramObject" id="65871500" targetConnections="46189a4c" archimateElement="4432cfe4">
+          <bounds x="30" y="40" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="2c8629d0" source="65871500" target="7fd4a829" archimateRelationship="d3999f30"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="cc27a7d9" archimateElement="ed26b5b2">
+          <bounds x="30" y="180" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="46189a4c" source="cc27a7d9" target="65871500" archimateRelationship="85fa3716"/>
+        </child>
+      </child>
+      <child xsi:type="archimate:Group" id="0c42074f" name="server tier" textAlignment="1">
+        <bounds x="425" y="350" width="206" height="271"/>
+        <child xsi:type="archimate:DiagramObject" id="7fd4a829" targetConnections="06eaaf3c 2c8629d0" archimateElement="08905d9a">
+          <bounds x="45" y="45" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="e158b187" archimateElement="a5b0c6cd">
+          <bounds x="45" y="180" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="06eaaf3c" source="e158b187" target="7fd4a829" archimateRelationship="51a91f05"/>
+        </child>
+      </child>
+      <child xsi:type="archimate:Note" id="f13d4657" fontColor="#ff0000" textAlignment="1">
+        <bounds x="170" y="225" width="185" height="80"/>
+        <content>two-tier architecture</content>
+      </child>
+    </element>
+    <element xsi:type="archimate:ArchimateDiagramModel" name="2 Three-Tier Architecture" id="1b3e8e2d-39b1-464c-866c-1c33c4bd6168">
+      <child xsi:type="archimate:Note" id="dd989d1b" fontColor="#ff0000" textAlignment="1">
+        <bounds x="243" y="344" width="185" height="80"/>
+        <content>three-tier architecture</content>
+      </child>
+      <child xsi:type="archimate:Group" id="f88fffde" name="external schema" textAlignment="1">
+        <bounds x="243" y="449" width="206" height="271"/>
+        <child xsi:type="archimate:DiagramObject" id="f887cc0c" targetConnections="ff61937e" archimateElement="2ba01a1c">
+          <bounds x="30" y="40" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="280c49ad" archimateElement="a4174e8a">
+          <bounds x="30" y="180" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="ff61937e" source="280c49ad" target="f887cc0c" archimateRelationship="12aeb06a"/>
+        </child>
+      </child>
+      <child xsi:type="archimate:Group" id="27fde0c4" name="internal schema (storage)" textAlignment="1">
+        <bounds x="733" y="449" width="206" height="271"/>
+        <child xsi:type="archimate:DiagramObject" id="df8a4037" targetConnections="4c8aa2c4" archimateElement="7e58f544">
+          <bounds x="45" y="45" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="c45eeed5" archimateElement="77ac56ea">
+          <bounds x="45" y="180" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="4c8aa2c4" source="c45eeed5" target="df8a4037" archimateRelationship="1366a2a9"/>
+        </child>
+      </child>
+      <child xsi:type="archimate:Group" id="df2104a0" name="conceptual schema" textAlignment="1">
+        <bounds x="493" y="449" width="206" height="271"/>
+        <child xsi:type="archimate:DiagramObject" id="8674f9b1" targetConnections="da0db959" archimateElement="6ca406bb">
+          <bounds x="45" y="45" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="49b6e1cc" archimateElement="06d39935">
+          <bounds x="45" y="180" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="da0db959" source="49b6e1cc" target="8674f9b1" archimateRelationship="9bb177bd"/>
+        </child>
+      </child>
+    </element>
+    <element xsi:type="archimate:ArchimateDiagramModel" name="3 Presentation and Application Logic" id="b98fabfe-6dc1-4908-996a-112af9f3d206">
+      <child xsi:type="archimate:Group" id="8455ac72" name="presentation tier" textAlignment="1">
+        <bounds x="392" y="106" width="400" height="140"/>
+        <child xsi:type="archimate:DiagramObject" id="cdea966e" archimateElement="c7e8a0b6">
+          <bounds x="50" y="50" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="a1831e77" source="cdea966e" target="8d833c22" archimateRelationship="5d812c69"/>
+        </child>
+        <documentation>The&#xD;
+pre-sentation tier is responsible for user interface only&#xD;
+- It handles windows,&#xD;
+menus, fonts, colors, and all positioning on screen or pape</documentation>
+      </child>
+      <child xsi:type="archimate:Group" id="fada7082" name="application logic tier " textAlignment="1">
+        <bounds x="392" y="270" width="400" height="140"/>
+        <child xsi:type="archimate:DiagramObject" id="8d833c22" targetConnections="a1831e77" archimateElement="8cb0ea70">
+          <bounds x="50" y="55" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="20339dec" source="8d833c22" target="c7ece81c" archimateRelationship="73171df3"/>
+        </child>
+        <documentation>It is responsible for all accesses to the domain tier and&#xD;
+any processing other than user interface processing</documentation>
+      </child>
+      <child xsi:type="archimate:Group" id="b92c2949" name="domain tier" textAlignment="1">
+        <bounds x="392" y="430" width="400" height="140"/>
+        <child xsi:type="archimate:DiagramObject" id="c7ece81c" targetConnections="20339dec" archimateElement="62bc496e">
+          <bounds x="55" y="60" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="11b807b6" source="c7ece81c" target="45aa4081" archimateRelationship="0e914055"/>
+        </child>
+      </child>
+      <child xsi:type="archimate:Group" id="aff84ddb" name="data source tier" textAlignment="1">
+        <bounds x="392" y="595" width="400" height="140"/>
+        <child xsi:type="archimate:DiagramObject" id="45aa4081" targetConnections="11b807b6" archimateElement="959e1251">
+          <bounds x="60" y="55" width="120" height="55"/>
+        </child>
+      </child>
+    </element>
+    <element xsi:type="archimate:ArchimateDiagramModel" name="4 Database Interaction " id="7f7e5591-2482-4d94-9b95-d1ac43b4b562">
+      <child xsi:type="archimate:Group" id="3959f3b8" name="domain tier" textAlignment="1">
+        <bounds x="175" y="370" width="400" height="140"/>
+        <child xsi:type="archimate:DiagramObject" id="a2c02588" archimateElement="dda6078c">
+          <bounds x="55" y="60" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="7c613d7b" source="a2c02588" target="e278018d" archimateRelationship="330608ee"/>
+        </child>
+      </child>
+      <child xsi:type="archimate:Group" id="35ad8663" name="data source tier" textAlignment="1">
+        <bounds x="175" y="710" width="400" height="140"/>
+        <child xsi:type="archimate:DiagramObject" id="d5a3ea4e" targetConnections="53c1ed1b" archimateElement="47f1f1cb">
+          <bounds x="60" y="55" width="120" height="55"/>
+        </child>
+      </child>
+      <child xsi:type="archimate:Group" id="9c22852a" name="database interface tier" textAlignment="1">
+        <bounds x="175" y="545" width="400" height="140"/>
+        <child xsi:type="archimate:DiagramObject" id="e278018d" targetConnections="7c613d7b" archimateElement="526224ba">
+          <bounds x="55" y="60" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="53c1ed1b" source="e278018d" target="d5a3ea4e" archimateRelationship="d7519cf8"/>
+        </child>
+        <documentation> database interface tier,&#xD;
+which is responsible for loading the domain tier with data from the database and&#xD;
+for updating the database when the domain changes. </documentation>
+      </child>
+      <child xsi:type="archimate:Note" id="8e558744" fontColor="#ff0000" textAlignment="1">
+        <bounds x="-35" y="545" width="185" height="80"/>
+        <content> separating the data&#xD;
+interface from the data model</content>
+      </child>
+    </element>
+  </folder>
+</archimate:model>

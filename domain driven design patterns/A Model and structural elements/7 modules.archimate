@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archimate:model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:archimate="http://www.archimatetool.com/archimate" name="7 modules " id="0d52e35d" version="4.0.0">
+  <folder name="Strategy" id="31695526" type="strategy"/>
+  <folder name="Business" id="7e7dc439" type="business"/>
+  <folder name="Application" id="078d7cc3" type="application">
+    <element xsi:type="archimate:ApplicationService" name="Service" id="e763f461"/>
+    <element xsi:type="archimate:ApplicationComponent" name="class" id="62bef46a"/>
+    <element xsi:type="archimate:ApplicationComponent" name="value-object" id="29319dba"/>
+    <element xsi:type="archimate:ApplicationService" name="service" id="b7e33c67"/>
+  </folder>
+  <folder name="Technology &amp; Physical" id="41f658b3" type="technology"/>
+  <folder name="Motivation" id="22647e58" type="motivation">
+    <element xsi:type="archimate:Requirement" name="stateless " id="ca751b2a"/>
+    <element xsi:type="archimate:Meaning" name="low coupling between modules" id="c3f8d8d3">
+      <documentation>Человек не может одновременно удерживать в уме слишком MHoro предметов (отсюда низкая внешняя зависимость)&#xD;
+&#xD;
+- нельзя разделять до бесконечности - у человеческого ума есть свои пределы, до&#xD;
+которых он еще способен соединять разделенное; если среда выходит за эти пределы, разработчики предметной области теряют способность расчленять модель&#xD;
+на осмысленные фрагменты.</documentation>
+    </element>
+    <element xsi:type="archimate:Meaning" name="high cohesion inside module" id="b35de0f4">
+      <documentation>А плохо связанные между собой фраrменты информации так же трудно понять, как&#xD;
+неструктурированную &quot;кашу&quot; из идей (отсюда высокая внутренняя связность)</documentation>
+    </element>
+    <element xsi:type="archimate:Meaning" name="high cohesion inside module" id="7f52c402">
+      <documentation>А плохо связанные между собой фраrменты информации так же трудно понять, как&#xD;
+неструктурированную &quot;кашу&quot; из идей (отсюда высокая внутренняя связность)</documentation>
+    </element>
+    <element xsi:type="archimate:Meaning" name="high cohesion inside module" id="ebe5acf0">
+      <documentation>А плохо связанные между собой фраrменты информации так же трудно понять, как&#xD;
+неструктурированную &quot;кашу&quot; из идей (отсюда высокая внутренняя связность)</documentation>
+    </element>
+  </folder>
+  <folder name="Implementation &amp; Migration" id="3c3ba046" type="implementation_migration"/>
+  <folder name="Other" id="73660a1a" type="other">
+    <element xsi:type="archimate:Grouping" name="module 1" id="c5e397b6">
+      <documentation>Division of the program into modules, also allows developers to better understand the work of the program, before they look inside the modules.</documentation>
+    </element>
+    <element xsi:type="archimate:Grouping" name="module 2" id="4473aae1"/>
+    <element xsi:type="archimate:Grouping" name="module 3" id="20b66991"/>
+  </folder>
+  <folder name="Relations" id="0fa4bbf5" type="relations">
+    <element xsi:type="archimate:AssociationRelationship" id="56e43088" source="ca751b2a" target="e763f461"/>
+    <element xsi:type="archimate:CompositionRelationship" id="6c8db3e7" source="c5e397b6" target="62bef46a"/>
+    <element xsi:type="archimate:CompositionRelationship" id="1793af3f" source="c5e397b6" target="29319dba"/>
+    <element xsi:type="archimate:CompositionRelationship" id="24ce1e2d" source="c5e397b6" target="b7e33c67"/>
+    <element xsi:type="archimate:AssociationRelationship" id="c94de81e" source="4473aae1" target="c3f8d8d3"/>
+    <element xsi:type="archimate:AssociationRelationship" id="83f89c6e" source="c5e397b6" target="c3f8d8d3"/>
+    <element xsi:type="archimate:AssociationRelationship" id="b5ef9141" source="20b66991" target="c3f8d8d3"/>
+    <element xsi:type="archimate:CompositionRelationship" id="b5088e96" source="c5e397b6" target="b35de0f4"/>
+    <element xsi:type="archimate:CompositionRelationship" id="8333f9c6" source="20b66991" target="7f52c402"/>
+    <element xsi:type="archimate:CompositionRelationship" id="3c69008b" source="4473aae1" target="ebe5acf0"/>
+  </folder>
+  <folder name="Views" id="323574ed" type="diagrams">
+    <element xsi:type="archimate:ArchimateDiagramModel" name="modules " id="24934885">
+      <child xsi:type="archimate:Group" id="2ccd2c0e" name="Domain model (information systems: application layer)" textAlignment="1">
+        <bounds x="90" y="80" width="1251" height="710"/>
+        <child xsi:type="archimate:Note" id="8513fbb5" fontColor="#ff0000" textAlignment="1">
+          <bounds x="105" y="100" width="217" height="140"/>
+          <content>In order to reduce the complexity of the domain model, the program is divided into modules.&#xD;
+</content>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="9ca3ef3f" archimateElement="c5e397b6">
+          <bounds x="365" y="100" width="400" height="140"/>
+          <sourceConnection xsi:type="archimate:Connection" id="b76699e4" source="9ca3ef3f" target="e0a5e020" archimateRelationship="83f89c6e"/>
+          <sourceConnection xsi:type="archimate:Connection" id="3b44b535" source="9ca3ef3f" target="f29df207" archimateRelationship="b5088e96"/>
+          <child xsi:type="archimate:DiagramObject" id="f29df207" targetConnections="3b44b535" archimateElement="b35de0f4">
+            <bounds x="130" y="50" width="120" height="55"/>
+          </child>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="3ba9e432" archimateElement="4473aae1">
+          <bounds x="65" y="370" width="400" height="140"/>
+          <sourceConnection xsi:type="archimate:Connection" id="8ca5eb33" source="3ba9e432" target="e0a5e020" archimateRelationship="c94de81e"/>
+          <sourceConnection xsi:type="archimate:Connection" id="8d94557b" source="3ba9e432" target="c46234d4" archimateRelationship="3c69008b"/>
+          <child xsi:type="archimate:DiagramObject" id="c46234d4" targetConnections="8d94557b" archimateElement="ebe5acf0">
+            <bounds x="130" y="50" width="120" height="55"/>
+          </child>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="e0a5e020" targetConnections="b76699e4 8ca5eb33 ca066ea7" archimateElement="c3f8d8d3">
+          <bounds x="565" y="385" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="216dd33d" archimateElement="20b66991">
+          <bounds x="740" y="430" width="400" height="140"/>
+          <sourceConnection xsi:type="archimate:Connection" id="ca066ea7" source="216dd33d" target="e0a5e020" archimateRelationship="b5ef9141"/>
+          <sourceConnection xsi:type="archimate:Connection" id="ba2a252a" source="216dd33d" target="ee778c3c" archimateRelationship="8333f9c6"/>
+          <child xsi:type="archimate:DiagramObject" id="ee778c3c" targetConnections="ba2a252a" archimateElement="7f52c402">
+            <bounds x="135" y="55" width="120" height="55"/>
+          </child>
+        </child>
+      </child>
+    </element>
+  </folder>
+</archimate:model>

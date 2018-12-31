@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archimate:model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:archimate="http://www.archimatetool.com/archimate" name="1 Table Module" id="c2873127" version="4.0.0">
+  <folder name="Strategy" id="008185c1" type="strategy"/>
+  <folder name="Business" id="119cb4a6" type="business"/>
+  <folder name="Application" id="5919dce4" type="application">
+    <element xsi:type="archimate:DataObject" name="data set 1" id="057cbef6"/>
+    <element xsi:type="archimate:DataObject" name="data set 1 (copy)" id="67c68909"/>
+    <element xsi:type="archimate:DataObject" name="data set 2" id="74f7a027"/>
+    <element xsi:type="archimate:DataObject" name="data set 3" id="857ad636"/>
+    <element xsi:type="archimate:DataObject" name="data set 3" id="b2f5868b"/>
+    <element xsi:type="archimate:DataObject" name="data set 2" id="7ee6e9f1"/>
+    <element xsi:type="archimate:DataObject" name="data set 1" id="d79d3124"/>
+    <element xsi:type="archimate:ApplicationComponent" name="class table module 1" id="fad4fd47"/>
+    <element xsi:type="archimate:ApplicationComponent" name="class table module 2" id="10b470c2"/>
+    <element xsi:type="archimate:ApplicationComponent" name="class table module 3" id="f523767e"/>
+    <element xsi:type="archimate:DataObject" name="entity 1" id="0ce78f36"/>
+    <element xsi:type="archimate:DataObject" name="entity 2" id="598fda57"/>
+    <element xsi:type="archimate:DataObject" name="entity 3" id="2ea59500"/>
+  </folder>
+  <folder name="Technology &amp; Physical" id="50716e50" type="technology"/>
+  <folder name="Motivation" id="859d8181" type="motivation"/>
+  <folder name="Implementation &amp; Migration" id="dd108345" type="implementation_migration"/>
+  <folder name="Other" id="e2ac7319" type="other">
+    <element xsi:type="archimate:Grouping" name="class table module 1" id="62dbc3f8"/>
+    <element xsi:type="archimate:Grouping" name="class table module 2" id="8071cd9f"/>
+    <element xsi:type="archimate:Grouping" name="class table module 3" id="9a3202fa"/>
+    <element xsi:type="archimate:Grouping" name="entity 6" id="a4dc51a1"/>
+    <element xsi:type="archimate:Grouping" name="entity 4" id="199f895d"/>
+    <element xsi:type="archimate:Grouping" name="entity 5" id="9716e9a7"/>
+    <element xsi:type="archimate:Grouping" name="some presenter classes" id="d990f668"/>
+  </folder>
+  <folder name="Relations" id="b3ab42ec" type="relations">
+    <element xsi:type="archimate:AssociationRelationship" id="808445e8" source="10b470c2" target="598fda57"/>
+    <element xsi:type="archimate:AssociationRelationship" id="a48b8a8f" source="9716e9a7" target="a4dc51a1"/>
+    <element xsi:type="archimate:AssociationRelationship" id="3b96cf32" source="62dbc3f8" target="8071cd9f"/>
+    <element xsi:type="archimate:AssociationRelationship" id="25228c1c" source="fad4fd47" target="0ce78f36"/>
+    <element xsi:type="archimate:AssociationRelationship" id="c5f217ae" source="62dbc3f8" target="9a3202fa"/>
+    <element xsi:type="archimate:AssociationRelationship" id="a2f56f78" source="8071cd9f" target="9a3202fa"/>
+    <element xsi:type="archimate:AssociationRelationship" id="c0ce58c4" source="199f895d" target="a4dc51a1"/>
+    <element xsi:type="archimate:AssociationRelationship" id="8b2eee3e" source="f523767e" target="2ea59500"/>
+    <element xsi:type="archimate:AssociationRelationship" id="1bb0bb5e" source="d990f668" target="fad4fd47"/>
+    <element xsi:type="archimate:AssociationRelationship" id="d4a4560c" source="d990f668" target="10b470c2"/>
+    <element xsi:type="archimate:AssociationRelationship" id="9a2c036e" source="d990f668" target="f523767e"/>
+    <element xsi:type="archimate:AssociationRelationship" id="7988c0d4" source="0ce78f36" target="598fda57"/>
+    <element xsi:type="archimate:AssociationRelationship" id="d9acaafb" source="598fda57" target="2ea59500"/>
+  </folder>
+  <folder name="Views" id="abcba43c" type="diagrams">
+    <element xsi:type="archimate:ArchimateDiagramModel" name="Table Module" id="d8e651f0">
+      <child xsi:type="archimate:Group" id="a12f60fd" name="presentation" textAlignment="1" fillColor="#c7e1e2">
+        <bounds x="237" y="205" width="1966" height="791"/>
+        <child xsi:type="archimate:DiagramObject" id="034ef35e" archimateElement="d990f668">
+          <bounds x="525" y="520" width="365" height="125"/>
+          <sourceConnection xsi:type="archimate:Connection" id="f9316983" source="034ef35e" target="7317c495" archimateRelationship="1bb0bb5e">
+            <bendpoint startX="-140" startY="352" endX="-8" endY="-317"/>
+          </sourceConnection>
+          <sourceConnection xsi:type="archimate:Connection" id="1e3502f6" source="034ef35e" target="ff3adecc" archimateRelationship="d4a4560c">
+            <bendpoint startX="76" startY="336" endX="-21" endY="-298"/>
+          </sourceConnection>
+          <sourceConnection xsi:type="archimate:Connection" id="d0003c4f" source="034ef35e" target="166b5a0d" archimateRelationship="9a2c036e">
+            <bendpoint startX="176" startY="401" endX="-6" endY="-359"/>
+          </sourceConnection>
+        </child>
+      </child>
+      <child xsi:type="archimate:Group" id="df08444d" name="domain" textAlignment="1" fillColor="#cedbd3">
+        <bounds x="237" y="1131" width="1966" height="791"/>
+        <child xsi:type="archimate:Group" id="da57731f" name="object model" textAlignment="1">
+          <bounds x="370" y="215" width="1156" height="456"/>
+          <child xsi:type="archimate:Note" id="e543b60b" fontColor="#ff0000" textAlignment="1">
+            <bounds x="555" y="186" width="446" height="74"/>
+            <content>object model&#xD;
+- each class has some business logic&#xD;
+- There are no obvious links between the classes (implicit throught database)</content>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="7317c495" targetConnections="f9316983" archimateElement="fad4fd47">
+            <bounds x="145" y="259" width="120" height="55"/>
+            <sourceConnection xsi:type="archimate:Connection" id="d7567ed9" source="7317c495" target="adb630f6" archimateRelationship="25228c1c"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="ff3adecc" targetConnections="1e3502f6" archimateElement="10b470c2">
+            <bounds x="375" y="210" width="120" height="55"/>
+            <sourceConnection xsi:type="archimate:Connection" id="8de3bd6b" source="ff3adecc" target="be599fd1" archimateRelationship="808445e8"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="166b5a0d" targetConnections="d0003c4f" archimateElement="f523767e">
+            <bounds x="460" y="342" width="120" height="55"/>
+            <sourceConnection xsi:type="archimate:Connection" id="9f55aecd" source="166b5a0d" target="092a7205" archimateRelationship="8b2eee3e"/>
+          </child>
+          <documentation>gang of four classic design pattern</documentation>
+        </child>
+      </child>
+      <child xsi:type="archimate:Group" id="70699ad5" name="data source" textAlignment="1" fillColor="#d8d1d7">
+        <bounds x="237" y="2055" width="1966" height="791"/>
+        <child xsi:type="archimate:Group" id="f5f929f6" name="database" lineColor="#c0c0c0" textAlignment="1" fillColor="#bbaeb9">
+          <bounds x="390" y="270" width="1156" height="456"/>
+          <child xsi:type="archimate:Note" id="d9d321f8" fontColor="#ff0000" textAlignment="1">
+            <bounds x="635" y="55" width="185" height="80"/>
+            <content>entity -relationship model</content>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="adb630f6" targetConnections="d7567ed9" archimateElement="0ce78f36">
+            <bounds x="100" y="223" width="120" height="55"/>
+            <sourceConnection xsi:type="archimate:Connection" id="c0f341b1" lineColor="#c0c0c0" source="adb630f6" target="be599fd1" archimateRelationship="7988c0d4"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="be599fd1" targetConnections="c0f341b1 8de3bd6b" archimateElement="598fda57">
+            <bounds x="305" y="169" width="120" height="55"/>
+            <sourceConnection xsi:type="archimate:Connection" id="73ee1d23" lineColor="#c0c0c0" source="be599fd1" target="092a7205" archimateRelationship="d9acaafb"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="092a7205" targetConnections="73ee1d23 9f55aecd" archimateElement="2ea59500">
+            <bounds x="410" y="285" width="120" height="55"/>
+          </child>
+          <documentation>gang of four classic design pattern</documentation>
+        </child>
+        <child xsi:type="archimate:Group" id="ce2696fd" name="some data source classes, through which to access the database" textAlignment="1" fillColor="#d2d7d7">
+          <bounds x="390" y="80" width="1156" height="140"/>
+          <documentation>Patterns of Enterprise Application Architecture</documentation>
+        </child>
+        <child xsi:type="archimate:Note" id="44617109" font="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|-52|3|2|1|34|Segoe UI" fontColor="#ff0000" textAlignment="1" textPosition="1">
+          <bounds x="15" y="20" width="385" height="90"/>
+          <content>- data source layer driven development of domain layer classes&#xD;
+- each table in database has its own class 'table module'&#xD;
+- the exchange between the layers is through the object 'data set'</content>
+        </child>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="480d288d" archimateElement="857ad636">
+        <bounds x="1090" y="1035" width="120" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="eb12810a" archimateElement="74f7a027">
+        <bounds x="955" y="1035" width="120" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="ef6e80fb" archimateElement="057cbef6">
+        <bounds x="745" y="1035" width="120" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="5750814c" archimateElement="b2f5868b">
+        <bounds x="1090" y="1965" width="120" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="d19988bc" archimateElement="7ee6e9f1">
+        <bounds x="955" y="1965" width="120" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="74157e0e" archimateElement="d79d3124">
+        <bounds x="745" y="1965" width="120" height="55"/>
+      </child>
+    </element>
+  </folder>
+</archimate:model>

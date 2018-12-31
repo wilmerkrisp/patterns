@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archimate:model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:archimate="http://www.archimatetool.com/archimate" name="5 conceptual contours" id="744526c2" version="4.0.0">
+  <folder name="Strategy" id="2abed889" type="strategy"/>
+  <folder name="Business" id="5acb8a62" type="business">
+    <element xsi:type="archimate:BusinessObject" name="entity 1" id="d7b56d48"/>
+    <element xsi:type="archimate:BusinessObject" name="entity 2" id="db2caff5"/>
+    <element xsi:type="archimate:BusinessObject" name="entity 3" id="dfc6fcc3"/>
+  </folder>
+  <folder name="Application" id="b68ed6c7" type="application">
+    <element xsi:type="archimate:ApplicationComponent" name="class 1" id="f16ba6b2"/>
+    <element xsi:type="archimate:ApplicationComponent" name="class 2" id="227556ca"/>
+    <element xsi:type="archimate:ApplicationComponent" name="class 3" id="e3541646"/>
+  </folder>
+  <folder name="Technology &amp; Physical" id="9578940c" type="technology"/>
+  <folder name="Motivation" id="37279bf1" type="motivation">
+    <element xsi:type="archimate:Meaning" name="low coupling between classes" id="2030eaa3">
+      <documentation>Человек не может одновременно удерживать в уме слишком MHoro предметов (отсюда низкая внешняя зависимость)&#xD;
+&#xD;
+- нельзя разделять до бесконечности - у человеческого ума есть свои пределы, до&#xD;
+которых он еще способен соединять разделенное; если среда выходит за эти пределы, разработчики предметной области теряют способность расчленять модель&#xD;
+на осмысленные фрагменты.</documentation>
+    </element>
+    <element xsi:type="archimate:Meaning" name="high cohesion inside class" id="0de401d8">
+      <documentation>А плохо связанные между собой фраrменты информации так же трудно понять, как&#xD;
+неструктурированную &quot;кашу&quot; из идей (отсюда высокая внутренняя связность)</documentation>
+    </element>
+    <element xsi:type="archimate:Meaning" name="high cohesion inside class " id="89c816ed">
+      <documentation>А плохо связанные между собой фраrменты информации так же трудно понять, как&#xD;
+неструктурированную &quot;кашу&quot; из идей (отсюда высокая внутренняя связность)</documentation>
+    </element>
+    <element xsi:type="archimate:Meaning" name="high cohesion inside class " id="1e943df6">
+      <documentation>А плохо связанные между собой фраrменты информации так же трудно понять, как&#xD;
+неструктурированную &quot;кашу&quot; из идей (отсюда высокая внутренняя связность)</documentation>
+    </element>
+    <element xsi:type="archimate:Meaning" name="Domain consistency" id="e47a3221"/>
+    <element xsi:type="archimate:Meaning" name="conceptual contour 2" id="bc8782fd"/>
+    <element xsi:type="archimate:Meaning" name="conceptual contour 3" id="9a762b59"/>
+    <element xsi:type="archimate:Meaning" name="conceptual contour 1" id="2f8f1a23"/>
+    <element xsi:type="archimate:Goal" name="modeling business use cases ,rather than real life." id="6603606b"/>
+  </folder>
+  <folder name="Implementation &amp; Migration" id="d412280d" type="implementation_migration"/>
+  <folder name="Other" id="d21c569e" type="other"/>
+  <folder name="Relations" id="319d7661" type="relations">
+    <element xsi:type="archimate:AggregationRelationship" name="the Class 1 contains an array of references to the class 2                                           " id="d4c3a8ee" source="f16ba6b2" target="227556ca"/>
+    <element xsi:type="archimate:AssociationRelationship" name="                         " id="7b736aee" source="d7b56d48" target="e47a3221"/>
+    <element xsi:type="archimate:AssociationRelationship" id="42815e1b" source="227556ca" target="db2caff5"/>
+    <element xsi:type="archimate:AssociationRelationship" id="bb76aa9f" source="f16ba6b2" target="d7b56d48"/>
+    <element xsi:type="archimate:AssociationRelationship" id="60affa0b" source="db2caff5" target="e47a3221"/>
+    <element xsi:type="archimate:AssociationRelationship" id="4f24acf7" source="dfc6fcc3" target="e47a3221"/>
+    <element xsi:type="archimate:AssociationRelationship" id="3225ef60" source="f16ba6b2" target="2030eaa3"/>
+    <element xsi:type="archimate:AssociationRelationship" id="95e50c97" source="227556ca" target="2030eaa3"/>
+    <element xsi:type="archimate:AssociationRelationship" id="d25ff83e" source="e3541646" target="2030eaa3"/>
+    <element xsi:type="archimate:AssociationRelationship" id="a25571ee" source="dfc6fcc3" target="e3541646"/>
+  </folder>
+  <folder name="Views" id="c4a4491f" type="diagrams">
+    <element xsi:type="archimate:ArchimateDiagramModel" name="conceptual contours" id="6eb534cd">
+      <child xsi:type="archimate:Note" id="dd10968c" fontColor="#ff0000" textAlignment="1" borderType="2">
+        <bounds x="390" y="435" width="185" height="60"/>
+        <content>Classes are a reflection of the conceptual/semantic contours of the domain</content>
+      </child>
+      <child xsi:type="archimate:Group" id="43ee0597" name="Conceptual domain model (business layer)" textAlignment="1">
+        <bounds x="199" y="60" width="766" height="340"/>
+        <child xsi:type="archimate:DiagramObject" id="f03a56c8" targetConnections="6f38c09e" archimateElement="d7b56d48">
+          <bounds x="110" y="169" width="145" height="85"/>
+          <sourceConnection xsi:type="archimate:Connection" id="9003116d" source="f03a56c8" target="764da72a" archimateRelationship="7b736aee"/>
+          <child xsi:type="archimate:DiagramObject" id="bac2468d" archimateElement="2f8f1a23">
+            <bounds x="10" y="30" width="120" height="55"/>
+          </child>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="2659def0" targetConnections="66438da3" archimateElement="db2caff5">
+          <bounds x="320" y="45" width="145" height="85"/>
+          <sourceConnection xsi:type="archimate:Connection" id="78586821" source="2659def0" target="764da72a" archimateRelationship="60affa0b"/>
+          <child xsi:type="archimate:DiagramObject" id="844488d1" archimateElement="bc8782fd">
+            <bounds x="15" y="30" width="120" height="55"/>
+          </child>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="bca485dc" archimateElement="dfc6fcc3">
+          <bounds x="540" y="238" width="145" height="85"/>
+          <sourceConnection xsi:type="archimate:Connection" id="ae7530c0" lineColor="#c0c0c0" source="bca485dc" target="ade708d4" archimateRelationship="a25571ee"/>
+          <sourceConnection xsi:type="archimate:Connection" id="38b8b1ff" source="bca485dc" target="764da72a" archimateRelationship="4f24acf7"/>
+          <child xsi:type="archimate:DiagramObject" id="fc28a754" archimateElement="9a762b59">
+            <bounds x="15" y="30" width="120" height="55"/>
+          </child>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="764da72a" targetConnections="38b8b1ff 78586821 9003116d" archimateElement="e47a3221">
+          <bounds x="333" y="190" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:Note" id="8c6c5fe2" fontColor="#ff0000" textAlignment="1" fillColor="#ffffff">
+          <bounds x="440" y="95" width="260" height="80"/>
+          <content>Conceptual contour is the sence/meaning of the entity in the subject domain.</content>
+        </child>
+        <child xsi:type="archimate:Note" id="ef38e0f9" fontColor="#ff0000" textAlignment="1" fillColor="#ffffff">
+          <bounds x="20" y="30" width="260" height="80"/>
+          <content>entities - fundamental concepts of the domain</content>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="022c9e75" archimateElement="6603606b">
+          <bounds x="515" y="30" width="146" height="61"/>
+        </child>
+      </child>
+      <child xsi:type="archimate:Group" id="e12b4a3d" name="Domain model (information systems: application layer)                                           " textAlignment="1">
+        <bounds x="199" y="530" width="766" height="340"/>
+        <child xsi:type="archimate:DiagramObject" id="d0c83962" archimateElement="f16ba6b2">
+          <bounds x="110" y="180" width="145" height="85"/>
+          <sourceConnection xsi:type="archimate:Connection" id="6f38c09e" lineColor="#c0c0c0" source="d0c83962" target="f03a56c8" archimateRelationship="bb76aa9f"/>
+          <sourceConnection xsi:type="archimate:Connection" id="fda70876" source="d0c83962" target="5940a8e3" archimateRelationship="3225ef60"/>
+          <child xsi:type="archimate:DiagramObject" id="b63658fc" archimateElement="1e943df6">
+            <bounds x="10" y="25" width="120" height="55"/>
+          </child>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="a3dd1a6d" archimateElement="227556ca">
+          <bounds x="317" y="40" width="145" height="85"/>
+          <sourceConnection xsi:type="archimate:Connection" id="66438da3" lineColor="#c0c0c0" source="a3dd1a6d" target="2659def0" archimateRelationship="42815e1b"/>
+          <sourceConnection xsi:type="archimate:Connection" id="f3f2003f" source="a3dd1a6d" target="5940a8e3" archimateRelationship="95e50c97"/>
+          <child xsi:type="archimate:DiagramObject" id="fb608ef3" archimateElement="0de401d8">
+            <bounds x="15" y="25" width="120" height="55"/>
+          </child>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="ade708d4" targetConnections="ae7530c0" archimateElement="e3541646">
+          <bounds x="540" y="225" width="145" height="85"/>
+          <sourceConnection xsi:type="archimate:Connection" id="1ab955b3" source="ade708d4" target="5940a8e3" archimateRelationship="d25ff83e"/>
+          <child xsi:type="archimate:DiagramObject" id="0449f9de" archimateElement="89c816ed">
+            <bounds x="15" y="25" width="120" height="55"/>
+          </child>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="5940a8e3" targetConnections="1ab955b3 f3f2003f fda70876" archimateElement="2030eaa3">
+          <bounds x="335" y="180" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:Note" id="40aeb02e" fontColor="#ff0000" textAlignment="1" fillColor="#ffffff">
+          <bounds x="461" y="90" width="260" height="80"/>
+          <content>When classes correspond to conceptual contours, they become more obvious and convenient in combinations (including unforeseen ones)</content>
+        </child>
+      </child>
+      <child xsi:type="archimate:Note" id="3dfec88d" fontColor="#ff0000" textAlignment="1" fillColor="#ffffff" borderType="2">
+        <bounds x="625" y="435" width="185" height="60"/>
+        <content>All entities of the domain and classes must correspond to each other and have meaning</content>
+      </child>
+    </element>
+  </folder>
+</archimate:model>

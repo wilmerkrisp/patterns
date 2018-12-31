@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archimate:model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:archimate="http://www.archimatetool.com/archimate" name="10 Layer Supertype" id="3d12e94c" version="4.0.0">
+  <folder name="Strategy" id="cf1003ae" type="strategy"/>
+  <folder name="Business" id="0eea8342" type="business"/>
+  <folder name="Application" id="efb05c98" type="application">
+    <element xsi:type="archimate:ApplicationComponent" name="class layer supertype" id="cb9f8aa5"/>
+    <element xsi:type="archimate:ApplicationComponent" name="class 1" id="531d33ca"/>
+    <element xsi:type="archimate:ApplicationComponent" name="class 2" id="668b5971"/>
+    <element xsi:type="archimate:ApplicationComponent" name="class 3" id="43796f3b"/>
+  </folder>
+  <folder name="Technology &amp; Physical" id="d454b05e" type="technology"/>
+  <folder name="Motivation" id="8999bae8" type="motivation"/>
+  <folder name="Implementation &amp; Migration" id="68bf31e9" type="implementation_migration"/>
+  <folder name="Other" id="a05877c2" type="other">
+    <element xsi:type="archimate:Grouping" name="classes 1" id="d779c83d"/>
+    <element xsi:type="archimate:Grouping" name="mapper" id="fc7808ac"/>
+    <element xsi:type="archimate:Grouping" name="classes 2" id="0d97829f"/>
+  </folder>
+  <folder name="Relations" id="594c5960" type="relations">
+    <element xsi:type="archimate:TriggeringRelationship" id="07ec105c" source="fc7808ac" target="0d97829f"/>
+    <element xsi:type="archimate:TriggeringRelationship" id="f1042fc6" source="d779c83d" target="fc7808ac"/>
+    <element xsi:type="archimate:TriggeringRelationship" id="5e7cf4b7" source="fc7808ac" target="d779c83d"/>
+    <element xsi:type="archimate:TriggeringRelationship" id="72c77206" source="fc7808ac" target="0d97829f"/>
+    <element xsi:type="archimate:TriggeringRelationship" id="14ae7141" source="d779c83d" target="fc7808ac"/>
+    <element xsi:type="archimate:TriggeringRelationship" id="47590bfb" source="0d97829f" target="fc7808ac"/>
+    <element xsi:type="archimate:SpecializationRelationship" id="5f92f3ba" source="531d33ca" target="cb9f8aa5"/>
+    <element xsi:type="archimate:SpecializationRelationship" id="124cadb1" source="668b5971" target="cb9f8aa5"/>
+    <element xsi:type="archimate:SpecializationRelationship" id="b216e5fa" source="43796f3b" target="cb9f8aa5"/>
+  </folder>
+  <folder name="Views" id="afc4d380" type="diagrams">
+    <element xsi:type="archimate:ArchimateDiagramModel" name="Layer Supertype" id="3f4f745d">
+      <child xsi:type="archimate:Group" id="c5b59b03" name="layer 1" textAlignment="1">
+        <bounds x="909" y="280" width="589" height="308"/>
+      </child>
+      <child xsi:type="archimate:Group" id="1e504e5d" name="layer 2" textAlignment="1">
+        <bounds x="909" y="624" width="589" height="308"/>
+        <child xsi:type="archimate:Note" id="59e82f25" fontColor="#ff0000" textAlignment="1">
+          <bounds x="12" y="150" width="539" height="116"/>
+          <content>since it is assumed that all of the classes have a common layer properties and behavior</content>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="ff98a307" targetConnections="e4c27210 8bde3a15 01193eb5" archimateElement="cb9f8aa5">
+          <bounds x="220" y="70" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="3c819e23" archimateElement="531d33ca">
+          <bounds x="45" y="190" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="e4c27210" lineColor="#0000ff" source="3c819e23" target="ff98a307" archimateRelationship="5f92f3ba"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="76fb866e" archimateElement="668b5971">
+          <bounds x="220" y="190" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="8bde3a15" lineColor="#0000ff" source="76fb866e" target="ff98a307" archimateRelationship="124cadb1"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="d6bf4b95" archimateElement="43796f3b">
+          <bounds x="405" y="190" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="01193eb5" lineColor="#0000ff" source="d6bf4b95" target="ff98a307" archimateRelationship="b216e5fa"/>
+        </child>
+        <child xsi:type="archimate:Note" id="0c18e066" fontColor="#ff0000" textAlignment="1">
+          <bounds x="12" y="50" width="185" height="80"/>
+          <content>superclass of objects in the LAYER</content>
+        </child>
+      </child>
+      <child xsi:type="archimate:Group" id="3df7e1e0" name="layer 3" textAlignment="1">
+        <bounds x="909" y="970" width="589" height="308"/>
+      </child>
+    </element>
+  </folder>
+</archimate:model>

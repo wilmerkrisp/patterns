@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archimate:model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:archimate="http://www.archimatetool.com/archimate" name="1 Transaction Script" id="0d8270d9" version="4.0.0">
+  <folder name="Strategy" id="31688340" type="strategy"/>
+  <folder name="Business" id="3bd91d23" type="business"/>
+  <folder name="Application" id="d875d965" type="application">
+    <element xsi:type="archimate:ApplicationComponent" name="class 1" id="f0a4e7ed"/>
+    <element xsi:type="archimate:ApplicationFunction" name="method 1" id="09835081"/>
+    <element xsi:type="archimate:ApplicationProcess" name="step1" id="b2998166"/>
+    <element xsi:type="archimate:ApplicationProcess" name="step 2" id="88e429c9"/>
+    <element xsi:type="archimate:ApplicationFunction" name="method 2" id="e4207eaa"/>
+    <element xsi:type="archimate:ApplicationProcess" name="step1" id="af097911"/>
+    <element xsi:type="archimate:ApplicationProcess" name="step 2" id="680855d4"/>
+    <element xsi:type="archimate:ApplicationEvent" name="event 1" id="46665508"/>
+    <element xsi:type="archimate:ApplicationEvent" name="event 2" id="b3d574f7"/>
+    <element xsi:type="archimate:ApplicationComponent" name="class transaction script 1" id="071fc689"/>
+    <element xsi:type="archimate:ApplicationComponent" name="class transaction script 2" id="12de32cc"/>
+  </folder>
+  <folder name="Technology &amp; Physical" id="7609db4a" type="technology"/>
+  <folder name="Motivation" id="0e78a785" type="motivation"/>
+  <folder name="Implementation &amp; Migration" id="ff75a665" type="implementation_migration"/>
+  <folder name="Other" id="73684acc" type="other">
+    <element xsi:type="archimate:Grouping" name="class 1" id="628c944d"/>
+    <element xsi:type="archimate:Grouping" name="data source classes" id="aecb3b93"/>
+  </folder>
+  <folder name="Relations" id="070e14f8" type="relations">
+    <element xsi:type="archimate:CompositionRelationship" id="2cecee42" source="628c944d" target="f0a4e7ed"/>
+    <element xsi:type="archimate:AssignmentRelationship" id="ec6996f9" source="f0a4e7ed" target="e4207eaa"/>
+    <element xsi:type="archimate:CompositionRelationship" id="ecb5de0a" source="628c944d" target="09835081"/>
+    <element xsi:type="archimate:CompositionRelationship" id="077d3f4d" source="09835081" target="88e429c9"/>
+    <element xsi:type="archimate:FlowRelationship" id="323f34ce" source="b2998166" target="88e429c9"/>
+    <element xsi:type="archimate:CompositionRelationship" id="63f72eda" source="e4207eaa" target="680855d4"/>
+    <element xsi:type="archimate:CompositionRelationship" id="8f103dff" source="e4207eaa" target="af097911"/>
+    <element xsi:type="archimate:FlowRelationship" id="a4675da9" source="af097911" target="680855d4"/>
+    <element xsi:type="archimate:CompositionRelationship" id="cbebdd02" source="628c944d" target="e4207eaa"/>
+    <element xsi:type="archimate:AssignmentRelationship" id="51fcaff1" source="f0a4e7ed" target="09835081"/>
+    <element xsi:type="archimate:CompositionRelationship" id="9f0b2aca" source="09835081" target="b2998166"/>
+    <element xsi:type="archimate:FlowRelationship" id="5632e689" source="46665508" target="071fc689"/>
+    <element xsi:type="archimate:FlowRelationship" id="66cd0b17" source="b3d574f7" target="12de32cc"/>
+    <element xsi:type="archimate:TriggeringRelationship" id="dfecb682" source="071fc689" target="aecb3b93"/>
+    <element xsi:type="archimate:TriggeringRelationship" id="7a3a87fe" source="12de32cc" target="aecb3b93"/>
+  </folder>
+  <folder name="Views" id="a6077786" type="diagrams">
+    <element xsi:type="archimate:ArchimateDiagramModel" name="Transaction Script" id="4dd181fa">
+      <child xsi:type="archimate:Group" id="a01d79d0" name="presentation" textAlignment="1" fillColor="#c7e1e2">
+        <bounds x="131" y="330" width="1966" height="791"/>
+        <child xsi:type="archimate:DiagramObject" id="c40ef68a" archimateElement="46665508">
+          <bounds x="269" y="567" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="b7fe2d4e" source="c40ef68a" target="750d6381" archimateRelationship="5632e689">
+            <bendpoint startX="40" startY="336" endX="-5" endY="-336"/>
+          </sourceConnection>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="4f71c40b" archimateElement="b3d574f7">
+          <bounds x="550" y="567" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="07e15a6b" source="4f71c40b" target="c90d6d8b" archimateRelationship="66cd0b17"/>
+        </child>
+        <child xsi:type="archimate:Note" id="ec89e500" font="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|-52|3|2|1|34|Segoe UI" fontColor="#ff0000" textAlignment="1" textPosition="1">
+          <bounds x="35" y="480" width="337" height="64"/>
+          <content>- presenter layer driven development of domain layer classes&#xD;
+- one event transaction = one transaction script class</content>
+        </child>
+      </child>
+      <child xsi:type="archimate:Group" id="af294722" name="domain" textAlignment="1" fillColor="#cedbd3">
+        <bounds x="131" y="1175" width="1966" height="791"/>
+        <child xsi:type="archimate:Group" id="780a2611" name="GoF: command" textAlignment="1">
+          <bounds x="220" y="300" width="1086" height="206"/>
+          <child xsi:type="archimate:DiagramObject" id="750d6381" targetConnections="b7fe2d4e" archimateElement="071fc689">
+            <bounds x="95" y="95" width="120" height="55"/>
+            <sourceConnection xsi:type="archimate:Connection" id="cc1ff9b9" source="750d6381" target="ba6db9b9" archimateRelationship="dfecb682">
+              <bendpoint startX="-5" startY="328" endX="-150" endY="-404"/>
+            </sourceConnection>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="c90d6d8b" targetConnections="07e15a6b" archimateElement="12de32cc">
+            <bounds x="395" y="95" width="120" height="55"/>
+            <sourceConnection xsi:type="archimate:Connection" id="eb7a154b" source="c90d6d8b" target="ba6db9b9" archimateRelationship="7a3a87fe">
+              <bendpoint startX="-36" startY="333" endX="119" endY="-399"/>
+            </sourceConnection>
+          </child>
+          <child xsi:type="archimate:Note" id="feebe791" textAlignment="1">
+            <bounds x="180" y="130" width="185" height="80"/>
+            <content>All logic for an operation is contained within a single service method. </content>
+          </child>
+          <child xsi:type="archimate:Note" id="ea0be0ea" fontColor="#ff0000" textAlignment="1">
+            <bounds x="15" y="30" width="185" height="36"/>
+            <content>event classes with business logic</content>
+          </child>
+          <documentation>gang of four classic design pattern</documentation>
+        </child>
+      </child>
+      <child xsi:type="archimate:Group" id="cae47883" name="data source" textAlignment="1" fillColor="#d8d1d7">
+        <bounds x="131" y="2025" width="1966" height="791"/>
+        <child xsi:type="archimate:DiagramObject" id="ba6db9b9" targetConnections="cc1ff9b9 eb7a154b" archimateElement="aecb3b93">
+          <bounds x="355" y="210" width="330" height="187"/>
+        </child>
+      </child>
+    </element>
+  </folder>
+</archimate:model>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archimate:model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:archimate="http://www.archimatetool.com/archimate" name="Facade" id="1aab120d" version="4.0.0">
+  <folder name="Strategy" id="8de962b7" type="strategy"/>
+  <folder name="Business" id="c8ae2efd" type="business"/>
+  <folder name="Application" id="4ef74818" type="application">
+    <element xsi:type="archimate:ApplicationFunction" name="call facade methods" id="b11916b6"/>
+    <element xsi:type="archimate:ApplicationComponent" name="facade 1" id="234ee456"/>
+    <element xsi:type="archimate:ApplicationComponent" name="class A" id="16614440"/>
+    <element xsi:type="archimate:ApplicationComponent" name="class B" id="bbc56006"/>
+    <element xsi:type="archimate:ApplicationComponent" name="class C" id="094e5326"/>
+    <element xsi:type="archimate:ApplicationComponent" name="facade 2" id="7ff10f7a"/>
+    <element xsi:type="archimate:ApplicationComponent" name="class D" id="777bdf70"/>
+    <element xsi:type="archimate:ApplicationComponent" name="class E" id="96517add"/>
+    <element xsi:type="archimate:ApplicationComponent" name="class F" id="4c46e3f3"/>
+    <element xsi:type="archimate:ApplicationComponent" name="facade 3" id="d27db187"/>
+    <element xsi:type="archimate:ApplicationComponent" name="class G" id="aae699da"/>
+    <element xsi:type="archimate:ApplicationComponent" name="class H" id="9a601a94"/>
+    <element xsi:type="archimate:ApplicationComponent" name="class J" id="ea819aef"/>
+  </folder>
+  <folder name="Technology &amp; Physical" id="f3c28bd4" type="technology"/>
+  <folder name="Motivation" id="82466690" type="motivation"/>
+  <folder name="Implementation &amp; Migration" id="be0f27c8" type="implementation_migration"/>
+  <folder name="Other" id="f30e5f03" type="other"/>
+  <folder name="Relations" id="1d9cfd8d" type="relations">
+    <element xsi:type="archimate:ServingRelationship" id="11fc4894" source="16614440" target="234ee456"/>
+    <element xsi:type="archimate:ServingRelationship" name="use  some methods of classes" id="1852f1a4" source="bbc56006" target="234ee456"/>
+    <element xsi:type="archimate:ServingRelationship" id="0edd63f4" source="094e5326" target="234ee456"/>
+    <element xsi:type="archimate:ServingRelationship" name=" access between the layers only through facades" id="27448ad1" source="234ee456" target="b11916b6"/>
+    <element xsi:type="archimate:ServingRelationship" id="6fa9f3d7" source="4c46e3f3" target="7ff10f7a"/>
+    <element xsi:type="archimate:ServingRelationship" id="0d9597c7" source="777bdf70" target="7ff10f7a"/>
+    <element xsi:type="archimate:ServingRelationship" name="use  some methods of classes" id="5e3d46f7" source="96517add" target="7ff10f7a"/>
+    <element xsi:type="archimate:ServingRelationship" id="9d06d7c1" source="ea819aef" target="d27db187"/>
+    <element xsi:type="archimate:ServingRelationship" id="ab629cd4" source="aae699da" target="d27db187"/>
+    <element xsi:type="archimate:ServingRelationship" name="use  some methods of classes" id="edff22fd" source="9a601a94" target="d27db187"/>
+    <element xsi:type="archimate:ServingRelationship" id="416739d3" source="7ff10f7a" target="094e5326"/>
+    <element xsi:type="archimate:ServingRelationship" name=" access between the layers only through facades" id="d8555ef7" source="7ff10f7a" target="16614440"/>
+    <element xsi:type="archimate:ServingRelationship" name=" access between the layers only through facades" id="bd101cda" source="d27db187" target="4c46e3f3"/>
+  </folder>
+  <folder name="Views" id="f3f37cbb" type="diagrams">
+    <element xsi:type="archimate:ArchimateDiagramModel" name="facad" id="79615b10">
+      <child xsi:type="archimate:Group" id="b80f9a1c" name="programm" textAlignment="1">
+        <bounds x="439" y="150" width="592" height="140"/>
+        <child xsi:type="archimate:DiagramObject" id="f4facd09" targetConnections="339247cf" archimateElement="b11916b6">
+          <bounds x="230" y="50" width="120" height="55"/>
+        </child>
+      </child>
+      <child xsi:type="archimate:Group" id="bf361ea7" name="layer 1 (subsystem/module/package)" fontColor="#ff0000" textAlignment="1" fillColor="#919100">
+        <bounds x="439" y="339" width="593" height="250"/>
+        <child xsi:type="archimate:DiagramObject" id="638a9f3d" targetConnections="43cb4996 85f2fc95 8463a795" fontColor="#ff0000" archimateElement="234ee456">
+          <bounds x="235" y="45" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="339247cf" fontColor="#ff0000" lineColor="#ff0000" source="638a9f3d" target="f4facd09" archimateRelationship="27448ad1"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="0b82c1b7" targetConnections="0e749b25" archimateElement="16614440">
+          <bounds x="60" y="170" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="43cb4996" source="0b82c1b7" target="638a9f3d" archimateRelationship="11fc4894"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="309a9f25" archimateElement="bbc56006">
+          <bounds x="235" y="170" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="85f2fc95" source="309a9f25" target="638a9f3d" archimateRelationship="1852f1a4"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="a8cc8f1c" targetConnections="cf88a066" archimateElement="094e5326">
+          <bounds x="430" y="170" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="8463a795" source="a8cc8f1c" target="638a9f3d" archimateRelationship="0edd63f4"/>
+        </child>
+      </child>
+      <child xsi:type="archimate:Group" id="e34e742a" name="layer 2 (subsystem/module/package)" fontColor="#ff0000" textAlignment="1" fillColor="#dddd00">
+        <bounds x="439" y="645" width="593" height="250"/>
+        <child xsi:type="archimate:Note" id="d000f527" fontColor="#ff0000" textAlignment="1">
+          <bounds x="397" y="45" width="185" height="190"/>
+          <content>You can change the inner layer classes without fear affects other layers</content>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="c2be4b82" targetConnections="47a20e04 dd451c44 9eb19b32" fontColor="#ff0000" archimateElement="7ff10f7a">
+          <bounds x="235" y="45" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="cf88a066" fontColor="#ff0000" lineColor="#ff0000" source="c2be4b82" target="a8cc8f1c" archimateRelationship="416739d3"/>
+          <sourceConnection xsi:type="archimate:Connection" id="0e749b25" fontColor="#ff0000" lineColor="#ff0000" source="c2be4b82" target="0b82c1b7" archimateRelationship="d8555ef7"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="87b2c09e" archimateElement="777bdf70">
+          <bounds x="60" y="170" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="9eb19b32" source="87b2c09e" target="c2be4b82" archimateRelationship="0d9597c7"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="6b70d028" archimateElement="96517add">
+          <bounds x="235" y="170" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="47a20e04" source="6b70d028" target="c2be4b82" archimateRelationship="5e3d46f7"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="56dc4939" targetConnections="cc84863e" archimateElement="4c46e3f3">
+          <bounds x="430" y="170" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="dd451c44" source="56dc4939" target="c2be4b82" archimateRelationship="6fa9f3d7"/>
+        </child>
+      </child>
+      <child xsi:type="archimate:Group" id="531a4282" name="layer 3 (subsystem/module/package)" fontColor="#ff0000" textAlignment="1" fillColor="#ffff17">
+        <bounds x="439" y="945" width="593" height="250"/>
+        <child xsi:type="archimate:DiagramObject" id="605ca835" targetConnections="aa02a901 8f631bda eb9a2ade" fontColor="#ff0000" archimateElement="d27db187">
+          <bounds x="235" y="45" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="cc84863e" fontColor="#ff0000" lineColor="#ff0000" source="605ca835" target="56dc4939" archimateRelationship="bd101cda"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="d0c5c851" archimateElement="aae699da">
+          <bounds x="60" y="170" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="eb9a2ade" source="d0c5c851" target="605ca835" archimateRelationship="ab629cd4"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="0234bbc6" archimateElement="9a601a94">
+          <bounds x="235" y="170" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="aa02a901" source="0234bbc6" target="605ca835" archimateRelationship="edff22fd"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="e717c1b2" archimateElement="ea819aef">
+          <bounds x="430" y="170" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="8f631bda" source="e717c1b2" target="605ca835" archimateRelationship="9d06d7c1"/>
+        </child>
+      </child>
+      <child xsi:type="archimate:Note" id="d1d7f316" fontColor="#ff0000" textAlignment="1">
+        <bounds x="1050" y="350" width="206" height="239"/>
+        <content>facade created absolutly new interface&#xD;
+- only one point (class/interface)&#xD;
+- simplified (short)&#xD;
+- default&#xD;
+- common&#xD;
+- for most frequent cases&#xD;
+&#xD;
+if I want use all possibilities, I use directly all classes
+
+one-way calls. facade sends requests subsystem classes&#xD;
+</content>
+      </child>
+    </element>
+    <element xsi:type="archimate:ArchimateDiagramModel" name="uml" id="33e0041e">
+      <child xsi:type="archimate:Group" id="930294f4" name="module/package" fontColor="#ff0000" textAlignment="1" fillColor="#dddd00">
+        <bounds x="439" y="645" width="593" height="250"/>
+        <child xsi:type="archimate:DiagramObject" id="be71b462" fontColor="#ff0000" archimateElement="7ff10f7a">
+          <bounds x="235" y="45" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="30c444d9" fontColor="#ff0000" lineColor="#ff0000" source="be71b462" target="649b14a9" archimateRelationship="d8555ef7"/>
+        </child>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="649b14a9" targetConnections="30c444d9" archimateElement="16614440">
+        <bounds x="475" y="470" width="120" height="55"/>
+      </child>
+    </element>
+  </folder>
+</archimate:model>

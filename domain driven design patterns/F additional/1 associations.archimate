@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archimate:model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:archimate="http://www.archimatetool.com/archimate" name="1 associations" id="485b18f7" version="4.0.0">
+  <folder name="Strategy" id="c4f42a2e" type="strategy"/>
+  <folder name="Business" id="4b10dbdb" type="business"/>
+  <folder name="Application" id="24a57359" type="application"/>
+  <folder name="Technology &amp; Physical" id="25dfe197" type="technology"/>
+  <folder name="Motivation" id="d539875e" type="motivation"/>
+  <folder name="Implementation &amp; Migration" id="5b6222e2" type="implementation_migration"/>
+  <folder name="Other" id="b9bf9f53" type="other"/>
+  <folder name="Relations" id="b63be736" type="relations"/>
+  <folder name="Views" id="79d24d37" type="diagrams">
+    <element xsi:type="archimate:ArchimateDiagramModel" name="associations" id="cccdc20e">
+      <child xsi:type="archimate:Note" id="934c91b5" textAlignment="1">
+        <bounds x="337" y="236" width="497" height="134"/>
+        <content>По возможности Сделать ограничение (словарь)&#xD;
+Сделать однонаправленными&#xD;
+Выделить циклические ссылки&#xD;
+</content>
+      </child>
+    </element>
+  </folder>
+</archimate:model>

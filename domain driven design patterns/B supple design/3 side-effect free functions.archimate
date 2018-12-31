@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archimate:model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:archimate="http://www.archimatetool.com/archimate" name="3 side-effect free functions" id="dd3a529f" version="4.0.0">
+  <folder name="Strategy" id="ad5dfd7e" type="strategy"/>
+  <folder name="Business" id="4f16fd93" type="business"/>
+  <folder name="Application" id="84db7499" type="application">
+    <element xsi:type="archimate:ApplicationFunction" name="operation" id="ff81d10e"/>
+    <element xsi:type="archimate:ApplicationFunction" name="command" id="d4473445"/>
+    <element xsi:type="archimate:ApplicationFunction" name="query" id="f0043de9"/>
+  </folder>
+  <folder name="Technology &amp; Physical" id="c2887e8d" type="technology"/>
+  <folder name="Motivation" id="f3889d8a" type="motivation">
+    <element xsi:type="archimate:Meaning" name="When using commands, side effects are possible" id="a8127ccb"/>
+    <element xsi:type="archimate:Constraint" name="For entities it is necessary to clearly distinguish commands from queries (and not to mix in one method the code)" id="bad3b7a0"/>
+    <element xsi:type="archimate:Meaning" name="Meaning" id="c33f4ca6"/>
+    <element xsi:type="archimate:Meaning" name="You can safely combine and use nested queries" id="42a4cd6c"/>
+  </folder>
+  <folder name="Implementation &amp; Migration" id="f1c36533" type="implementation_migration"/>
+  <folder name="Other" id="3eeae19b" type="other"/>
+  <folder name="Relations" id="db91ec46" type="relations">
+    <element xsi:type="archimate:SpecializationRelationship" id="5b1942dd" source="f0043de9" target="ff81d10e"/>
+    <element xsi:type="archimate:SpecializationRelationship" id="439ab23d" source="d4473445" target="ff81d10e"/>
+    <element xsi:type="archimate:AssociationRelationship" id="af6bf361" source="d4473445" target="a8127ccb"/>
+    <element xsi:type="archimate:AssociationRelationship" id="d25549a4" source="bad3b7a0" target="ff81d10e"/>
+    <element xsi:type="archimate:AssociationRelationship" id="44cd95f0" source="f0043de9" target="42a4cd6c"/>
+  </folder>
+  <folder name="Views" id="d22ec9e6" type="diagrams">
+    <element xsi:type="archimate:ArchimateDiagramModel" name="side-effect free functions" id="0657bf58">
+      <child xsi:type="archimate:DiagramObject" id="19b91fbc" targetConnections="1524b1ca a89b00e4 283b7b10" archimateElement="ff81d10e">
+        <bounds x="363" y="149" width="120" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="2ad974f0" archimateElement="d4473445">
+        <bounds x="270" y="290" width="120" height="55"/>
+        <sourceConnection xsi:type="archimate:Connection" id="a89b00e4" source="2ad974f0" target="19b91fbc" archimateRelationship="439ab23d"/>
+        <sourceConnection xsi:type="archimate:Connection" id="c04db4fa" source="2ad974f0" target="5a73a69b" archimateRelationship="af6bf361"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="880eacd5" archimateElement="f0043de9">
+        <bounds x="470" y="290" width="120" height="55"/>
+        <sourceConnection xsi:type="archimate:Connection" id="1524b1ca" source="880eacd5" target="19b91fbc" archimateRelationship="5b1942dd"/>
+        <sourceConnection xsi:type="archimate:Connection" id="654c6eb9" source="880eacd5" target="72570483" archimateRelationship="44cd95f0"/>
+      </child>
+      <child xsi:type="archimate:Note" id="cab07c7c" textAlignment="1">
+        <bounds x="260" y="360" width="185" height="80"/>
+        <content>a commands make changes to the system</content>
+      </child>
+      <child xsi:type="archimate:Note" id="6f3bfc21" fontColor="#ff0000" textAlignment="1">
+        <bounds x="520" y="360" width="185" height="80"/>
+        <content>queries receive information from the system (side-effect free functions)</content>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="5a73a69b" targetConnections="c04db4fa" archimateElement="a8127ccb">
+        <bounds x="70" y="290" width="120" height="55"/>
+      </child>
+      <child xsi:type="archimate:Note" id="d998afce" textAlignment="1">
+        <bounds x="15" y="360" width="185" height="80"/>
+        <content>Side effect is the unintended consequence of the action</content>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="21b0c71f" archimateElement="bad3b7a0">
+        <bounds x="317" y="25" width="211" height="81"/>
+        <sourceConnection xsi:type="archimate:Connection" id="283b7b10" source="21b0c71f" target="19b91fbc" archimateRelationship="d25549a4"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="72570483" targetConnections="654c6eb9" archimateElement="42a4cd6c">
+        <bounds x="679" y="294" width="120" height="55"/>
+      </child>
+      <child xsi:type="archimate:Note" id="b40f396a" fontColor="#ff0000" borderType="2">
+        <bounds x="336" y="230" width="185" height="46"/>
+        <content>Use explicit naming convention for class methods</content>
+      </child>
+    </element>
+  </folder>
+</archimate:model>

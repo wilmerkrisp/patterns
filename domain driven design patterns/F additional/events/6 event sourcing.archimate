@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archimate:model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:archimate="http://www.archimatetool.com/archimate" name="event sourcing" id="aa25824a" version="4.0.0">
+  <folder name="Strategy" id="4c46c453" type="strategy"/>
+  <folder name="Business" id="286fceb2" type="business">
+    <element xsi:type="archimate:BusinessObject" name="entity 1" id="8794d1c0"/>
+    <element xsi:type="archimate:BusinessObject" name="entity 1 " id="14c61bfe"/>
+  </folder>
+  <folder name="Application" id="d7030df7" type="application">
+    <element xsi:type="archimate:DataObject" name="table 1" id="287114fa"/>
+    <element xsi:type="archimate:DataObject" name="persistence table (event sourcing) " id="c9406b02"/>
+    <element xsi:type="archimate:DataObject" name="event type " id="03b1e8b3"/>
+    <element xsi:type="archimate:DataObject" name="event content " id="7beb2964"/>
+    <element xsi:type="archimate:DataObject" name="aggregate name " id="f0a96881"/>
+    <element xsi:type="archimate:DataObject" name="ordinal number " id="0de516be"/>
+    <element xsi:type="archimate:ApplicationEvent" name="Application Event" id="cc8e9126"/>
+  </folder>
+  <folder name="Technology &amp; Physical" id="4aff65e8" type="technology"/>
+  <folder name="Motivation" id="13ead315" type="motivation"/>
+  <folder name="Implementation &amp; Migration" id="ac68bea6" type="implementation_migration"/>
+  <folder name="Other" id="0c7a2b62" type="other">
+    <element xsi:type="archimate:Grouping" name="aggregate 1" id="47caee49"/>
+    <element xsi:type="archimate:Grouping" name="aggregate 1 " id="f0cc4a65"/>
+  </folder>
+  <folder name="Relations" id="f09ab09d" type="relations">
+    <element xsi:type="archimate:CompositionRelationship" id="43de4979" source="c9406b02" target="0de516be"/>
+    <element xsi:type="archimate:AssociationRelationship" id="14df45bd" source="287114fa" target="47caee49"/>
+    <element xsi:type="archimate:CompositionRelationship" id="22fad559" source="c9406b02" target="03b1e8b3"/>
+    <element xsi:type="archimate:AssociationRelationship" id="a71742e4" source="47caee49" target="8794d1c0"/>
+    <element xsi:type="archimate:CompositionRelationship" id="122f4445" source="c9406b02" target="f0a96881"/>
+    <element xsi:type="archimate:AssociationRelationship" id="57c012c6" source="f0cc4a65" target="14c61bfe"/>
+    <element xsi:type="archimate:CompositionRelationship" id="a03ed7b6" source="c9406b02" target="7beb2964"/>
+    <element xsi:type="archimate:AssociationRelationship" id="f737d38f" source="f0cc4a65" target="c9406b02"/>
+    <element xsi:type="archimate:InfluenceRelationship" id="a06e073b" source="cc8e9126" target="f0cc4a65"/>
+  </folder>
+  <folder name="Views" id="e3819791" type="diagrams">
+    <element xsi:type="archimate:ArchimateDiagramModel" name="event sourcing" id="36eea90a">
+      <child xsi:type="archimate:Note" id="a6ef2a8c" textAlignment="1">
+        <bounds x="954" y="130" width="657" height="1256"/>
+        <content>Event sourcing example.&#xD;
+In order to restore the state of the aggregate, it is necessary to apply to it all the events from the first to the last.&#xD;
+Also, we can determine what the state was at any time in the past.</content>
+      </child>
+      <child xsi:type="archimate:Note" id="88c9ae9f" textAlignment="1">
+        <bounds x="145" y="130" width="657" height="1256"/>
+        <content>Example of traditional snapshot‐only persistence.&#xD;
+To restore the state of the aggregate, you simply need to read it from the table.</content>
+      </child>
+      <child xsi:type="archimate:Group" id="c9e78879" name="Conceptual domain model" textAlignment="1">
+        <bounds x="225" y="195" width="491" height="156"/>
+        <child xsi:type="archimate:DiagramObject" id="2d183ccb" targetConnections="636b8195" archimateElement="8794d1c0">
+          <bounds x="105" y="60" width="120" height="55"/>
+        </child>
+      </child>
+      <child xsi:type="archimate:Group" id="e02b44c0" name="application layer                                           " textAlignment="1">
+        <bounds x="225" y="475" width="491" height="236"/>
+        <child xsi:type="archimate:DiagramObject" id="637825c5" targetConnections="a277318b" archimateElement="47caee49">
+          <bounds x="105" y="120" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="636b8195" lineColor="#c0c0c0" source="637825c5" target="2d183ccb" archimateRelationship="a71742e4"/>
+        </child>
+      </child>
+      <child xsi:type="archimate:Group" id="a4c462f7" name="data layer" textAlignment="1">
+        <bounds x="225" y="802" width="491" height="504"/>
+        <child xsi:type="archimate:DiagramObject" id="ef9144cd" archimateElement="287114fa">
+          <bounds x="115" y="65" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="a277318b" lineColor="#c0c0c0" source="ef9144cd" target="637825c5" archimateRelationship="14df45bd"/>
+        </child>
+      </child>
+      <child xsi:type="archimate:Note" id="83e98be0" fontColor="#ff0000" textAlignment="1" borderType="2">
+        <bounds x="340" y="730" width="140" height="56"/>
+        <content>persisting the Aggregate state as a whole</content>
+      </child>
+      <child xsi:type="archimate:Group" id="82e6162b" name="Conceptual domain model" textAlignment="1">
+        <bounds x="1024" y="210" width="491" height="156"/>
+        <child xsi:type="archimate:DiagramObject" id="39dab933" targetConnections="619a4723" archimateElement="14c61bfe">
+          <bounds x="105" y="60" width="120" height="55"/>
+        </child>
+      </child>
+      <child xsi:type="archimate:Group" id="87ac487b" name="application layer                                           " textAlignment="1">
+        <bounds x="1024" y="475" width="491" height="236"/>
+        <child xsi:type="archimate:DiagramObject" id="769dd317" targetConnections="cd9dc855" archimateElement="f0cc4a65">
+          <bounds x="105" y="120" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="619a4723" lineColor="#c0c0c0" source="769dd317" target="39dab933" archimateRelationship="57c012c6"/>
+          <sourceConnection xsi:type="archimate:Connection" id="a84ba34a" lineColor="#c0c0c0" source="769dd317" target="06ec5567" archimateRelationship="f737d38f"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="26a817c5" archimateElement="cc8e9126">
+          <bounds x="312" y="113" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="cd9dc855" source="26a817c5" target="769dd317" archimateRelationship="a06e073b"/>
+        </child>
+      </child>
+      <child xsi:type="archimate:Group" id="6c499ea7" name="data layer" textAlignment="1">
+        <bounds x="1024" y="819" width="491" height="504"/>
+        <child xsi:type="archimate:DiagramObject" id="06ec5567" targetConnections="a84ba34a" fontColor="#ff0000" archimateElement="c9406b02">
+          <bounds x="90" y="60" width="210" height="296"/>
+          <sourceConnection xsi:type="archimate:Connection" id="ef7ef711" source="06ec5567" target="0bb237e9" archimateRelationship="a03ed7b6"/>
+          <sourceConnection xsi:type="archimate:Connection" id="5193a9c6" source="06ec5567" target="310e0dba" archimateRelationship="43de4979"/>
+          <sourceConnection xsi:type="archimate:Connection" id="13e5bb9e" source="06ec5567" target="b832ac8c" archimateRelationship="22fad559"/>
+          <sourceConnection xsi:type="archimate:Connection" id="0155c316" source="06ec5567" target="38e66eaa" archimateRelationship="122f4445"/>
+          <child xsi:type="archimate:DiagramObject" id="b832ac8c" targetConnections="13e5bb9e" archimateElement="03b1e8b3">
+            <bounds x="45" y="165" width="120" height="55"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="0bb237e9" targetConnections="ef7ef711" archimateElement="7beb2964">
+            <bounds x="45" y="230" width="120" height="55"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="38e66eaa" targetConnections="0155c316" archimateElement="f0a96881">
+            <bounds x="45" y="100" width="120" height="55"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="310e0dba" targetConnections="5193a9c6" archimateElement="0de516be">
+            <bounds x="45" y="35" width="120" height="55"/>
+          </child>
+        </child>
+      </child>
+      <child xsi:type="archimate:Note" id="6bcd6460" fontColor="#ff0000" textAlignment="1" borderType="2">
+        <bounds x="1119" y="747" width="185" height="56"/>
+        <content>Keep the history of all events that happened with the aggreagate</content>
+      </child>
+      <child xsi:type="archimate:Note" id="d6321fad" textAlignment="1">
+        <bounds x="1320" y="430" width="233" height="120"/>
+        <content>Аll changes to the domain objects are initiated by the event objects.&#xD;
+&#xD;
+For example, we can restore events (from the event store) one at a time and see what happens. That is, we can better test the causes and effects of any event.</content>
+      </child>
+    </element>
+  </folder>
+</archimate:model>

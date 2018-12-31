@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archimate:model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:archimate="http://www.archimatetool.com/archimate" name="7 closure of operations" id="b9bb3dd9" version="4.0.0">
+  <folder name="Strategy" id="79a4d230" type="strategy"/>
+  <folder name="Business" id="2e5bf62d" type="business"/>
+  <folder name="Application" id="492fb7df" type="application">
+    <element xsi:type="archimate:ApplicationFunction" name="Application Function" id="48b234fb"/>
+    <element xsi:type="archimate:ApplicationProcess" name="get input arguments of some type" id="e166187d"/>
+    <element xsi:type="archimate:ApplicationProcess" name="some operations" id="1daa6dec"/>
+    <element xsi:type="archimate:ApplicationProcess" name="Return the result of the same type as the input arguments" id="54f317b7"/>
+  </folder>
+  <folder name="Technology &amp; Physical" id="75b62713" type="technology"/>
+  <folder name="Motivation" id="12d2e3a7" type="motivation">
+    <element xsi:type="archimate:Meaning" name="closure of operation" id="0a3d3b4a"/>
+  </folder>
+  <folder name="Implementation &amp; Migration" id="6b8de3c8" type="implementation_migration"/>
+  <folder name="Other" id="570ea28d" type="other"/>
+  <folder name="Relations" id="2410b78f" type="relations">
+    <element xsi:type="archimate:CompositionRelationship" id="d87165ca" source="48b234fb" target="e166187d"/>
+    <element xsi:type="archimate:CompositionRelationship" id="e9c11d2d" source="48b234fb" target="1daa6dec"/>
+    <element xsi:type="archimate:CompositionRelationship" id="41e85ea0" source="48b234fb" target="54f317b7"/>
+    <element xsi:type="archimate:FlowRelationship" id="aab0a0ca" source="e166187d" target="1daa6dec"/>
+    <element xsi:type="archimate:FlowRelationship" id="288067a5" source="1daa6dec" target="54f317b7"/>
+    <element xsi:type="archimate:AssociationRelationship" id="7586a6b3" source="48b234fb" target="0a3d3b4a"/>
+  </folder>
+  <folder name="Views" id="b0290d64" type="diagrams">
+    <element xsi:type="archimate:ArchimateDiagramModel" name="closure of operations" id="e2f79947">
+      <child xsi:type="archimate:DiagramObject" id="0a6d99fb" archimateElement="48b234fb">
+        <bounds x="55" y="50" width="201" height="246"/>
+        <sourceConnection xsi:type="archimate:Connection" id="25c28825" source="0a6d99fb" target="3ad286d6" archimateRelationship="d87165ca"/>
+        <sourceConnection xsi:type="archimate:Connection" id="d614cbb7" source="0a6d99fb" target="b065b131" archimateRelationship="e9c11d2d"/>
+        <sourceConnection xsi:type="archimate:Connection" id="cfc3c60d" source="0a6d99fb" target="3c240da5" archimateRelationship="41e85ea0"/>
+        <sourceConnection xsi:type="archimate:Connection" id="90ec9d38" source="0a6d99fb" target="4fbc3d13" archimateRelationship="7586a6b3"/>
+        <child xsi:type="archimate:DiagramObject" id="3ad286d6" targetConnections="25c28825" archimateElement="e166187d">
+          <bounds x="40" y="45" width="155" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="cbc81486" source="3ad286d6" target="b065b131" archimateRelationship="aab0a0ca"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="b065b131" targetConnections="d614cbb7 cbc81486" archimateElement="1daa6dec">
+          <bounds x="40" y="110" width="155" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="ef990af0" source="b065b131" target="3c240da5" archimateRelationship="288067a5"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="3c240da5" targetConnections="cfc3c60d ef990af0" archimateElement="54f317b7">
+          <bounds x="40" y="180" width="155" height="55"/>
+        </child>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="4fbc3d13" targetConnections="90ec9d38" archimateElement="0a3d3b4a">
+        <bounds x="310" y="155" width="120" height="55"/>
+      </child>
+      <child xsi:type="archimate:Note" id="7a49878a" fontColor="#ff0000" textAlignment="1">
+        <bounds x="335" y="209" width="256" height="87"/>
+        <content>It is desirable to use closure of operations.&#xD;
+This property only provides a dependency on a single data type (since the type of input or output values of the same type)</content>
+      </child>
+    </element>
+  </folder>
+</archimate:model>

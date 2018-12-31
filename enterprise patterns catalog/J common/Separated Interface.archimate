@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archimate:model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:archimate="http://www.archimatetool.com/archimate" name="10 Separated Interface" id="6e61c278" version="4.0.0">
+  <folder name="Strategy" id="e537e5e2" type="strategy"/>
+  <folder name="Business" id="0af8567f" type="business"/>
+  <folder name="Application" id="0ed9d6ba" type="application">
+    <element xsi:type="archimate:ApplicationComponent" name="class 1" id="d88d2930"/>
+    <element xsi:type="archimate:ApplicationComponent" name="class 2" id="0ec82184"/>
+    <element xsi:type="archimate:ApplicationComponent" name="class implementation" id="d68256a3"/>
+    <element xsi:type="archimate:ApplicationFunction" name="some func" id="c7462205"/>
+    <element xsi:type="archimate:ApplicationFunction" name="some func" id="59202737"/>
+    <element xsi:type="archimate:ApplicationFunction" name="call func" id="1a90fb93"/>
+    <element xsi:type="archimate:ApplicationInterface" name="separated interface" id="b5238f21-ec62-4dae-a4fc-39d8c9e880e1"/>
+  </folder>
+  <folder name="Technology &amp; Physical" id="876ff70a" type="technology"/>
+  <folder name="Motivation" id="fcd548ff" type="motivation"/>
+  <folder name="Implementation &amp; Migration" id="4a50d6f9" type="implementation_migration"/>
+  <folder name="Other" id="da4d7633" type="other"/>
+  <folder name="Relations" id="e918bd6e" type="relations">
+    <element xsi:type="archimate:AssignmentRelationship" id="8275ef02" source="d68256a3" target="59202737"/>
+    <element xsi:type="archimate:AssignmentRelationship" id="fc09739c" source="d88d2930" target="1a90fb93"/>
+    <element xsi:type="archimate:TriggeringRelationship" id="45b87fbb" source="1a90fb93" target="c7462205"/>
+    <element xsi:type="archimate:TriggeringRelationship" name="opposite call direction" id="e183c718" source="c7462205" target="59202737"/>
+    <element xsi:type="archimate:RealizationRelationship" id="ba49111c-4cad-44f0-9352-8c28e94608fc" source="d68256a3" target="b5238f21-ec62-4dae-a4fc-39d8c9e880e1"/>
+  </folder>
+  <folder name="Views" id="e6279315" type="diagrams">
+    <element xsi:type="archimate:ArchimateDiagramModel" name="Separated Interface" id="4fecc007">
+      <child xsi:type="archimate:Group" id="5b8ed245" name="layer 1" textAlignment="1">
+        <bounds x="182" y="214" width="589" height="308"/>
+        <sourceConnection id="96bd6086" name="Call direction" fontColor="#ff0000" lineWidth="3" lineColor="#ff0000" source="5b8ed245" target="b0ce6c8a" type="1"/>
+        <child xsi:type="archimate:DiagramObject" id="4f454bbc" archimateElement="d68256a3">
+          <bounds x="315" y="85" width="204" height="124"/>
+          <sourceConnection xsi:type="archimate:Connection" id="fc07ee5b" source="4f454bbc" target="80dcc3aa" archimateRelationship="8275ef02"/>
+          <sourceConnection xsi:type="archimate:Connection" id="c4300483-9b8a-4a58-b864-e1176e4c2480" lineColor="#0000ff" source="4f454bbc" target="b4475e67-66bf-4155-a227-7ee4fb9725af" archimateRelationship="ba49111c-4cad-44f0-9352-8c28e94608fc">
+            <bendpoint startX="-49" startY="359" endX="-54" endY="-346"/>
+          </sourceConnection>
+          <child xsi:type="archimate:DiagramObject" id="80dcc3aa" targetConnections="fc07ee5b 4350f690" archimateElement="59202737">
+            <bounds x="70" y="56" width="120" height="55"/>
+          </child>
+        </child>
+      </child>
+      <child xsi:type="archimate:Group" id="b0ce6c8a" name="layer 2" targetConnections="96bd6086" textAlignment="1">
+        <bounds x="182" y="558" width="589" height="308"/>
+        <sourceConnection id="b42500c2" name="Call direction" fontColor="#ff0000" lineWidth="3" lineColor="#ff0000" source="b0ce6c8a" target="ee65ac62" type="1"/>
+      </child>
+      <child xsi:type="archimate:Group" id="ee65ac62" name="layer 3 (Fowler: gateway)" targetConnections="b42500c2" textAlignment="1">
+        <bounds x="182" y="904" width="589" height="308"/>
+        <child xsi:type="archimate:DiagramObject" id="0ae31b26" archimateElement="d88d2930">
+          <bounds x="45" y="100" width="204" height="124"/>
+          <sourceConnection xsi:type="archimate:Connection" id="f80db264" source="0ae31b26" target="849bfbfe" archimateRelationship="fc09739c"/>
+          <child xsi:type="archimate:DiagramObject" id="849bfbfe" targetConnections="f80db264" archimateElement="1a90fb93">
+            <bounds x="45" y="43" width="120" height="55"/>
+            <sourceConnection xsi:type="archimate:Connection" id="6f8c783b" source="849bfbfe" target="92fe6bd7" archimateRelationship="45b87fbb"/>
+          </child>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="b4475e67-66bf-4155-a227-7ee4fb9725af" targetConnections="c4300483-9b8a-4a58-b864-e1176e4c2480" archimateElement="b5238f21-ec62-4dae-a4fc-39d8c9e880e1">
+          <bounds x="320" y="100" width="204" height="124"/>
+          <child xsi:type="archimate:DiagramObject" id="92fe6bd7" targetConnections="6f8c783b" archimateElement="c7462205">
+            <bounds x="40" y="50" width="120" height="55"/>
+            <sourceConnection xsi:type="archimate:Connection" id="4350f690" fontColor="#ff0000" lineColor="#ff0000" source="92fe6bd7" target="80dcc3aa" archimateRelationship="e183c718">
+              <bendpoint startX="26" startY="-348" endX="8" endY="348"/>
+            </sourceConnection>
+          </child>
+        </child>
+      </child>
+      <child xsi:type="archimate:Note" id="b60da925" fontColor="#ff0000" textAlignment="1">
+        <bounds x="721" y="1018" width="215" height="102"/>
+        <content>- The bottom layer still does not know anything about the top layer&#xD;
+- But in the lower layer provides a special interface for such needs</content>
+      </child>
+      <child xsi:type="archimate:Note" id="27c731f2" fontColor="#ff0000" textAlignment="1">
+        <bounds x="721" y="300" width="215" height="102"/>
+        <content>- if you want to provide a function call, contrary to the general direction of the dependencies between the layers&#xD;
+- callback becomes possible thanks to the implementation of the interface</content>
+      </child>
+    </element>
+  </folder>
+</archimate:model>

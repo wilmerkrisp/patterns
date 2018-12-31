@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archimate:model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:archimate="http://www.archimatetool.com/archimate" name="Inversion of Control" id="6af68511" version="4.0.0">
+  <folder name="Strategy" id="9d6b8c7b" type="strategy"/>
+  <folder name="Business" id="4d32e6c2" type="business"/>
+  <folder name="Application" id="90c08e46" type="application">
+    <element xsi:type="archimate:ApplicationComponent" name="Component 1" id="6170a003"/>
+    <element xsi:type="archimate:ApplicationComponent" name="Component 2" id="d5256e49"/>
+    <element xsi:type="archimate:ApplicationComponent" name="Application Component" id="5b8cd164"/>
+    <element xsi:type="archimate:ApplicationComponent" name="Application Component" id="44667069"/>
+    <element xsi:type="archimate:ApplicationComponent" name="Component 1 " id="1bf8b22e"/>
+    <element xsi:type="archimate:ApplicationComponent" name="Component 2 " id="bf9eebff"/>
+  </folder>
+  <folder name="Technology &amp; Physical" id="2b218629" type="technology"/>
+  <folder name="Motivation" id="2e2a67a9" type="motivation"/>
+  <folder name="Implementation &amp; Migration" id="ebdd29eb" type="implementation_migration"/>
+  <folder name="Other" id="34fac4ae" type="other"/>
+  <folder name="Relations" id="ac219772" type="relations">
+    <element xsi:type="archimate:FlowRelationship" id="71f710c8" source="6170a003" target="d5256e49"/>
+    <element xsi:type="archimate:FlowRelationship" name="Here the control inversion by comparison with the previous case" id="6336d64a" source="bf9eebff" target="1bf8b22e"/>
+  </folder>
+  <folder name="Views" id="77a79ff2" type="diagrams">
+    <element xsi:type="archimate:ArchimateDiagramModel" name="Inversion of Control" id="cc65d567">
+      <child xsi:type="archimate:Note" id="0de8c499" fontColor="#ff0000" textAlignment="1">
+        <bounds x="40" y="215" width="261" height="371"/>
+        <content>Variant 1</content>
+      </child>
+      <child xsi:type="archimate:Note" id="4197be5a" fontColor="#ff0000" textAlignment="1">
+        <bounds x="10" y="80" width="241" height="91"/>
+        <content>IoC&#xD;
+Inversion of control is about who initiates messages.</content>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="30f2731d" archimateElement="6170a003">
+        <bounds x="111" y="317" width="120" height="55"/>
+        <sourceConnection xsi:type="archimate:Connection" id="64cc79b9" source="30f2731d" target="2f3efd94" archimateRelationship="71f710c8"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="2f3efd94" targetConnections="64cc79b9" archimateElement="d5256e49">
+        <bounds x="111" y="480" width="120" height="55"/>
+      </child>
+      <child xsi:type="archimate:Note" id="c5949277" fontColor="#ff0000" textAlignment="1">
+        <bounds x="404" y="215" width="261" height="371"/>
+        <content>Variant 2</content>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="2982f7fb" targetConnections="ad56d543" archimateElement="1bf8b22e">
+        <bounds x="475" y="317" width="120" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="ac6ec9da" archimateElement="bf9eebff">
+        <bounds x="475" y="480" width="120" height="55"/>
+        <sourceConnection xsi:type="archimate:Connection" id="ad56d543" source="ac6ec9da" target="2982f7fb" archimateRelationship="6336d64a"/>
+      </child>
+    </element>
+  </folder>
+</archimate:model>

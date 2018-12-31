@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archimate:model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:archimate="http://www.archimatetool.com/archimate" name="4 assertions" id="0aff88cf" version="4.0.0">
+  <folder name="Strategy" id="501a0abb" type="strategy"/>
+  <folder name="Business" id="1bc79cc1" type="business"/>
+  <folder name="Application" id="71c308b5" type="application">
+    <element xsi:type="archimate:ApplicationComponent" name="Application Component" id="7ed6d67a"/>
+    <element xsi:type="archimate:ApplicationFunction" name="command with side effects" id="af109513"/>
+    <element xsi:type="archimate:ApplicationProcess" name="assert pre-conditions" id="3f1a843a"/>
+    <element xsi:type="archimate:ApplicationProcess" name="Application Process" id="e273b8a9"/>
+    <element xsi:type="archimate:ApplicationProcess" name="assert post-conditions" id="66a9ddf2"/>
+    <element xsi:type="archimate:ApplicationFunction" name="test command" id="ffbc9e61">
+      <documentation>•	Object invariants are conditions that should be true for each instance of a class whenever that object is visible to a client. They express the conditions under which the object is considered to be correct.&#xD;
+•	During run-time checking, invariants are checked at the end of each public method. </documentation>
+    </element>
+    <element xsi:type="archimate:ApplicationProcess" name="call command" id="0a17edc3"/>
+  </folder>
+  <folder name="Technology &amp; Physical" id="9c40c597" type="technology"/>
+  <folder name="Motivation" id="f39b7083" type="motivation">
+    <element xsi:type="archimate:Requirement" name="Conditions that must be met, so that the post-condition gives a guaranteed result" id="4588e36d"/>
+    <element xsi:type="archimate:Requirement" name="The side effects of the operation are the guaranteed consequences of calling the method" id="608a16d7"/>
+  </folder>
+  <folder name="Implementation &amp; Migration" id="170e54a8" type="implementation_migration"/>
+  <folder name="Other" id="eb550cb2" type="other"/>
+  <folder name="Relations" id="9e697f40" type="relations">
+    <element xsi:type="archimate:AssignmentRelationship" id="1d1a3251" source="7ed6d67a" target="af109513"/>
+    <element xsi:type="archimate:CompositionRelationship" id="4ff15203" source="af109513" target="e273b8a9"/>
+    <element xsi:type="archimate:FlowRelationship" id="7754c9df" source="3f1a843a" target="e273b8a9"/>
+    <element xsi:type="archimate:FlowRelationship" id="ce351647" source="e273b8a9" target="66a9ddf2"/>
+    <element xsi:type="archimate:CompositionRelationship" id="398ceb1f" source="ffbc9e61" target="3f1a843a"/>
+    <element xsi:type="archimate:CompositionRelationship" id="adb3036c" source="ffbc9e61" target="66a9ddf2"/>
+    <element xsi:type="archimate:AssociationRelationship" id="31c32e2a" source="af109513" target="4588e36d"/>
+    <element xsi:type="archimate:AssociationRelationship" id="06dc8b99" source="af109513" target="608a16d7"/>
+    <element xsi:type="archimate:AssociationRelationship" id="13aa13a7" source="4588e36d" target="3f1a843a"/>
+    <element xsi:type="archimate:AssociationRelationship" id="2d3294ea" source="608a16d7" target="66a9ddf2"/>
+    <element xsi:type="archimate:CompositionRelationship" id="9e335afc" source="ffbc9e61" target="0a17edc3"/>
+    <element xsi:type="archimate:FlowRelationship" id="3bc8cdd8" source="3f1a843a" target="0a17edc3"/>
+    <element xsi:type="archimate:FlowRelationship" id="914c4d6a" source="0a17edc3" target="66a9ddf2"/>
+    <element xsi:type="archimate:FlowRelationship" id="022c42a4-0622-4c9f-8f89-9b914ade74bf" source="0a17edc3" target="af109513"/>
+  </folder>
+  <folder name="Views" id="80a9f1fd" type="diagrams">
+    <element xsi:type="archimate:ArchimateDiagramModel" name="assertions" id="83779222">
+      <child xsi:type="archimate:DiagramObject" id="5bcd65ae" archimateElement="7ed6d67a">
+        <bounds x="45" y="75" width="343" height="386"/>
+        <sourceConnection xsi:type="archimate:Connection" id="79fd0531" source="5bcd65ae" target="abb084ea" archimateRelationship="1d1a3251"/>
+        <child xsi:type="archimate:DiagramObject" id="abb084ea" targetConnections="79fd0531 e9e8140a-bad6-428f-ad2a-5914c80284ef" archimateElement="af109513">
+          <bounds x="47" y="93" width="274" height="268"/>
+          <sourceConnection xsi:type="archimate:Connection" id="92c29b38" lineColor="#999999" source="abb084ea" target="a1901519" archimateRelationship="31c32e2a">
+            <bendpoint startX="163" startY="-77" endX="-122" endY="30"/>
+          </sourceConnection>
+          <sourceConnection xsi:type="archimate:Connection" id="1ba43da1" lineColor="#999999" source="abb084ea" target="869c06d7" archimateRelationship="06dc8b99">
+            <bendpoint startX="173" startY="78" endX="-127" endY="-13"/>
+          </sourceConnection>
+        </child>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="a1901519" targetConnections="92c29b38" archimateElement="4588e36d">
+        <bounds x="442" y="155" width="185" height="93"/>
+        <sourceConnection xsi:type="archimate:Connection" id="b21e9cc3" lineColor="#999999" source="a1901519" target="fe31cb98" archimateRelationship="13aa13a7"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="869c06d7" targetConnections="1ba43da1" archimateElement="608a16d7">
+        <bounds x="442" y="340" width="185" height="93"/>
+        <sourceConnection xsi:type="archimate:Connection" id="a1790d38" lineColor="#999999" source="869c06d7" target="3fb36252" archimateRelationship="2d3294ea">
+          <bendpoint startX="153" startY="-13" endX="-115" endY="23"/>
+        </sourceConnection>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="8355fcd0" archimateElement="ffbc9e61">
+        <bounds x="682" y="165" width="274" height="268"/>
+        <sourceConnection xsi:type="archimate:Connection" id="f60c6582" source="8355fcd0" target="fe31cb98" archimateRelationship="398ceb1f"/>
+        <sourceConnection xsi:type="archimate:Connection" id="456f4533" source="8355fcd0" target="3fb36252" archimateRelationship="adb3036c"/>
+        <sourceConnection xsi:type="archimate:Connection" id="88176379" source="8355fcd0" target="53a79efe" archimateRelationship="9e335afc"/>
+        <child xsi:type="archimate:DiagramObject" id="fe31cb98" targetConnections="f60c6582 b21e9cc3" archimateElement="3f1a843a">
+          <bounds x="75" y="40" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="fdad7395" source="fe31cb98" target="53a79efe" archimateRelationship="3bc8cdd8"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="3fb36252" targetConnections="456f4533 a1790d38 2fa879db" archimateElement="66a9ddf2">
+          <bounds x="75" y="195" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="53a79efe" targetConnections="88176379 fdad7395" archimateElement="0a17edc3">
+          <bounds x="75" y="115" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="2fa879db" source="53a79efe" target="3fb36252" archimateRelationship="914c4d6a"/>
+          <sourceConnection xsi:type="archimate:Connection" id="e9e8140a-bad6-428f-ad2a-5914c80284ef" source="53a79efe" target="abb084ea" archimateRelationship="022c42a4-0622-4c9f-8f89-9b914ade74bf"/>
+        </child>
+      </child>
+      <child xsi:type="archimate:Note" id="5c94c3a1" fontColor="#ff0000" textAlignment="1">
+        <bounds x="867" y="210" width="185" height="80"/>
+        <content>Explicit record of assertions, helps the developer to understand the work of the command and side effects</content>
+      </child>
+      <child xsi:type="archimate:Note" id="e93d7cf0-ce67-48e6-90e2-e585bd58c38f" fontColor="#ff0000" textAlignment="1">
+        <bounds x="442" y="40" width="185" height="80"/>
+        <content>assertion defines the result of an operation or an invariant</content>
+      </child>
+    </element>
+  </folder>
+</archimate:model>

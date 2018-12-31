@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archimate:model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:archimate="http://www.archimatetool.com/archimate" name="2 constraints" id="6b6a06a6" version="4.0.0">
+  <folder name="Strategy" id="e6c93706" type="strategy"/>
+  <folder name="Business" id="e39951b3" type="business"/>
+  <folder name="Application" id="aba4681a" type="application"/>
+  <folder name="Technology &amp; Physical" id="c19e2d51" type="technology"/>
+  <folder name="Motivation" id="512d6fc6" type="motivation"/>
+  <folder name="Implementation &amp; Migration" id="52d02a1a" type="implementation_migration"/>
+  <folder name="Other" id="1785ad86" type="other"/>
+  <folder name="Relations" id="a3d1998f" type="relations"/>
+  <folder name="Views" id="d818aea6" type="diagrams">
+    <element xsi:type="archimate:ArchimateDiagramModel" name="constraints" id="3959460f">
+      <child xsi:type="archimate:Note" id="48d52c54" textAlignment="1">
+        <bounds x="187" y="163" width="185" height="80"/>
+        <content>Constraint conditions in the form of methods or individual objects</content>
+      </child>
+    </element>
+  </folder>
+</archimate:model>
