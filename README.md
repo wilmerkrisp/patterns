@@ -1,5 +1,5 @@
 # patterns
-Complete catalog of all classical patterns in the Archimate language (ArchiTool used https://www.archimatetool.com) 
+Complete catalog of all classical patterns in the Archimate language (ArchiTool used https://www.archimatetool.com)
 This version includes all 155+ patterns completed (278+ models). Images also available.
 
 - Domain driven design patterns
@@ -9,3 +9,9 @@ This version includes all 155+ patterns completed (278+ models). Images also ava
 
 It's great opportunity to use best practices in your micro service architecture
 Also avialable at http://arch.expert.life/en/patterns
+
+<H1>See huge examples inside</H1>
+
+![example1](example1.png)
+
+![example2](example2.png)
