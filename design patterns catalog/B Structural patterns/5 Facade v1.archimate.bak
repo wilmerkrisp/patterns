@@ -223,7 +223,7 @@ one-way calls. facade sends requests subsystem classes&#xD;
         <content>each class has its own responsibility</content>
       </child>
       <child xsi:type="archimate:Note" id="1d85b250-873c-400b-a915-b6e108e9bdc5" textAlignment="1">
-        <bounds x="480" y="145" width="185" height="80"/>
+        <bounds x="453" y="145" width="185" height="80"/>
         <content>the facade for convenience combines / exposes the diverse functionality that other classes provide</content>
       </child>
     </element>

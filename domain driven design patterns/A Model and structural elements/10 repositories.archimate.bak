@@ -619,7 +619,7 @@ Fouler's pattern: repository</content>
             </child>
             <child xsi:type="archimate:Note" id="90dedbb4-8eba-4695-be05-56f007d4edb8" textAlignment="1">
               <bounds x="280" y="60" width="185" height="80"/>
-              <content>It's seens that the method the same (as in repository) but acording with Bridge Pattern, now I can change it seperately</content>
+              <content>вроде бы те же самые методы но на самом деле я теперь могу их менять отдельно от repository</content>
             </child>
           </child>
           <child xsi:type="archimate:DiagramObject" id="c897b2fc-94db-4b42-9343-fc99eefbbff7" targetConnections="c3edc43a-d1b2-44ec-a099-f0e8e10971c8" archimateElement="9e5a895c-b42a-4102-8511-6f8ef5f648c5">
@@ -661,12 +661,12 @@ Fouler's pattern: repository</content>
           </child>
         </child>
         <child xsi:type="archimate:Note" id="3dc02831-228a-4976-8a95-418902f11a77" textAlignment="1">
-          <bounds x="1100" y="340" width="138" height="61"/>
-          <content>also Bridge Pattern: abstract class has a reference to Repository interface</content>
+          <bounds x="1100" y="340" width="138" height="51"/>
+          <content>паттерн мост: абстрактный класс содержит интерфейс</content>
         </child>
         <child xsi:type="archimate:Note" id="1566f12c-57dc-46f6-a6a7-b7ee38325ef2" textAlignment="1">
           <bounds x="1100" y="140" width="138" height="51"/>
-          <content>Bridge Pattern: abstract class has a reference to Repository interface</content>
+          <content>паттерн мост: абстрактный класс содержит интерфейс</content>
         </child>
       </child>
     </element>

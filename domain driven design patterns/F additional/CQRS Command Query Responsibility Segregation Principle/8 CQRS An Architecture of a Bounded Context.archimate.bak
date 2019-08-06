@@ -36,7 +36,7 @@
         </child>
       </child>
       <child xsi:type="archimate:Group" id="85dc3409-7a98-4958-9a97-e9e4e881be9c" name="command layer" textAlignment="1" fillColor="#b0b0b0">
-        <bounds x="569" y="644" width="492" height="284"/>
+        <bounds x="569" y="644" width="962" height="284"/>
         <child xsi:type="archimate:DiagramObject" id="cb1fb975-6d03-4787-9bf8-d0488b9fb177" targetConnections="6f54d8aa-8183-4569-82a1-64d1b31cda17 a187bc1b-c75b-47c7-88c0-7b1a99e72127" archimateElement="ff8bcce4-2fea-480a-a183-701b616fe5e6">
           <bounds x="250" y="100" width="175" height="140"/>
           <sourceConnection xsi:type="archimate:Connection" id="b6d5faac-a66a-43ea-b1e4-cc871b836b2a" source="cb1fb975-6d03-4787-9bf8-d0488b9fb177" target="c4bb3c76-b908-48c3-8e43-0ef63cf8aa32" archimateRelationship="6efffe56-e295-4dda-9de0-360c3f0859a3"/>
@@ -65,10 +65,6 @@
         <content>Command Query Responsibility&#xD;
 Segregation (CQRS) 
 Different layers for Commands and Queries</content>
-      </child>
-      <child xsi:type="archimate:Note" id="1edb88a1-a77c-449e-9076-4071ac5eb691" textAlignment="1">
-        <bounds x="1190" y="749" width="185" height="80"/>
-        <content>Assymetric layers: 3 in the case of cpmmand and 2 in case of query</content>
       </child>
     </element>
     <element xsi:type="archimate:ArchimateDiagramModel" name="CQS" id="7c7461bf-9947-4b4f-aa26-b9f5c3aeaa85">

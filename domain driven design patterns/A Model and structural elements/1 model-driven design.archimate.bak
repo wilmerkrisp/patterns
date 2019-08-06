@@ -8,8 +8,6 @@
     <element xsi:type="archimate:BusinessObject" name="entity 2 (copy)" id="ee0a772f"/>
     <element xsi:type="archimate:BusinessObject" name="entity 1 (copy)" id="c3e98b54-ad04-46f4-9501-ad5914983462"/>
     <element xsi:type="archimate:BusinessObject" name="entity 2 (copy)" id="8158aca1-2635-4a11-8a8c-c17c25cb7d8d"/>
-    <element xsi:type="archimate:BusinessActor" name="Business Actor 1" id="61d4f13c-849d-4167-a23b-f8d9947842c9"/>
-    <element xsi:type="archimate:BusinessActor" name="Business Actor 2" id="8f3fa997-c783-43d2-a269-87d6ade18eb2"/>
   </folder>
   <folder name="Application" id="56e91d2a" type="application">
     <element xsi:type="archimate:ApplicationComponent" name="class 1" id="ada4d778"/>
@@ -20,8 +18,8 @@
     <element xsi:type="archimate:ApplicationComponent" name="class 2 (copy)" id="5df8d01c"/>
     <element xsi:type="archimate:DataObject" name="table 1 (copy)" id="330e3be6"/>
     <element xsi:type="archimate:DataObject" name="table 2 (copy)" id="906b8bb4"/>
-    <element xsi:type="archimate:ApplicationComponent" name="class 1 " id="df17903b-bbc6-4eff-8dd7-89608bd915c2"/>
-    <element xsi:type="archimate:ApplicationComponent" name="class 2" id="aa5071e0-1ec4-4896-9f20-65e5d04f79b6"/>
+    <element xsi:type="archimate:ApplicationComponent" name="class 1 (copy)" id="df17903b-bbc6-4eff-8dd7-89608bd915c2"/>
+    <element xsi:type="archimate:ApplicationComponent" name="class 2 (copy)" id="aa5071e0-1ec4-4896-9f20-65e5d04f79b6"/>
     <element xsi:type="archimate:DataObject" name="table 1 (copy)" id="d9efd1e8-325f-4973-9bb0-cb4b41fdcc4d"/>
     <element xsi:type="archimate:DataObject" name="table 2 (copy)" id="0f21d838-bfff-48fc-b9f7-e9c2e8a5cbc1"/>
   </folder>
@@ -54,8 +52,8 @@
     <element xsi:type="archimate:AggregationRelationship" name="the Class 1 contains an array of references to the class 2                                           " id="616a83fc-575e-445f-b25e-5e387de6db47" source="df17903b-bbc6-4eff-8dd7-89608bd915c2" target="aa5071e0-1ec4-4896-9f20-65e5d04f79b6"/>
     <element xsi:type="archimate:AssociationRelationship" name="the Table 2 contains the foreign key to the Table 1                                           " id="4c04eddf-cd65-4611-837c-bc93664ee849" source="d9efd1e8-325f-4973-9bb0-cb4b41fdcc4d" target="0f21d838-bfff-48fc-b9f7-e9c2e8a5cbc1"/>
     <element xsi:type="archimate:AssociationRelationship" id="72e4fb36-8f42-40ce-b96c-1a3a34ff4ce3" source="d9efd1e8-325f-4973-9bb0-cb4b41fdcc4d" target="df17903b-bbc6-4eff-8dd7-89608bd915c2"/>
-    <element xsi:type="archimate:AssociationRelationship" id="f2b9d523-50fe-458a-ac98-f05e170d28c7" source="df17903b-bbc6-4eff-8dd7-89608bd915c2" target="61d4f13c-849d-4167-a23b-f8d9947842c9"/>
-    <element xsi:type="archimate:AssociationRelationship" id="d7d687f7-c170-4968-bcb7-81845b347a9e" source="aa5071e0-1ec4-4896-9f20-65e5d04f79b6" target="8f3fa997-c783-43d2-a269-87d6ade18eb2"/>
+    <element xsi:type="archimate:AssociationRelationship" id="f2b9d523-50fe-458a-ac98-f05e170d28c7" source="df17903b-bbc6-4eff-8dd7-89608bd915c2" target="c3e98b54-ad04-46f4-9501-ad5914983462"/>
+    <element xsi:type="archimate:AssociationRelationship" id="d7d687f7-c170-4968-bcb7-81845b347a9e" source="aa5071e0-1ec4-4896-9f20-65e5d04f79b6" target="8158aca1-2635-4a11-8a8c-c17c25cb7d8d"/>
   </folder>
   <folder name="Views" id="1f4a80c0" type="diagrams">
     <element xsi:type="archimate:ArchimateDiagramModel" name="model-driven design " id="d2340809">
@@ -155,32 +153,42 @@
     </element>
     <element xsi:type="archimate:ArchimateDiagramModel" name="single responsibility principle" id="cd688425-44a8-4cf9-82b3-763f961f051d">
       <child xsi:type="archimate:Note" id="85b31f64-2a70-498f-9460-32327e11ad75" fontColor="#ff0000" textAlignment="1" borderType="2">
-        <bounds x="284" y="460" width="623" height="40"/>
-        <content>If we go to the cause of class changes - those to the business customer, it turns out that each class is associated with one such 'person'. This is due to Conway’s law that the structure of the program reflects the structure of the organization.</content>
+        <bounds x="478" y="461" width="185" height="38"/>
+        <content>model driven design</content>
       </child>
       <child xsi:type="archimate:Group" id="2023efc2-a490-48e3-adf0-421fde12b29c" name="Conceptual domain model (business layer)" textAlignment="1">
-        <bounds x="180" y="210" width="766" height="236"/>
-        <child xsi:type="archimate:DiagramObject" id="ef6753b6-9a71-42d2-b4b3-d3597c680cb3" targetConnections="7fd75aa2-7634-4f86-9046-e06569f21af0" archimateElement="61d4f13c-849d-4167-a23b-f8d9947842c9">
-          <bounds x="105" y="50" width="120" height="55"/>
+        <bounds x="180" y="290" width="766" height="156"/>
+        <child xsi:type="archimate:DiagramObject" id="2a334f67-d7c0-4959-b46a-a9d276ed9c8c" targetConnections="7fd75aa2-7634-4f86-9046-e06569f21af0" archimateElement="c3e98b54-ad04-46f4-9501-ad5914983462">
+          <bounds x="105" y="60" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="ecbc6d31-0d0d-486f-98dd-daacb20b89cf" fontColor="#ff0000" textPosition="0" source="2a334f67-d7c0-4959-b46a-a9d276ed9c8c" target="4c76357e-261a-4c5b-87f6-cc770656dc6e" archimateRelationship="947d7ab7-07fe-465e-896e-21b090c28a00"/>
         </child>
-        <child xsi:type="archimate:DiagramObject" id="daf9b696-ee27-4f09-9a87-26bd53903ada" targetConnections="45a70b59-def4-4c53-a3ec-3f995a13c18e" archimateElement="8f3fa997-c783-43d2-a269-87d6ade18eb2">
-          <bounds x="545" y="50" width="120" height="55"/>
+        <child xsi:type="archimate:DiagramObject" id="4c76357e-261a-4c5b-87f6-cc770656dc6e" targetConnections="ecbc6d31-0d0d-486f-98dd-daacb20b89cf 45a70b59-def4-4c53-a3ec-3f995a13c18e" archimateElement="8158aca1-2635-4a11-8a8c-c17c25cb7d8d">
+          <bounds x="545" y="60" width="120" height="55"/>
         </child>
       </child>
       <child xsi:type="archimate:Group" id="70a8b3d2-48a1-48ca-bfb5-36f32785a9a5" name="Domain model (information systems: application layer)                                           " textAlignment="1">
         <bounds x="180" y="517" width="766" height="156"/>
-        <child xsi:type="archimate:DiagramObject" id="e20a47e5-4936-4e11-9776-eaafd89cb68f" archimateElement="df17903b-bbc6-4eff-8dd7-89608bd915c2">
+        <child xsi:type="archimate:DiagramObject" id="e20a47e5-4936-4e11-9776-eaafd89cb68f" targetConnections="552a6bfd-ae03-46e3-809a-c33b720cd276" archimateElement="df17903b-bbc6-4eff-8dd7-89608bd915c2">
           <bounds x="110" y="65" width="120" height="55"/>
-          <sourceConnection xsi:type="archimate:Connection" id="7fd75aa2-7634-4f86-9046-e06569f21af0" lineColor="#c0c0c0" source="e20a47e5-4936-4e11-9776-eaafd89cb68f" target="ef6753b6-9a71-42d2-b4b3-d3597c680cb3" archimateRelationship="f2b9d523-50fe-458a-ac98-f05e170d28c7"/>
+          <sourceConnection xsi:type="archimate:Connection" id="6e07a3c0-c4e6-44cc-bbdf-b5360415a6f3" fontColor="#ff0000" textPosition="0" source="e20a47e5-4936-4e11-9776-eaafd89cb68f" target="20b8d026-0f91-45ef-b765-8a88e35d06c2" archimateRelationship="616a83fc-575e-445f-b25e-5e387de6db47"/>
+          <sourceConnection xsi:type="archimate:Connection" id="7fd75aa2-7634-4f86-9046-e06569f21af0" lineColor="#c0c0c0" source="e20a47e5-4936-4e11-9776-eaafd89cb68f" target="2a334f67-d7c0-4959-b46a-a9d276ed9c8c" archimateRelationship="f2b9d523-50fe-458a-ac98-f05e170d28c7"/>
         </child>
-        <child xsi:type="archimate:DiagramObject" id="20b8d026-0f91-45ef-b765-8a88e35d06c2" archimateElement="aa5071e0-1ec4-4896-9f20-65e5d04f79b6">
+        <child xsi:type="archimate:DiagramObject" id="20b8d026-0f91-45ef-b765-8a88e35d06c2" targetConnections="6e07a3c0-c4e6-44cc-bbdf-b5360415a6f3 bc25d2f5-db10-4498-997e-010c676ee2e0" archimateElement="aa5071e0-1ec4-4896-9f20-65e5d04f79b6">
           <bounds x="550" y="65" width="120" height="55"/>
-          <sourceConnection xsi:type="archimate:Connection" id="45a70b59-def4-4c53-a3ec-3f995a13c18e" lineColor="#c0c0c0" source="20b8d026-0f91-45ef-b765-8a88e35d06c2" target="daf9b696-ee27-4f09-9a87-26bd53903ada" archimateRelationship="d7d687f7-c170-4968-bcb7-81845b347a9e"/>
+          <sourceConnection xsi:type="archimate:Connection" id="45a70b59-def4-4c53-a3ec-3f995a13c18e" lineColor="#c0c0c0" source="20b8d026-0f91-45ef-b765-8a88e35d06c2" target="4c76357e-261a-4c5b-87f6-cc770656dc6e" archimateRelationship="d7d687f7-c170-4968-bcb7-81845b347a9e"/>
         </child>
       </child>
-      <child xsi:type="archimate:Note" id="7a689b39-86b8-4f9f-aa89-3ce32a6f61f2" textAlignment="1">
-        <bounds x="100" y="120" width="185" height="80"/>
-        <content>Single responsibility principle from the SOLID model</content>
+      <child xsi:type="archimate:Group" id="6d6ba240-ac0b-41d2-b4db-29764a506978" name="Data model (information systems: data layer)" textAlignment="1">
+        <bounds x="180" y="765" width="766" height="156"/>
+        <child xsi:type="archimate:DiagramObject" id="a9507dba-3e65-4699-a822-b0a6fa7b2627" archimateElement="d9efd1e8-325f-4973-9bb0-cb4b41fdcc4d">
+          <bounds x="115" y="65" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="814e3a5a-aeac-4164-ba50-0edecc222695" fontColor="#ff0000" textPosition="2" source="a9507dba-3e65-4699-a822-b0a6fa7b2627" target="88f093ef-78e6-4e61-95dd-b9e1e8028728" archimateRelationship="4c04eddf-cd65-4611-837c-bc93664ee849"/>
+          <sourceConnection xsi:type="archimate:Connection" id="552a6bfd-ae03-46e3-809a-c33b720cd276" lineColor="#c0c0c0" source="a9507dba-3e65-4699-a822-b0a6fa7b2627" target="e20a47e5-4936-4e11-9776-eaafd89cb68f" archimateRelationship="72e4fb36-8f42-40ce-b96c-1a3a34ff4ce3"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="88f093ef-78e6-4e61-95dd-b9e1e8028728" targetConnections="814e3a5a-aeac-4164-ba50-0edecc222695" archimateElement="0f21d838-bfff-48fc-b9f7-e9c2e8a5cbc1">
+          <bounds x="555" y="65" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="bc25d2f5-db10-4498-997e-010c676ee2e0" lineColor="#c0c0c0" source="88f093ef-78e6-4e61-95dd-b9e1e8028728" target="20b8d026-0f91-45ef-b765-8a88e35d06c2" archimateRelationship="73c32f90-db6f-49cf-8166-f690ea05bc55"/>
+        </child>
       </child>
     </element>
   </folder>

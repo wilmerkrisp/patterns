@@ -392,10 +392,6 @@ Onion Architecture</content>
         <bounds x="-80" y="485" width="120" height="55"/>
         <sourceConnection xsi:type="archimate:Connection" id="34cabf49" source="c619d18e" target="b87a184f" archimateRelationship="dc0f9553"/>
       </child>
-      <child xsi:type="archimate:Note" id="e59cfb2e-9a5f-4e02-af34-51b822fb8f7a" fontColor="#ff2600" textAlignment="1">
-        <bounds x="500" y="525" width="185" height="80"/>
-        <content>The more towards the center the more important the level. The level depends only on an even more important level with which it is connected internally and is independent of the external.</content>
-      </child>
     </element>
     <element xsi:type="archimate:ArchimateDiagramModel" name="layered architecture (asymmetric ) (copy)" id="5b687c83-323e-45f6-97be-2ac8cb5c8a0e">
       <child xsi:type="archimate:Note" id="fd5be7d1-4baa-4244-b97d-7837a09e7a95" fontColor="#ff0000" textAlignment="1">
