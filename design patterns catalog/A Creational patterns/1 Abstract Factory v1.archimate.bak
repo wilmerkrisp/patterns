@@ -287,7 +287,7 @@
         </child>
       </child>
     </element>
-    <element xsi:type="archimate:ArchimateDiagramModel" name="DI refer to concrete comp" id="3f011e7c-2b50-4a0d-9f04-340446212b6f">
+    <element xsi:type="archimate:ArchimateDiagramModel" name="factory (copy)" id="3f011e7c-2b50-4a0d-9f04-340446212b6f">
       <child xsi:type="archimate:Group" id="b5c4baf4-1974-448c-a91a-275a93ce93a7" name="Isolate all dependencies to specific classes in one place" textAlignment="1" fillColor="#ff9200">
         <bounds x="540" y="560" width="761" height="371"/>
       </child>
@@ -351,10 +351,6 @@
           <bounds x="66" y="83" width="120" height="55"/>
           <sourceConnection xsi:type="archimate:Connection" id="908a3914-602e-4859-9e12-28bee5695eb2" lineColor="#ff2600" source="ebfadb9f-532e-4d37-a2a1-90b2e688893a" target="cc1ed96b-e259-4ce0-9cb9-3b74d9e74488" archimateRelationship="b685141b-e032-49ad-98ae-78b5fdc7a4ea"/>
         </child>
-      </child>
-      <child xsi:type="archimate:Note" id="92bf138a-136e-47b6-998c-75817ffbfcb7" textAlignment="1">
-        <bounds x="110" y="544" width="185" height="80"/>
-        <content>When you start the program in the main method, create all factories - this isolates the creation of all specific dependencies in one place</content>
       </child>
     </element>
   </folder>

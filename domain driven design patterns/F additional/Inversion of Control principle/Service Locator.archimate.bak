@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<archimate:model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:archimate="http://www.archimatetool.com/archimate" name="Service Locator" id="aef727b8" version="4.4.0">
+<archimate:model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:archimate="http://www.archimatetool.com/archimate" name="Service Locator" id="aef727b8" version="4.0.0">
   <folder name="Strategy" id="14d17077" type="strategy"/>
   <folder name="Business" id="6e68b6ec" type="business"/>
   <folder name="Application" id="48440dd1" type="application">
@@ -197,11 +197,6 @@ Fawler's pattern: registry</content>
 interface1 = interface 1 implementation 1&#xD;
 interface2 = interface 2 implementation 1</content>
         </child>
-      </child>
-      <child xsi:type="archimate:Note" id="f0d548ad-9eaf-4610-93db-f7681928d4c8" textAlignment="1">
-        <bounds x="690" y="210" width="271" height="80"/>
-        <content>There is a point of view that this is an antipattern, 
-since when using a locator in classes, the object is often obtained from a static locator class instead of getting it from the outside in constructor with dependency injection</content>
       </child>
     </element>
   </folder>

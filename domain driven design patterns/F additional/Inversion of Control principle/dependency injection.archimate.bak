@@ -217,7 +217,7 @@ interface2.params = params</content>
 Dependencies are provided externally by a special injector and a configuration file.</content>
       </child>
     </element>
-    <element xsi:type="archimate:ArchimateDiagramModel" name="dependency injection  (composition root)" id="ab7c7bbd-699c-43d7-8b0d-1857636f8941">
+    <element xsi:type="archimate:ArchimateDiagramModel" name="dependency injection  (copy)" id="ab7c7bbd-699c-43d7-8b0d-1857636f8941">
       <child xsi:type="archimate:Note" id="496b84ff-b6e1-42e4-b482-00d7b187d3c1" fontColor="#ff0000" textAlignment="1">
         <bounds x="60" y="280" width="281" height="81"/>
         <content>the diagram demonstrates the basic concepts of DI:
