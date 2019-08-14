@@ -189,6 +189,10 @@ if I want use all possibilities, I use directly all classes
 one-way calls. facade sends requests subsystem classes&#xD;
 </content>
       </child>
+      <child xsi:type="archimate:Note" id="8b2f54cd-1162-41cd-bbcd-16eb49d1f90d" textAlignment="1">
+        <bounds x="1050" y="660" width="185" height="80"/>
+        <content>antipattern: if the facade is a class (not an interface) then all clients will transitively depend on all classes behind the facade</content>
+      </child>
     </element>
     <element xsi:type="archimate:ArchimateDiagramModel" name="uml" id="33e0041e">
       <child xsi:type="archimate:Group" id="930294f4" name="module/package" fontColor="#ff0000" textAlignment="1" fillColor="#dddd00">

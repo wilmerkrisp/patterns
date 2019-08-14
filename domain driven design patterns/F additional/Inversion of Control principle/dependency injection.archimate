@@ -219,17 +219,18 @@ Dependencies are provided externally by a special injector and a configuration f
     </element>
     <element xsi:type="archimate:ArchimateDiagramModel" name="dependency injection  (composition root)" id="ab7c7bbd-699c-43d7-8b0d-1857636f8941">
       <child xsi:type="archimate:Note" id="496b84ff-b6e1-42e4-b482-00d7b187d3c1" fontColor="#ff0000" textAlignment="1">
-        <bounds x="60" y="280" width="281" height="81"/>
+        <bounds x="30" y="150" width="281" height="81"/>
         <content>the diagram demonstrates the basic concepts of DI:
+- the main component
 - root of composition
 - recognition root - first recognized and injected class (the root of the object graph to be recognized)
 </content>
       </child>
       <child xsi:type="archimate:DiagramObject" id="55a6cc5d-cdbd-4738-a58d-09936ec6d77e" archimateElement="f5518965-fdf3-4e8d-8e07-a6b3d5919436" type="1">
-        <bounds x="163" y="382" width="348" height="359"/>
+        <bounds x="163" y="280" width="348" height="461"/>
         <sourceConnection xsi:type="archimate:Connection" id="9def38ab-438b-4dc4-9a66-58934c9f2bea" source="55a6cc5d-cdbd-4738-a58d-09936ec6d77e" target="e05b55c8-ce15-43d7-a586-5d38b5ad6d2f" archimateRelationship="ae4b2471-20f2-48c0-a859-b73b6cf2c0b8"/>
         <child xsi:type="archimate:DiagramObject" id="e05b55c8-ce15-43d7-a586-5d38b5ad6d2f" targetConnections="9def38ab-438b-4dc4-9a66-58934c9f2bea" archimateElement="f17bea54-435e-44d2-9694-85d07f057858">
-          <bounds x="20" y="40" width="301" height="281"/>
+          <bounds x="20" y="142" width="301" height="281"/>
           <sourceConnection xsi:type="archimate:Connection" id="2498f312-3afe-46fd-9506-7773368513d2" source="e05b55c8-ce15-43d7-a586-5d38b5ad6d2f" target="753c0893-55b5-4bc1-85c7-cb9acf657336" archimateRelationship="7c508e12-ef28-4f31-99e7-9d950442357e"/>
           <sourceConnection xsi:type="archimate:Connection" id="550aa921-2af7-4c78-b937-f58ad4b42387" source="e05b55c8-ce15-43d7-a586-5d38b5ad6d2f" target="3d54d04e-a9ef-4238-b345-abf8a4d7c83f" archimateRelationship="049862c8-28a7-41a1-9aab-8074c63a57cc"/>
           <child xsi:type="archimate:DiagramObject" id="753c0893-55b5-4bc1-85c7-cb9acf657336" targetConnections="2498f312-3afe-46fd-9506-7773368513d2" archimateElement="de48fe46-0040-42a5-840b-52f66623c682">
@@ -246,6 +247,15 @@ Dependencies are provided externally by a special injector and a configuration f
             <bounds x="53" y="144" width="120" height="55"/>
             <sourceConnection xsi:type="archimate:Connection" id="0ba58614-7986-42c6-9969-9b3356a119b1" fontColor="#ff2600" lineWidth="3" lineColor="#ff2600" source="3d54d04e-a9ef-4238-b345-abf8a4d7c83f" target="889905f0-b809-427a-8f6c-dcf83bfcf789" archimateRelationship="fea3c334-454c-49cc-be08-fdb5e4dbe393"/>
           </child>
+        </child>
+        <child xsi:type="archimate:Note" id="bbe8a332-ca2d-4b48-90a9-516531a86b37" textAlignment="1">
+          <bounds x="15" y="20" width="306" height="106"/>
+          <content>the main component
+- it provides only the workability of the system .  
+- his task is to create all Factories, Strategies and other global tools and then transfer control to high-level abstractions in the system . 
+- it is in the main component that all dependencies should be implemented using the dependency injection infrastructure
+- the lowest level dirty module located in the outer circle of pure architecture .  It loads whatever the higher-level system needs and then transfers control to it .
+- think of the main component as a plug-in,</content>
         </child>
       </child>
       <child xsi:type="archimate:DiagramObject" id="4914f873-af07-434c-8efa-d93177a56c57" targetConnections="de497e5f-10a2-4c60-b9e9-90b05e443c45" archimateElement="c6b30132-f7c6-4383-ae4c-22af0661da05" type="1">

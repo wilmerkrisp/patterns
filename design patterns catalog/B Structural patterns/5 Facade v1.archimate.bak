@@ -237,13 +237,14 @@ one-way calls. facade sends requests subsystem classes&#xD;
           <bounds x="370" y="70" width="120" height="55"/>
         </child>
       </child>
-      <child xsi:type="archimate:Note" id="68c45c5c-6eb1-4280-ad03-436d7c536e66" textAlignment="1">
-        <bounds x="220" y="680" width="185" height="80"/>
-        <content>each class has its own responsibility</content>
+      <child xsi:type="archimate:Note" id="68c45c5c-6eb1-4280-ad03-436d7c536e66" fontColor="#ff2600" textAlignment="1">
+        <bounds x="270" y="620" width="221" height="121"/>
+        <content>It is dangerous to create dependencies on modules that contain more than you need. The diagram shows that the interfaces are separated and changing one will not affect the client of the other interface</content>
       </child>
       <child xsi:type="archimate:Note" id="1d85b250-873c-400b-a915-b6e108e9bdc5" textAlignment="1">
-        <bounds x="140" y="460" width="185" height="80"/>
-        <content>the facade for convenience combines / exposes the diverse functionality that other classes provide</content>
+        <bounds x="270" y="761" width="185" height="80"/>
+        <content>This pattern as a counterbalance to the facade pattern (which on the contrary may contain too many responsibilities)
+</content>
       </child>
       <child xsi:type="archimate:Group" id="04c8ed0f-a1d6-4551-b2d7-04d98e9d17b5" name="Conceptual domain model (business layer)" textAlignment="1">
         <bounds x="360" y="260" width="1191" height="236"/>
