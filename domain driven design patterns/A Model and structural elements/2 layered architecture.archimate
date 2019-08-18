@@ -783,9 +783,9 @@ see patterns: Separated Interface, Dependency Inversion</content>
           <bounds x="120" y="50" width="120" height="55"/>
         </child>
       </child>
-      <child xsi:type="archimate:Note" id="197e34d2-f981-42bf-a513-ca229ca70d9b" textAlignment="1">
-        <bounds x="50" y="1100" width="185" height="80"/>
-        <content>interfaces and value objects for data exchange are placed in a separate level. Both domain and service level depend on the intermediate level</content>
+      <child xsi:type="archimate:Note" id="197e34d2-f981-42bf-a513-ca229ca70d9b" fontColor="#ff2600" textAlignment="1">
+        <bounds x="50" y="1090" width="185" height="100"/>
+        <content>interfaces and value objects for data exchange are placed in a separate level. Both domain and service level depend on the intermediate level (for example separate package in Java or different namespace in C++)</content>
       </child>
     </element>
     <element xsi:type="archimate:ArchimateDiagramModel" name="Hexagonal architecture (symmetric) (copy)" id="ded82cc9-daf7-449c-b0af-b3e7efd7dfa1">

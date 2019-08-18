@@ -1053,7 +1053,8 @@ see patterns: Separated Interface, Dependency Inversion</content>
         <sourceConnection xsi:type="archimate:Connection" id="8e05a5a2-88ff-47c5-9f7f-494f2da86321" lineWidth="3" lineColor="#ff2600" source="f940260c-1953-41a8-942a-99f805a65b41" target="cb18ac90-1cf3-4141-b8ed-b0469c86b41c" archimateRelationship="2e080298-5acb-4941-ad7c-224df372bf3b"/>
       </child>
       <child xsi:type="archimate:Note" id="92c1f3e4-db04-4f74-a756-aa2407bc22f3" textAlignment="1">
-        <bounds x="-36" y="-18" width="185" height="80"/>
+        <bounds x="-40" y="-30" width="185" height="80"/>
+        <content>the direction of all dependencies (inheritance or challenges) is strictly towards the center, there are no other directions and there are absolutely no cyclic dependencies</content>
       </child>
     </element>
   </folder>
