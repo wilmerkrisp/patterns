@@ -19,7 +19,7 @@ image:example2.png[link="example2.png"]
 == Book avialable also with pdf
 patterns.pdf
 
-== Architecture with JArchitecture
+== Architecture with JArchitect
 image:https://www.jarchitect.com/assets/img/transparentlogo.png["JArchitecture",width=170,link="www.jarchitect.com"]
 Architecture diagrams is also presented for comparison (coming soon!), built with JArchitect. Thanks to Codegear / CppDepend for the JArchitect.
 
