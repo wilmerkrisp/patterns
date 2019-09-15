@@ -271,9 +271,10 @@
     <element xsi:type="archimate:FlowRelationship" id="76c2167f-fe54-475d-b6cd-b49fc79fe8f1" source="45f31726-6ca1-4007-a4c8-7cb9c5c52fab" target="b35f7768-3fbb-4348-8262-97f652914b0e"/>
     <element xsi:type="archimate:FlowRelationship" id="2a921617-2073-4dc6-9dd5-1238709a6bc0" source="45f31726-6ca1-4007-a4c8-7cb9c5c52fab" target="072bf8bc-b17d-4816-835c-5ecbcee8d8f1"/>
     <element xsi:type="archimate:FlowRelationship" id="c5246113-e6a6-442e-9159-df81f3e3ae41" source="45f31726-6ca1-4007-a4c8-7cb9c5c52fab" target="eb2a54cd-1eb8-4e15-967b-763bf3708c17"/>
-    <element xsi:type="archimate:FlowRelationship" id="b01f3004-19d1-423c-bd40-17678ff9a8ae" source="f766c52c-96b5-4666-84df-623a8e8750db" target="07321a71-7f77-4b02-b421-c23e3e897408"/>
+    <element xsi:type="archimate:FlowRelationship" id="b01f3004-19d1-423c-bd40-17678ff9a8ae" source="f766c52c-96b5-4666-84df-623a8e8750db" target="eb2a54cd-1eb8-4e15-967b-763bf3708c17"/>
     <element xsi:type="archimate:FlowRelationship" id="8a7275c7-69fc-45fa-8d04-2d5478128bdc" source="072bf8bc-b17d-4816-835c-5ecbcee8d8f1" target="eb2a54cd-1eb8-4e15-967b-763bf3708c17"/>
     <element xsi:type="archimate:SpecializationRelationship" id="1ff52781-859a-42cb-bb6f-145b7d2cb4ce" source="45f31726-6ca1-4007-a4c8-7cb9c5c52fab" target="bc618cfe-542d-4203-8835-b9d16b553566"/>
+    <element xsi:type="archimate:TriggeringRelationship" id="4ec53d23-3427-4303-96a3-5dcdd1e4d991" source="92322504-441f-454a-9e78-222158852dc3" target="848369c4-0b94-4a71-acb5-dfa06f081998"/>
   </folder>
   <folder name="Views" id="d924b4f7-04ad-4c1a-87a0-06e621243346" type="diagrams">
     <element xsi:type="archimate:ArchimateDiagramModel" name="clean architecture" id="4cf8f41a-474e-4a2a-b77e-59be2e8d0f4a">
@@ -1671,17 +1672,17 @@ that violates Liskov's substitution principle </content>
         <sourceConnection xsi:type="archimate:Connection" id="c24976d3-53f2-4b1f-b81d-cbd2bc0656ac" lineWidth="3" lineColor="#cacaca" source="3d93c715-f010-4ef3-92ab-aa4385a25c62" target="7d1b55ae-0898-40b9-b7b8-0857e9bece7b" archimateRelationship="06767321-a592-4968-889b-fecfbd58a49a">
           <bendpoint startX="-10" startY="-197" endX="-10" endY="187"/>
         </sourceConnection>
-        <sourceConnection xsi:type="archimate:Connection" id="9b3aa3f6-55ae-4426-b0ad-f70c22483cf2" source="3d93c715-f010-4ef3-92ab-aa4385a25c62" target="39305d02-3e0a-4265-b0cd-13781dad0d04" archimateRelationship="b01f3004-19d1-423c-bd40-17678ff9a8ae">
+        <sourceConnection xsi:type="archimate:Connection" id="9b3aa3f6-55ae-4426-b0ad-f70c22483cf2" source="3d93c715-f010-4ef3-92ab-aa4385a25c62" target="29069980-ebd6-45f9-b5a1-d5731cc60c3a" archimateRelationship="b01f3004-19d1-423c-bd40-17678ff9a8ae">
           <bendpoint startX="-460" startY="-7" endX="5" endY="153"/>
         </sourceConnection>
       </child>
-      <child xsi:type="archimate:DiagramObject" id="39305d02-3e0a-4265-b0cd-13781dad0d04" targetConnections="9b3aa3f6-55ae-4426-b0ad-f70c22483cf2" textAlignment="1" archimateElement="07321a71-7f77-4b02-b421-c23e3e897408">
+      <child xsi:type="archimate:DiagramObject" id="39305d02-3e0a-4265-b0cd-13781dad0d04" textAlignment="1" archimateElement="07321a71-7f77-4b02-b421-c23e3e897408">
         <bounds x="400" y="600" width="130" height="55"/>
         <sourceConnection xsi:type="archimate:Connection" id="2aa11650-3204-4bc4-9ac8-3c5282b91bdc" lineWidth="3" lineColor="#cacaca" source="39305d02-3e0a-4265-b0cd-13781dad0d04" target="29069980-ebd6-45f9-b5a1-d5731cc60c3a" archimateRelationship="f67d0481-7b13-47ae-88c7-0af7e8361f10">
           <bendpoint startX="-9" startY="-249" endX="-30" endY="229"/>
         </sourceConnection>
       </child>
-      <child xsi:type="archimate:DiagramObject" id="29069980-ebd6-45f9-b5a1-d5731cc60c3a" targetConnections="11e63185-e6d3-486b-bc4b-a9a63d1da144 62d17513-5787-4ba9-82ee-2ebfba2cf508 2aa11650-3204-4bc4-9ac8-3c5282b91bdc" textAlignment="1" archimateElement="eb2a54cd-1eb8-4e15-967b-763bf3708c17">
+      <child xsi:type="archimate:DiagramObject" id="29069980-ebd6-45f9-b5a1-d5731cc60c3a" targetConnections="11e63185-e6d3-486b-bc4b-a9a63d1da144 62d17513-5787-4ba9-82ee-2ebfba2cf508 2aa11650-3204-4bc4-9ac8-3c5282b91bdc 9b3aa3f6-55ae-4426-b0ad-f70c22483cf2" textAlignment="1" archimateElement="eb2a54cd-1eb8-4e15-967b-763bf3708c17">
         <bounds x="400" y="198" width="120" height="55"/>
       </child>
       <child xsi:type="archimate:DiagramObject" id="cf958303-5179-42e2-8e60-4c7ea52301ae" targetConnections="47662238-0cb2-42ac-9dd2-d997d0a45a03 638de2a9-4cfa-4fe0-978d-6a426e808dff" textAlignment="1" archimateElement="bc618cfe-542d-4203-8835-b9d16b553566">
@@ -1713,8 +1714,9 @@ that violates Liskov's substitution principle </content>
       </child>
       <child xsi:type="archimate:DiagramObject" id="18748ac0-4337-4cbd-81fa-a7fd31372280" textAlignment="1" archimateElement="92322504-441f-454a-9e78-222158852dc3">
         <bounds x="410" y="860" width="830" height="55"/>
+        <sourceConnection xsi:type="archimate:Connection" id="907dda1f-3ef0-4ac4-b1de-abf72ebaf638" source="18748ac0-4337-4cbd-81fa-a7fd31372280" target="858815d4-fe44-48f2-bead-98854940d7be" archimateRelationship="4ec53d23-3427-4303-96a3-5dcdd1e4d991"/>
       </child>
-      <child xsi:type="archimate:DiagramObject" id="858815d4-fe44-48f2-bead-98854940d7be" textAlignment="1" archimateElement="848369c4-0b94-4a71-acb5-dfa06f081998">
+      <child xsi:type="archimate:DiagramObject" id="858815d4-fe44-48f2-bead-98854940d7be" targetConnections="907dda1f-3ef0-4ac4-b1de-abf72ebaf638" textAlignment="1" fillColor="#00f900" archimateElement="848369c4-0b94-4a71-acb5-dfa06f081998">
         <bounds x="1120" y="760" width="120" height="55"/>
         <sourceConnection xsi:type="archimate:Connection" id="843995db-fb19-4f61-b96c-8fa1f1efef5e" source="858815d4-fe44-48f2-bead-98854940d7be" target="bfed6571-4de4-42e9-9b6b-c209edebc3fe" archimateRelationship="29027b2a-7096-4018-b695-13920670736e">
           <bendpoint startX="-30" startY="-497" endX="430" endY="3"/>
@@ -1725,23 +1727,21 @@ that violates Liskov's substitution principle </content>
         <sourceConnection xsi:type="archimate:Connection" id="92f8b1fb-81a5-4f29-977f-698c0f7b0f98" lineWidth="3" lineColor="#cacaca" source="e26b905f-77cc-4f0b-9323-a7ec3bd1fd33" target="442580fa-0882-4ae2-a2f0-53651a7b18fd" archimateRelationship="06767321-a592-4968-889b-fecfbd58a49a">
           <bendpoint startX="-10" startY="-197" endX="-10" endY="187"/>
         </sourceConnection>
-        <sourceConnection xsi:type="archimate:Connection" id="093a8967-b944-4125-a142-0f15e5f93fb3" source="e26b905f-77cc-4f0b-9323-a7ec3bd1fd33" target="23e4ef9b-dbba-4c75-9254-363609bfa5c5" archimateRelationship="b01f3004-19d1-423c-bd40-17678ff9a8ae">
-          <bendpoint startX="-460" startY="-7" endX="5" endY="153"/>
-        </sourceConnection>
+        <sourceConnection xsi:type="archimate:Connection" id="093a8967-b944-4125-a142-0f15e5f93fb3" source="e26b905f-77cc-4f0b-9323-a7ec3bd1fd33" target="0ec2ab77-be35-4eb1-83f9-af71e37839d0" archimateRelationship="b01f3004-19d1-423c-bd40-17678ff9a8ae"/>
       </child>
-      <child xsi:type="archimate:DiagramObject" id="23e4ef9b-dbba-4c75-9254-363609bfa5c5" targetConnections="093a8967-b944-4125-a142-0f15e5f93fb3" textAlignment="1" archimateElement="07321a71-7f77-4b02-b421-c23e3e897408">
+      <child xsi:type="archimate:DiagramObject" id="23e4ef9b-dbba-4c75-9254-363609bfa5c5" textAlignment="1" archimateElement="07321a71-7f77-4b02-b421-c23e3e897408">
         <bounds x="400" y="600" width="130" height="55"/>
         <sourceConnection xsi:type="archimate:Connection" id="0dbfaf45-6612-4650-8a7d-84707ea7065f" lineWidth="3" lineColor="#cacaca" source="23e4ef9b-dbba-4c75-9254-363609bfa5c5" target="0ec2ab77-be35-4eb1-83f9-af71e37839d0" archimateRelationship="f67d0481-7b13-47ae-88c7-0af7e8361f10">
           <bendpoint startX="-9" startY="-249" endX="-30" endY="229"/>
         </sourceConnection>
       </child>
-      <child xsi:type="archimate:DiagramObject" id="0ec2ab77-be35-4eb1-83f9-af71e37839d0" targetConnections="0dbfaf45-6612-4650-8a7d-84707ea7065f a25bc8be-f20d-4d30-ae60-d037efc4168a 496acdaf-cee1-40d8-8e03-246fd4a28e82" textAlignment="1" archimateElement="eb2a54cd-1eb8-4e15-967b-763bf3708c17">
+      <child xsi:type="archimate:DiagramObject" id="0ec2ab77-be35-4eb1-83f9-af71e37839d0" targetConnections="0dbfaf45-6612-4650-8a7d-84707ea7065f a25bc8be-f20d-4d30-ae60-d037efc4168a 496acdaf-cee1-40d8-8e03-246fd4a28e82 093a8967-b944-4125-a142-0f15e5f93fb3" textAlignment="1" fillColor="#00f900" archimateElement="eb2a54cd-1eb8-4e15-967b-763bf3708c17">
         <bounds x="400" y="198" width="120" height="55"/>
       </child>
-      <child xsi:type="archimate:DiagramObject" id="bfed6571-4de4-42e9-9b6b-c209edebc3fe" targetConnections="843995db-fb19-4f61-b96c-8fa1f1efef5e 42211dcf-42e2-42e3-b1f6-e7345a965fce" textAlignment="1" archimateElement="bc618cfe-542d-4203-8835-b9d16b553566">
+      <child xsi:type="archimate:DiagramObject" id="bfed6571-4de4-42e9-9b6b-c209edebc3fe" targetConnections="843995db-fb19-4f61-b96c-8fa1f1efef5e 42211dcf-42e2-42e3-b1f6-e7345a965fce" textAlignment="1" fillColor="#00f900" archimateElement="bc618cfe-542d-4203-8835-b9d16b553566">
         <bounds x="660" y="260" width="120" height="55"/>
       </child>
-      <child xsi:type="archimate:DiagramObject" id="442580fa-0882-4ae2-a2f0-53651a7b18fd" targetConnections="92f8b1fb-81a5-4f29-977f-698c0f7b0f98 1555092d-91dc-47df-8f65-ebe1d4b03c60" textAlignment="1" archimateElement="b35f7768-3fbb-4348-8262-97f652914b0e">
+      <child xsi:type="archimate:DiagramObject" id="442580fa-0882-4ae2-a2f0-53651a7b18fd" targetConnections="92f8b1fb-81a5-4f29-977f-698c0f7b0f98 1555092d-91dc-47df-8f65-ebe1d4b03c60" textAlignment="1" fillColor="#00f900" archimateElement="b35f7768-3fbb-4348-8262-97f652914b0e">
         <bounds x="870" y="430" width="120" height="55"/>
         <sourceConnection xsi:type="archimate:Connection" id="a25bc8be-f20d-4d30-ae60-d037efc4168a" source="442580fa-0882-4ae2-a2f0-53651a7b18fd" target="0ec2ab77-be35-4eb1-83f9-af71e37839d0" archimateRelationship="9760b791-b374-4b91-9eff-88cdef82f6ea"/>
       </child>
@@ -1752,9 +1752,12 @@ that violates Liskov's substitution principle </content>
         <sourceConnection xsi:type="archimate:Connection" id="42211dcf-42e2-42e3-b1f6-e7345a965fce" lineWidth="3" lineColor="#cacaca" source="9ddff333-c659-4937-87da-3e2668782d9a" target="bfed6571-4de4-42e9-9b6b-c209edebc3fe" archimateRelationship="1ff52781-859a-42cb-bb6f-145b7d2cb4ce"/>
       </child>
       <child xsi:type="archimate:Note" id="928e041f-e306-4e70-b1bf-bc1a94f36518" fontColor="#ff2600" textAlignment="1">
-        <bounds x="389" y="60" width="185" height="80"/>
+        <bounds x="389" y="60" width="272" height="80"/>
         <content>Package by layer
-</content>
+
+green - public packages opened to other packages
+white - private packages in module/jar
+gray - java jar or gradle project</content>
       </child>
     </element>
     <element xsi:type="archimate:ArchimateDiagramModel" name="clean architecture package (leveled) (only pack) (variant2)" id="6e60e118-1547-4de8-999b-cb5b1fb670e4">
@@ -1766,8 +1769,9 @@ that violates Liskov's substitution principle </content>
       </child>
       <child xsi:type="archimate:DiagramObject" id="fae0cc7c-2a45-469b-86d1-54b28b92aa5a" textAlignment="1" archimateElement="92322504-441f-454a-9e78-222158852dc3">
         <bounds x="410" y="860" width="830" height="55"/>
+        <sourceConnection xsi:type="archimate:Connection" id="92e2c88c-dc70-4b4a-a321-c342e66e6b99" source="fae0cc7c-2a45-469b-86d1-54b28b92aa5a" target="e39b56dd-fe19-43c3-9471-34347b83add4" archimateRelationship="4ec53d23-3427-4303-96a3-5dcdd1e4d991"/>
       </child>
-      <child xsi:type="archimate:DiagramObject" id="e39b56dd-fe19-43c3-9471-34347b83add4" textAlignment="1" archimateElement="848369c4-0b94-4a71-acb5-dfa06f081998">
+      <child xsi:type="archimate:DiagramObject" id="e39b56dd-fe19-43c3-9471-34347b83add4" targetConnections="92e2c88c-dc70-4b4a-a321-c342e66e6b99" textAlignment="1" fillColor="#00f900" archimateElement="848369c4-0b94-4a71-acb5-dfa06f081998">
         <bounds x="1120" y="760" width="120" height="55"/>
         <sourceConnection xsi:type="archimate:Connection" id="ed1493ad-c1d6-4dad-8ae7-07c37566ea70" source="e39b56dd-fe19-43c3-9471-34347b83add4" target="0f2e6bdc-3712-4498-a4df-2222828dfae4" archimateRelationship="29027b2a-7096-4018-b695-13920670736e">
           <bendpoint startX="-30" startY="-497" endX="430" endY="3"/>
@@ -1778,17 +1782,15 @@ that violates Liskov's substitution principle </content>
         <sourceConnection xsi:type="archimate:Connection" id="5520b8b1-d84a-4e8b-9316-95217896e047" lineWidth="3" lineColor="#cacaca" source="44077b75-d022-47c1-88ab-d87efa96f8d8" target="25806019-d001-4fb5-b7fe-267484c56b06" archimateRelationship="06767321-a592-4968-889b-fecfbd58a49a">
           <bendpoint startX="-10" startY="-197" endX="-10" endY="187"/>
         </sourceConnection>
-        <sourceConnection xsi:type="archimate:Connection" id="f800f7a9-53b2-4ac3-83bc-c45fef7c6ca1" source="44077b75-d022-47c1-88ab-d87efa96f8d8" target="27ecceaf-6047-4d0d-aaf1-9948da3cabef" archimateRelationship="b01f3004-19d1-423c-bd40-17678ff9a8ae">
-          <bendpoint startX="-460" startY="-7" endX="5" endY="153"/>
-        </sourceConnection>
+        <sourceConnection xsi:type="archimate:Connection" id="f800f7a9-53b2-4ac3-83bc-c45fef7c6ca1" source="44077b75-d022-47c1-88ab-d87efa96f8d8" target="2b3ad8ad-d57f-4911-970b-e1b51c2d8614" archimateRelationship="b01f3004-19d1-423c-bd40-17678ff9a8ae"/>
       </child>
-      <child xsi:type="archimate:DiagramObject" id="27ecceaf-6047-4d0d-aaf1-9948da3cabef" targetConnections="f800f7a9-53b2-4ac3-83bc-c45fef7c6ca1" textAlignment="1" archimateElement="07321a71-7f77-4b02-b421-c23e3e897408">
+      <child xsi:type="archimate:DiagramObject" id="27ecceaf-6047-4d0d-aaf1-9948da3cabef" textAlignment="1" archimateElement="07321a71-7f77-4b02-b421-c23e3e897408">
         <bounds x="400" y="600" width="130" height="55"/>
         <sourceConnection xsi:type="archimate:Connection" id="bf43d7df-0aa0-49e8-ba30-a68e8a40390f" lineWidth="3" lineColor="#cacaca" source="27ecceaf-6047-4d0d-aaf1-9948da3cabef" target="2b3ad8ad-d57f-4911-970b-e1b51c2d8614" archimateRelationship="f67d0481-7b13-47ae-88c7-0af7e8361f10">
           <bendpoint startX="-9" startY="-249" endX="-30" endY="229"/>
         </sourceConnection>
       </child>
-      <child xsi:type="archimate:DiagramObject" id="2b3ad8ad-d57f-4911-970b-e1b51c2d8614" targetConnections="bf43d7df-0aa0-49e8-ba30-a68e8a40390f 11a23b83-8f42-4df4-94be-f30ebfb8982b 16a0d58b-5cc3-4a61-b9d6-467f3eba3eb6" textAlignment="1" archimateElement="eb2a54cd-1eb8-4e15-967b-763bf3708c17">
+      <child xsi:type="archimate:DiagramObject" id="2b3ad8ad-d57f-4911-970b-e1b51c2d8614" targetConnections="bf43d7df-0aa0-49e8-ba30-a68e8a40390f 11a23b83-8f42-4df4-94be-f30ebfb8982b 16a0d58b-5cc3-4a61-b9d6-467f3eba3eb6 f800f7a9-53b2-4ac3-83bc-c45fef7c6ca1" textAlignment="1" archimateElement="eb2a54cd-1eb8-4e15-967b-763bf3708c17">
         <bounds x="400" y="198" width="120" height="55"/>
       </child>
       <child xsi:type="archimate:DiagramObject" id="0f2e6bdc-3712-4498-a4df-2222828dfae4" targetConnections="ed1493ad-c1d6-4dad-8ae7-07c37566ea70 56792e2b-6ce3-4f97-9938-b8552b379d16" textAlignment="1" archimateElement="bc618cfe-542d-4203-8835-b9d16b553566">
@@ -1805,9 +1807,11 @@ that violates Liskov's substitution principle </content>
         <sourceConnection xsi:type="archimate:Connection" id="56792e2b-6ce3-4f97-9938-b8552b379d16" lineWidth="3" lineColor="#cacaca" source="c788cded-2eef-44cd-a415-56e7be94a544" target="0f2e6bdc-3712-4498-a4df-2222828dfae4" archimateRelationship="1ff52781-859a-42cb-bb6f-145b7d2cb4ce"/>
       </child>
       <child xsi:type="archimate:Note" id="877cb547-3e61-44e6-b935-7731aee689aa" fontColor="#ff2600" textAlignment="1">
-        <bounds x="389" y="60" width="185" height="80"/>
+        <bounds x="389" y="60" width="212" height="80"/>
         <content>Package by feature
-</content>
+
+green - public packages in module/jar
+white - private packages in module/jar</content>
       </child>
     </element>
     <element xsi:type="archimate:ArchimateDiagramModel" name="clean architecture package (leveled) (only pack) (variant3)" id="f4ecba7a-5369-4956-bad3-8a5a75267b19">
@@ -1822,8 +1826,9 @@ that violates Liskov's substitution principle </content>
       </child>
       <child xsi:type="archimate:DiagramObject" id="eac84d83-d8f6-43c2-992b-1c97d8ab8aa3" textAlignment="1" archimateElement="92322504-441f-454a-9e78-222158852dc3">
         <bounds x="410" y="860" width="830" height="55"/>
+        <sourceConnection xsi:type="archimate:Connection" id="297be1d9-04c6-4c22-9c1c-69ce46b88257" source="eac84d83-d8f6-43c2-992b-1c97d8ab8aa3" target="1449c410-2302-4ff4-85b4-f59d523bff9e" archimateRelationship="4ec53d23-3427-4303-96a3-5dcdd1e4d991"/>
       </child>
-      <child xsi:type="archimate:DiagramObject" id="1449c410-2302-4ff4-85b4-f59d523bff9e" textAlignment="1" archimateElement="848369c4-0b94-4a71-acb5-dfa06f081998">
+      <child xsi:type="archimate:DiagramObject" id="1449c410-2302-4ff4-85b4-f59d523bff9e" targetConnections="297be1d9-04c6-4c22-9c1c-69ce46b88257" textAlignment="1" fillColor="#00f900" archimateElement="848369c4-0b94-4a71-acb5-dfa06f081998">
         <bounds x="1120" y="760" width="120" height="55"/>
         <sourceConnection xsi:type="archimate:Connection" id="78fbc40c-4127-4d3d-8047-eb6edcdeb330" source="1449c410-2302-4ff4-85b4-f59d523bff9e" target="fbc135e3-e00b-4fb6-9b87-6eee9a2a6928" archimateRelationship="29027b2a-7096-4018-b695-13920670736e">
           <bendpoint startX="-30" startY="-497" endX="430" endY="3"/>
@@ -1834,23 +1839,21 @@ that violates Liskov's substitution principle </content>
         <sourceConnection xsi:type="archimate:Connection" id="ed38a81e-9426-4bfe-9eed-f5279bae3430" lineWidth="3" lineColor="#cacaca" source="38b2aa6e-ef1e-4194-ac41-8d55d2d8fdee" target="a889fec9-09d5-47e1-8e09-97dd74955d95" archimateRelationship="06767321-a592-4968-889b-fecfbd58a49a">
           <bendpoint startX="-10" startY="-197" endX="-10" endY="187"/>
         </sourceConnection>
-        <sourceConnection xsi:type="archimate:Connection" id="a8a37176-0688-444e-af93-25896e1501f4" source="38b2aa6e-ef1e-4194-ac41-8d55d2d8fdee" target="c54fb54a-2b1e-4841-bf1b-9dd3d4fe7beb" archimateRelationship="b01f3004-19d1-423c-bd40-17678ff9a8ae">
-          <bendpoint startX="-460" startY="-7" endX="5" endY="153"/>
-        </sourceConnection>
+        <sourceConnection xsi:type="archimate:Connection" id="a8a37176-0688-444e-af93-25896e1501f4" source="38b2aa6e-ef1e-4194-ac41-8d55d2d8fdee" target="b2ef6da7-dfc5-4cbc-9692-ff0e4631cc8a" archimateRelationship="b01f3004-19d1-423c-bd40-17678ff9a8ae"/>
       </child>
-      <child xsi:type="archimate:DiagramObject" id="c54fb54a-2b1e-4841-bf1b-9dd3d4fe7beb" targetConnections="a8a37176-0688-444e-af93-25896e1501f4" textAlignment="1" archimateElement="07321a71-7f77-4b02-b421-c23e3e897408">
+      <child xsi:type="archimate:DiagramObject" id="c54fb54a-2b1e-4841-bf1b-9dd3d4fe7beb" textAlignment="1" archimateElement="07321a71-7f77-4b02-b421-c23e3e897408">
         <bounds x="400" y="600" width="130" height="55"/>
         <sourceConnection xsi:type="archimate:Connection" id="a269f140-25be-431c-973d-db89735785ed" lineWidth="3" lineColor="#cacaca" source="c54fb54a-2b1e-4841-bf1b-9dd3d4fe7beb" target="b2ef6da7-dfc5-4cbc-9692-ff0e4631cc8a" archimateRelationship="f67d0481-7b13-47ae-88c7-0af7e8361f10">
           <bendpoint startX="-9" startY="-249" endX="-30" endY="229"/>
         </sourceConnection>
       </child>
-      <child xsi:type="archimate:DiagramObject" id="b2ef6da7-dfc5-4cbc-9692-ff0e4631cc8a" targetConnections="a269f140-25be-431c-973d-db89735785ed 3a2155e6-e1fa-4eed-8475-be321c3b2c89 b317a471-b062-4d3a-8379-cb76f61e3e0c" textAlignment="1" archimateElement="eb2a54cd-1eb8-4e15-967b-763bf3708c17">
+      <child xsi:type="archimate:DiagramObject" id="b2ef6da7-dfc5-4cbc-9692-ff0e4631cc8a" targetConnections="a269f140-25be-431c-973d-db89735785ed 3a2155e6-e1fa-4eed-8475-be321c3b2c89 b317a471-b062-4d3a-8379-cb76f61e3e0c a8a37176-0688-444e-af93-25896e1501f4" textAlignment="1" fillColor="#00f900" archimateElement="eb2a54cd-1eb8-4e15-967b-763bf3708c17">
         <bounds x="400" y="198" width="120" height="55"/>
       </child>
-      <child xsi:type="archimate:DiagramObject" id="fbc135e3-e00b-4fb6-9b87-6eee9a2a6928" targetConnections="78fbc40c-4127-4d3d-8047-eb6edcdeb330 2b6eac3e-ca58-469e-9895-cd82d37f1d8e" textAlignment="1" archimateElement="bc618cfe-542d-4203-8835-b9d16b553566">
+      <child xsi:type="archimate:DiagramObject" id="fbc135e3-e00b-4fb6-9b87-6eee9a2a6928" targetConnections="78fbc40c-4127-4d3d-8047-eb6edcdeb330 2b6eac3e-ca58-469e-9895-cd82d37f1d8e" textAlignment="1" fillColor="#00f900" archimateElement="bc618cfe-542d-4203-8835-b9d16b553566">
         <bounds x="660" y="260" width="120" height="55"/>
       </child>
-      <child xsi:type="archimate:DiagramObject" id="a889fec9-09d5-47e1-8e09-97dd74955d95" targetConnections="ed38a81e-9426-4bfe-9eed-f5279bae3430 b042700f-f9bb-41d5-bbcc-23b9b239c69f" textAlignment="1" archimateElement="b35f7768-3fbb-4348-8262-97f652914b0e">
+      <child xsi:type="archimate:DiagramObject" id="a889fec9-09d5-47e1-8e09-97dd74955d95" targetConnections="ed38a81e-9426-4bfe-9eed-f5279bae3430 b042700f-f9bb-41d5-bbcc-23b9b239c69f" textAlignment="1" fillColor="#00f900" archimateElement="b35f7768-3fbb-4348-8262-97f652914b0e">
         <bounds x="870" y="430" width="120" height="55"/>
         <sourceConnection xsi:type="archimate:Connection" id="3a2155e6-e1fa-4eed-8475-be321c3b2c89" source="a889fec9-09d5-47e1-8e09-97dd74955d95" target="b2ef6da7-dfc5-4cbc-9692-ff0e4631cc8a" archimateRelationship="9760b791-b374-4b91-9eff-88cdef82f6ea"/>
       </child>
@@ -1861,10 +1864,13 @@ that violates Liskov's substitution principle </content>
         <sourceConnection xsi:type="archimate:Connection" id="2b6eac3e-ca58-469e-9895-cd82d37f1d8e" lineWidth="3" lineColor="#cacaca" source="b809c81f-dab6-42c1-a8c7-17315171cc26" target="fbc135e3-e00b-4fb6-9b87-6eee9a2a6928" archimateRelationship="1ff52781-859a-42cb-bb6f-145b7d2cb4ce"/>
       </child>
       <child xsi:type="archimate:Note" id="180152ea-d753-4cdb-b871-d6f975039047" fontColor="#ff2600" textAlignment="1">
-        <bounds x="389" y="60" width="185" height="80"/>
+        <bounds x="389" y="60" width="212" height="80"/>
         <content>“ports and adapters,
 ”the “hexagonal architecture,” 
-“boundaries, controllers, entities,”</content>
+“boundaries, controllers, entities,”
+
+green - public packages in module/jar
+white - private packages in module/jar</content>
       </child>
     </element>
     <element xsi:type="archimate:ArchimateDiagramModel" name="clean architecture package (leveled) (only pack) (variant 4)" id="6abbd5d1-f753-4cc7-9ddf-9464734549a0">
@@ -1876,8 +1882,9 @@ that violates Liskov's substitution principle </content>
       </child>
       <child xsi:type="archimate:DiagramObject" id="23ad686a-c4de-40bc-8d24-19048058b2ed" textAlignment="1" archimateElement="92322504-441f-454a-9e78-222158852dc3">
         <bounds x="410" y="860" width="830" height="55"/>
+        <sourceConnection xsi:type="archimate:Connection" id="d9e67744-bf46-4fe2-84fc-779f9c2581fa" source="23ad686a-c4de-40bc-8d24-19048058b2ed" target="df494345-289a-4240-a5aa-ee7ce43e7eb8" archimateRelationship="4ec53d23-3427-4303-96a3-5dcdd1e4d991"/>
       </child>
-      <child xsi:type="archimate:DiagramObject" id="df494345-289a-4240-a5aa-ee7ce43e7eb8" textAlignment="1" archimateElement="848369c4-0b94-4a71-acb5-dfa06f081998">
+      <child xsi:type="archimate:DiagramObject" id="df494345-289a-4240-a5aa-ee7ce43e7eb8" targetConnections="d9e67744-bf46-4fe2-84fc-779f9c2581fa" textAlignment="1" fillColor="#00f900" archimateElement="848369c4-0b94-4a71-acb5-dfa06f081998">
         <bounds x="1120" y="760" width="120" height="55"/>
         <sourceConnection xsi:type="archimate:Connection" id="31e57dd6-6558-46ea-8dfe-515fe5ff44d5" source="df494345-289a-4240-a5aa-ee7ce43e7eb8" target="1a9edbfa-efd7-4a72-8461-465b2cd6fb26" archimateRelationship="29027b2a-7096-4018-b695-13920670736e">
           <bendpoint startX="-30" startY="-497" endX="430" endY="3"/>
@@ -1888,20 +1895,18 @@ that violates Liskov's substitution principle </content>
         <sourceConnection xsi:type="archimate:Connection" id="691ba852-0763-4f3c-9598-a6fd0b3d97b2" lineWidth="3" lineColor="#cacaca" source="699ba2ce-f27f-4604-89dd-ca5b7d5d05a3" target="de964b6a-8f86-4644-a6ba-22000a248a5d" archimateRelationship="06767321-a592-4968-889b-fecfbd58a49a">
           <bendpoint startX="-10" startY="-197" endX="-10" endY="187"/>
         </sourceConnection>
-        <sourceConnection xsi:type="archimate:Connection" id="ba8c341a-cc40-469b-8f05-8d64c2fca170" source="699ba2ce-f27f-4604-89dd-ca5b7d5d05a3" target="2a3b6067-b175-4275-b698-5fb8c80f5dd8" archimateRelationship="b01f3004-19d1-423c-bd40-17678ff9a8ae">
-          <bendpoint startX="-460" startY="-7" endX="5" endY="153"/>
-        </sourceConnection>
+        <sourceConnection xsi:type="archimate:Connection" id="ba8c341a-cc40-469b-8f05-8d64c2fca170" source="699ba2ce-f27f-4604-89dd-ca5b7d5d05a3" target="d1d3da7b-ce26-4bc7-aa61-1f91de7fedc4" archimateRelationship="b01f3004-19d1-423c-bd40-17678ff9a8ae"/>
       </child>
-      <child xsi:type="archimate:DiagramObject" id="2a3b6067-b175-4275-b698-5fb8c80f5dd8" targetConnections="ba8c341a-cc40-469b-8f05-8d64c2fca170" textAlignment="1" archimateElement="07321a71-7f77-4b02-b421-c23e3e897408">
+      <child xsi:type="archimate:DiagramObject" id="2a3b6067-b175-4275-b698-5fb8c80f5dd8" textAlignment="1" archimateElement="07321a71-7f77-4b02-b421-c23e3e897408">
         <bounds x="400" y="600" width="130" height="55"/>
         <sourceConnection xsi:type="archimate:Connection" id="e6f77d7b-b2b1-4865-8bfe-d17e2c8be70a" lineWidth="3" lineColor="#cacaca" source="2a3b6067-b175-4275-b698-5fb8c80f5dd8" target="d1d3da7b-ce26-4bc7-aa61-1f91de7fedc4" archimateRelationship="f67d0481-7b13-47ae-88c7-0af7e8361f10">
           <bendpoint startX="-9" startY="-249" endX="-30" endY="229"/>
         </sourceConnection>
       </child>
-      <child xsi:type="archimate:DiagramObject" id="d1d3da7b-ce26-4bc7-aa61-1f91de7fedc4" targetConnections="e6f77d7b-b2b1-4865-8bfe-d17e2c8be70a bd8a9896-93ba-4b49-bc76-a354eda99868 c5e09977-deb5-41d6-b909-c524ee80c738" textAlignment="1" archimateElement="eb2a54cd-1eb8-4e15-967b-763bf3708c17">
+      <child xsi:type="archimate:DiagramObject" id="d1d3da7b-ce26-4bc7-aa61-1f91de7fedc4" targetConnections="e6f77d7b-b2b1-4865-8bfe-d17e2c8be70a bd8a9896-93ba-4b49-bc76-a354eda99868 c5e09977-deb5-41d6-b909-c524ee80c738 ba8c341a-cc40-469b-8f05-8d64c2fca170" textAlignment="1" archimateElement="eb2a54cd-1eb8-4e15-967b-763bf3708c17">
         <bounds x="400" y="198" width="120" height="55"/>
       </child>
-      <child xsi:type="archimate:DiagramObject" id="1a9edbfa-efd7-4a72-8461-465b2cd6fb26" targetConnections="31e57dd6-6558-46ea-8dfe-515fe5ff44d5 479ff05d-2e61-43ee-a027-e62ff220f0eb" textAlignment="1" archimateElement="bc618cfe-542d-4203-8835-b9d16b553566">
+      <child xsi:type="archimate:DiagramObject" id="1a9edbfa-efd7-4a72-8461-465b2cd6fb26" targetConnections="31e57dd6-6558-46ea-8dfe-515fe5ff44d5 479ff05d-2e61-43ee-a027-e62ff220f0eb" textAlignment="1" fillColor="#00f900" archimateElement="bc618cfe-542d-4203-8835-b9d16b553566">
         <bounds x="660" y="260" width="120" height="55"/>
       </child>
       <child xsi:type="archimate:DiagramObject" id="de964b6a-8f86-4644-a6ba-22000a248a5d" targetConnections="691ba852-0763-4f3c-9598-a6fd0b3d97b2 d726bb13-4c70-44da-abc1-dac16bce6370" textAlignment="1" archimateElement="b35f7768-3fbb-4348-8262-97f652914b0e">
@@ -1915,9 +1920,12 @@ that violates Liskov's substitution principle </content>
         <sourceConnection xsi:type="archimate:Connection" id="479ff05d-2e61-43ee-a027-e62ff220f0eb" lineWidth="3" lineColor="#cacaca" source="621f331e-e58e-49ac-9295-f910d495fbca" target="1a9edbfa-efd7-4a72-8461-465b2cd6fb26" archimateRelationship="1ff52781-859a-42cb-bb6f-145b7d2cb4ce"/>
       </child>
       <child xsi:type="archimate:Note" id="7e64f99a-21c7-424d-acb4-c7d190f79d1b" fontColor="#ff2600" textAlignment="1">
-        <bounds x="389" y="60" width="185" height="80"/>
+        <bounds x="389" y="60" width="222" height="80"/>
         <content>Package by component
-</content>
+MSA microservices architecture style
+
+green - public packages in module/jar
+white - private packages in module/jar</content>
       </child>
     </element>
   </folder>
