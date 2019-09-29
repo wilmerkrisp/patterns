@@ -26,7 +26,7 @@ Architecture diagrams is also presented for comparison (coming soon!), built wit
 
 == Architecture with Structure101
 image:http://structure101.com/images/s101_170.png["Structure101",width=170,link="http://www.Structure101.com"]
-Architecture diagrams is also presented for comparison (coming soon!), built with Structure101 Studio. Thanks to Structure101 for the Studio/Workspace.
+Architecture diagrams is also presented for comparison, built with Structure101 Studio. Thanks to Structure101 for the Studio/Workspace.
 
 == Table of contents
 
