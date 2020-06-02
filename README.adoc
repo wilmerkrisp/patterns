@@ -20,14 +20,6 @@ image:example2.png[link="example2.png"]
 
 image:patternsbookcover.png[link="patterns.pdf"]
 
-== Architecture with JArchitect
-image:https://www.jarchitect.com/assets/img/transparentlogo.png["JArchitecture",width=170,link="http://www.jarchitect.com"]
-Architecture diagrams is also presented for comparison (coming soon!), built with JArchitect. Thanks to Codegears / CppDepend for the JArchitect.
-
-== Architecture with Structure101
-image:http://structure101.com/images/s101_170.png["Structure101",width=170,link="http://www.Structure101.com"]
-Architecture diagrams is also presented for comparison, built with Structure101 Studio. Thanks to Structure101 for the Studio/Workspace.
-
 == Table of contents
 
 * DESIGN PATTERNS
@@ -294,3 +286,12 @@ Architecture diagrams is also presented for comparison, built with Structure101 
 *** EXTRACT DEPENDENCY FROM INTERFACE TO COSNTRUCTOR
 *** INTERFACE SEGREGATION
 ** CLEAN ARCHITECTURE
+
+
+== Architecture with JArchitect
+image:https://www.jarchitect.com/assets/img/transparentlogo.png["JArchitecture",width=170,link="http://www.jarchitect.com"]
+Architecture diagrams is also presented for comparison (coming soon!), built with JArchitect. Thanks to Codegears / CppDepend for the JArchitect.
+
+== Architecture with Structure101
+image:http://structure101.com/images/s101_170.png["Structure101",width=170,link="http://www.Structure101.com"]
+Architecture diagrams is also presented for comparison, built with Structure101 Studio. Thanks to Structure101 for the Studio/Workspace.
